@@ -1,0 +1,272 @@
+[ {
+  "logicalId" : "13",
+  "designationDate" : "2003-07-07",
+  "regulation" : {
+    "programme" : "IRQ",
+    "publicationDate" : "2003-07-08",
+    "legalBasis" : "Council Regulation (EC) No 1210/2003"
+  },
+  "subjectType" : {
+    "code" : "person",
+    "classification" : "Individual"
+  },
+  "nameAlias" : [ {
+    "wholeName" : "Saddam Hussein Al-Tikriti",
+    "firstName" : "Saddam",
+    "lastName" : "Hussein Al-Tikriti",
+    "gender" : "M",
+    "strong" : "true"
+  }, {
+    "wholeName" : "Abu Ali",
+    "strong" : "false"
+  } ],
+  "birthdate" : {
+    "birthdate" : "1937-04-28",
+    "city" : "al-Awja",
+    "countryIso2Code" : "IQ"
+  },
+  "citizenship" : {
+    "countryIso2Code" : "IQ"
+  },
+  "address" : {
+    "street" : "Presidential Palace Complex",
+    "city" : "Baghdad",
+    "countryIso2Code" : "IQ"
+  },
+  "identification" : {
+    "identificationTypeCode" : "passport",
+    "number" : "A123456",
+    "countryIso2Code" : "IQ",
+    "logicalId" : "501"
+  },
+  "sanctionMeasure" : [ {
+    "measureType" : "AssetFreeze",
+    "measureLogicalId" : "201"
+  }, {
+    "measureType" : "TravelBan",
+    "measureLogicalId" : "202"
+  } ]
+}, {
+  "logicalId" : "25",
+  "designationDate" : "2003-07-07",
+  "regulation" : {
+    "programme" : "IRQ",
+    "publicationDate" : "2003-07-08",
+    "legalBasis" : "Council Regulation (EC) No 1210/2003"
+  },
+  "subjectType" : {
+    "code" : "person",
+    "classification" : "Individual"
+  },
+  "nameAlias" : [ {
+    "wholeName" : "Ali Hassan Al-Tikriti",
+    "firstName" : "Ali",
+    "lastName" : "Hassan Al-Tikriti",
+    "gender" : "M",
+    "strong" : "true"
+  }, {
+    "wholeName" : "Chemical Ali",
+    "strong" : "false"
+  } ],
+  "birthdate" : {
+    "birthdate" : "1941-01-01",
+    "city" : "al-Awja",
+    "countryIso2Code" : "IQ"
+  },
+  "citizenship" : {
+    "countryIso2Code" : "IQ"
+  },
+  "relation" : {
+    "relationType" : "Associate/Cousin",
+    "targetEntityLogicalId" : "13"
+  },
+  "sanctionMeasure" : {
+    "measureType" : "AssetFreeze",
+    "measureLogicalId" : "201"
+  }
+}, {
+  "logicalId" : "88",
+  "designationDate" : "2014-03-17",
+  "regulation" : {
+    "programme" : "RUS",
+    "publicationDate" : "2014-03-17",
+    "legalBasis" : "Council Regulation (EU) No 269/2014"
+  },
+  "subjectType" : {
+    "code" : "enterprise",
+    "classification" : "LegalEntity"
+  },
+  "nameAlias" : [ {
+    "wholeName" : "Example Shipping & Holding LLC",
+    "strong" : "true"
+  }, {
+    "wholeName" : "ESH Group",
+    "strong" : "false"
+  } ],
+  "address" : {
+    "street" : "Presnenskaya Embankment 12",
+    "city" : "Moscow",
+    "postalCode" : "123100",
+    "countryIso2Code" : "RU"
+  },
+  "registration" : {
+    "number" : "1027700000000",
+    "countryIso2Code" : "RU",
+    "date" : "2002-08-12"
+  },
+  "taxIdentifier" : {
+    "type" : "INN",
+    "number" : "7701234567",
+    "countryIso2Code" : "RU"
+  },
+  "ownership" : {
+    "controllerLogicalId" : "25",
+    "sharePercentage" : "65.5"
+  },
+  "sanctionMeasure" : {
+    "measureType" : "AssetFreeze",
+    "measureLogicalId" : "201"
+  }
+}, {
+  "logicalId" : "99",
+  "designationDate" : "2014-07-30",
+  "regulation" : {
+    "programme" : "RUS",
+    "publicationDate" : "2014-07-30",
+    "legalBasis" : "Council Regulation (EU) No 833/2014"
+  },
+  "subjectType" : {
+    "code" : "enterprise",
+    "classification" : "Subsidiary"
+  },
+  "nameAlias" : {
+    "wholeName" : "Example Marine Logistics Ltd",
+    "strong" : "true"
+  },
+  "address" : {
+    "street" : "Gladstonos 55",
+    "city" : "Limassol",
+    "postalCode" : "3040",
+    "countryIso2Code" : "CY"
+  },
+  "registration" : {
+    "number" : "HE123456",
+    "countryIso2Code" : "CY",
+    "date" : "2008-04-15"
+  },
+  "relation" : {
+    "relationType" : "Subsidiary",
+    "targetEntityLogicalId" : "88"
+  },
+  "sanctionMeasure" : {
+    "measureType" : "AssetFreeze",
+    "measureLogicalId" : "201"
+  }
+}, {
+  "logicalId" : "120",
+  "designationDate" : "2019-07-04",
+  "regulation" : {
+    "programme" : "IRN",
+    "publicationDate" : "2019-07-05",
+    "legalBasis" : "Council Regulation (EU) No 267/2012"
+  },
+  "subjectType" : {
+    "code" : "vessel",
+    "classification" : "Vessel"
+  },
+  "nameAlias" : [ {
+    "wholeName" : "GRACE 1",
+    "strong" : "true"
+  }, {
+    "wholeName" : "ADRIAN DARYA 1",
+    "strong" : "true"
+  } ],
+  "vessel" : {
+    "imo" : "9116412",
+    "mmsi" : "422123456",
+    "callSign" : "EPAB3",
+    "flag" : "IR",
+    "type" : "Crude Oil Tanker",
+    "tonnage" : "300000",
+    "buildYear" : "1997",
+    "ownerLogicalId" : "88",
+    "operatorLogicalId" : "99"
+  },
+  "sanctionMeasure" : {
+    "measureType" : "PortAccessBan",
+    "measureLogicalId" : "203"
+  }
+}, {
+  "logicalId" : "150",
+  "designationDate" : "2022-04-08",
+  "regulation" : {
+    "programme" : "RUS",
+    "publicationDate" : "2022-04-08",
+    "legalBasis" : "Council Regulation (EU) 2022/576"
+  },
+  "subjectType" : {
+    "code" : "aircraft",
+    "classification" : "Aircraft"
+  },
+  "nameAlias" : {
+    "wholeName" : "RA-96022",
+    "strong" : "true"
+  },
+  "aircraft" : {
+    "registration" : "RA-96022",
+    "serial" : "74393201022",
+    "manufacturer" : "Ilyushin",
+    "model" : "Il-96-300",
+    "buildYear" : "2009",
+    "ownerLogicalId" : "88",
+    "operatorLogicalId" : "88"
+  },
+  "sanctionMeasure" : {
+    "measureType" : "AirspaceBan",
+    "measureLogicalId" : "204"
+  }
+}, {
+  "logicalId" : "201",
+  "designationDate" : "2003-07-07",
+  "regulation" : {
+    "programme" : "GLOBAL",
+    "legalBasis" : "EU Common Foreign and Security Policy"
+  },
+  "subjectType" : {
+    "code" : "sanction",
+    "classification" : "SanctionMeasure"
+  },
+  "measure" : {
+    "type" : "AssetFreeze",
+    "description" : "Freezing of funds and economic resources",
+    "authority" : "Council of the European Union"
+  },
+  "targetEntity" : [ {
+    "targetLogicalId" : "13"
+  }, {
+    "targetLogicalId" : "25"
+  }, {
+    "targetLogicalId" : "88"
+  }, {
+    "targetLogicalId" : "99"
+  } ]
+}, {
+  "logicalId" : "202",
+  "designationDate" : "2003-07-07",
+  "regulation" : {
+    "programme" : "IRQ",
+    "legalBasis" : "Council Regulation (EC) No 1210/2003"
+  },
+  "subjectType" : {
+    "code" : "sanction",
+    "classification" : "SanctionMeasure"
+  },
+  "measure" : {
+    "type" : "TravelBan",
+    "description" : "Restrictions on admission / transit through EU member states",
+    "authority" : "Council of the European Union"
+  },
+  "targetEntity" : {
+    "targetLogicalId" : "13"
+  }
+} ]

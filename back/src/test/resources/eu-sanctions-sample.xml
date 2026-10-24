@@ -1,0 +1,98 @@
+<export>
+  <!-- 1. PERSONNE PHYSIQUE PRINCIPALE -->
+  <sanctionEntity logicalId="13" designationDate="2003-07-07">
+    <regulation programme="IRQ" publicationDate="2003-07-08" legalBasis="Council Regulation (EC) No 1210/2003"/>
+    <subjectType code="person" classification="Individual"/>
+    <nameAlias wholeName="Saddam Hussein Al-Tikriti" firstName="Saddam" lastName="Hussein Al-Tikriti" gender="M" strong="true"/>
+    <nameAlias wholeName="Abu Ali" strong="false"/>
+    <birthdate birthdate="1937-04-28" city="al-Awja" countryIso2Code="IQ"/>
+    <citizenship countryIso2Code="IQ"/>
+    <address street="Presidential Palace Complex" city="Baghdad" countryIso2Code="IQ"/>
+    <identification identificationTypeCode="passport" number="A123456" countryIso2Code="IQ" logicalId="501"/>
+    <!-- Mesure de sanction associée -->
+    <sanctionMeasure measureType="AssetFreeze" measureLogicalId="201"/>
+    <sanctionMeasure measureType="TravelBan" measureLogicalId="202"/>
+  </sanctionEntity>
+
+  <!-- 2. PERSONNE PHYSIQUE ASSOCIÉE / MEMBRE DE FAMILLE (Relation vers logicalId="13") -->
+  <sanctionEntity logicalId="25" designationDate="2003-07-07">
+    <regulation programme="IRQ" publicationDate="2003-07-08" legalBasis="Council Regulation (EC) No 1210/2003"/>
+    <subjectType code="person" classification="Individual"/>
+    <nameAlias wholeName="Ali Hassan Al-Tikriti" firstName="Ali" lastName="Hassan Al-Tikriti" gender="M" strong="true"/>
+    <nameAlias wholeName="Chemical Ali" strong="false"/>
+    <birthdate birthdate="1941-01-01" city="al-Awja" countryIso2Code="IQ"/>
+    <citizenship countryIso2Code="IQ"/>
+    <!-- Relation familiale et politique avec l'entité 13 -->
+    <relation relationType="Associate/Cousin" targetEntityLogicalId="13"/>
+    <sanctionMeasure measureType="AssetFreeze" measureLogicalId="201"/>
+  </sanctionEntity>
+
+  <!-- 3. SOCIÉTÉ MÈRE (ENTREPRISE / HOLDING) -->
+  <sanctionEntity logicalId="88" designationDate="2014-03-17">
+    <regulation programme="RUS" publicationDate="2014-03-17" legalBasis="Council Regulation (EU) No 269/2014"/>
+    <subjectType code="enterprise" classification="LegalEntity"/>
+    <nameAlias wholeName="Example Shipping &amp; Holding LLC" strong="true"/>
+    <nameAlias wholeName="ESH Group" strong="false"/>
+    <address street="Presnenskaya Embankment 12" city="Moscow" postalCode="123100" countryIso2Code="RU"/>
+    <registration number="1027700000000" countryIso2Code="RU" date="2002-08-12"/>
+    <taxIdentifier type="INN" number="7701234567" countryIso2Code="RU"/>
+    <!-- Bénéficiaire effectif (UBO) : Dirigé/contrôlé par l'entité 25 -->
+    <ownership controllerLogicalId="25" sharePercentage="65.5"/>
+    <sanctionMeasure measureType="AssetFreeze" measureLogicalId="201"/>
+  </sanctionEntity>
+
+  <!-- 4. FILIALE MARITIME (Détenue à 100% par la holding 88) -->
+  <sanctionEntity logicalId="99" designationDate="2014-07-30">
+    <regulation programme="RUS" publicationDate="2014-07-30" legalBasis="Council Regulation (EU) No 833/2014"/>
+    <subjectType code="enterprise" classification="Subsidiary"/>
+    <nameAlias wholeName="Example Marine Logistics Ltd" strong="true"/>
+    <address street="Gladstonos 55" city="Limassol" postalCode="3040" countryIso2Code="CY"/>
+    <registration number="HE123456" countryIso2Code="CY" date="2008-04-15"/>
+    <!-- Relation de filiale avec la société mère 88 -->
+    <relation relationType="Subsidiary" targetEntityLogicalId="88"/>
+    <sanctionMeasure measureType="AssetFreeze" measureLogicalId="201"/>
+  </sanctionEntity>
+
+  <!-- 5. NAVIRE (Pétrolier - Détenu par la holding 88, exploité par la filiale 99) -->
+  <sanctionEntity logicalId="120" designationDate="2019-07-04">
+    <regulation programme="IRN" publicationDate="2019-07-05" legalBasis="Council Regulation (EU) No 267/2012"/>
+    <subjectType code="vessel" classification="Vessel"/>
+    <nameAlias wholeName="GRACE 1" strong="true"/>
+    <nameAlias wholeName="ADRIAN DARYA 1" strong="true"/>
+    <vessel imo="9116412" mmsi="422123456" callSign="EPAB3" flag="IR" type="Crude Oil Tanker"
+            tonnage="300000" buildYear="1997"
+            ownerLogicalId="88" operatorLogicalId="99"/>
+    <sanctionMeasure measureType="PortAccessBan" measureLogicalId="203"/>
+  </sanctionEntity>
+
+  <!-- 6. AÉRONEF (Avion de transport de VIP/Fret - Détenu/opéré par la holding 88) -->
+  <sanctionEntity logicalId="150" designationDate="2022-04-08">
+    <regulation programme="RUS" publicationDate="2022-04-08" legalBasis="Council Regulation (EU) 2022/576"/>
+    <subjectType code="aircraft" classification="Aircraft"/>
+    <nameAlias wholeName="RA-96022" strong="true"/>
+    <aircraft registration="RA-96022" serial="74393201022" manufacturer="Ilyushin" model="Il-96-300"
+              buildYear="2009"
+              ownerLogicalId="88" operatorLogicalId="88"/>
+    <sanctionMeasure measureType="AirspaceBan" measureLogicalId="204"/>
+  </sanctionEntity>
+
+  <!-- 7. MESURE DE SANCTION GLOBALE : GEL DES AVOIRS (Asset Freeze) -->
+  <sanctionEntity logicalId="201" designationDate="2003-07-07">
+    <regulation programme="GLOBAL" legalBasis="EU Common Foreign and Security Policy"/>
+    <subjectType code="sanction" classification="SanctionMeasure"/>
+    <measure type="AssetFreeze" description="Freezing of funds and economic resources" authority="Council of the European Union"/>
+    <!-- Entités cibles directes soumises à ce gel -->
+    <targetEntity targetLogicalId="13"/>
+    <targetEntity targetLogicalId="25"/>
+    <targetEntity targetLogicalId="88"/>
+    <targetEntity targetLogicalId="99"/>
+  </sanctionEntity>
+
+  <!-- 8. MESURE DE SANCTION : INTERDICTION DE VOYAGE (Travel Ban) -->
+  <sanctionEntity logicalId="202" designationDate="2003-07-07">
+    <regulation programme="IRQ" legalBasis="Council Regulation (EC) No 1210/2003"/>
+    <subjectType code="sanction" classification="SanctionMeasure"/>
+    <measure type="TravelBan" description="Restrictions on admission / transit through EU member states" authority="Council of the European Union"/>
+    <targetEntity targetLogicalId="13"/>
+  </sanctionEntity>
+</export>

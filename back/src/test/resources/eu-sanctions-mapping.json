@@ -1,0 +1,123 @@
+{
+  "name": "EU Financial Sanctions Mapping Configuration",
+  "description": "Rules for mapping EU Sanctions XML export to FollowTheMoney (FTM) ontology",
+  "rules": [
+    {
+      "targetNodeName": "sanctionEntity",
+      "conditionJsonPath": "$.subjectType.code",
+      "conditionValue": "person",
+      "ftmSchema": "Person",
+      "idJsonPaths": [
+        "$.logicalId"
+      ],
+      "propertiesMapping": {
+        "name": "$.nameAlias[0].wholeName",
+        "alias": "$.nameAlias[*].wholeName",
+        "firstName": "$.nameAlias[0].firstName",
+        "lastName": "$.nameAlias[0].lastName",
+        "gender": "$.nameAlias[0].gender",
+        "birthDate": "$.birthdate.birthdate",
+        "birthPlace": "$.birthdate.city",
+        "nationality": "$.citizenship.countryIso2Code",
+        "passportNumber": "$.identification.number",
+        "program": "$.regulation.programme",
+        "sanctionDate": "$.designationDate"
+      },
+      "foreignKeyProperties": [
+        "sanction"
+      ]
+    },
+    {
+      "targetNodeName": "sanctionEntity",
+      "conditionJsonPath": "$.subjectType.code",
+      "conditionValue": "enterprise",
+      "ftmSchema": "Company",
+      "idJsonPaths": [
+        "$.logicalId"
+      ],
+      "propertiesMapping": {
+        "name": "$.nameAlias[0].wholeName",
+        "alias": "$.nameAlias[*].wholeName",
+        "country": "$.address.countryIso2Code",
+        "address": "$.address.city",
+        "registrationNumber": "$.registration.number",
+        "taxNumber": "$.taxIdentifier.number",
+        "program": "$.regulation.programme",
+        "sanctionDate": "$.designationDate"
+      },
+      "foreignKeyProperties": []
+    },
+    {
+      "targetNodeName": "sanctionEntity",
+      "conditionJsonPath": "$.subjectType.code",
+      "conditionValue": "vessel",
+      "ftmSchema": "Vessel",
+      "idJsonPaths": [
+        "$.logicalId"
+      ],
+      "propertiesMapping": {
+        "name": "$.nameAlias[0].wholeName",
+        "alias": "$.nameAlias[*].wholeName",
+        "imoNumber": "$.vessel.imo",
+        "mmsi": "$.vessel.mmsi",
+        "callSign": "$.vessel.callSign",
+        "flag": "$.vessel.flag",
+        "type": "$.vessel.type",
+        "tonnage": "$.vessel.tonnage",
+        "buildDate": "$.vessel.buildYear",
+        "owner": "$.vessel.ownerLogicalId",
+        "operator": "$.vessel.operatorLogicalId",
+        "program": "$.regulation.programme",
+        "sanctionDate": "$.designationDate"
+      },
+      "foreignKeyProperties": [
+        "owner",
+        "operator"
+      ]
+    },
+    {
+      "targetNodeName": "sanctionEntity",
+      "conditionJsonPath": "$.subjectType.code",
+      "conditionValue": "aircraft",
+      "ftmSchema": "Airplane",
+      "idJsonPaths": [
+        "$.logicalId"
+      ],
+      "propertiesMapping": {
+        "name": "$.nameAlias.wholeName",
+        "registrationNumber": "$.aircraft.registration",
+        "serialNumber": "$.aircraft.serial",
+        "manufacturer": "$.aircraft.manufacturer",
+        "model": "$.aircraft.model",
+        "buildDate": "$.aircraft.buildYear",
+        "owner": "$.aircraft.ownerLogicalId",
+        "operator": "$.aircraft.operatorLogicalId",
+        "program": "$.regulation.programme",
+        "sanctionDate": "$.designationDate"
+      },
+      "foreignKeyProperties": [
+        "owner",
+        "operator"
+      ]
+    },
+    {
+      "targetNodeName": "sanctionEntity",
+      "conditionJsonPath": "$.subjectType.code",
+      "conditionValue": "sanction",
+      "ftmSchema": "Sanction",
+      "idJsonPaths": [
+        "$.logicalId"
+      ],
+      "propertiesMapping": {
+        "program": "$.regulation.programme",
+        "authority": "$.measure.authority",
+        "description": "$.measure.description",
+        "startDate": "$.designationDate",
+        "entity": "$.targetEntity[*].targetLogicalId"
+      },
+      "foreignKeyProperties": [
+        "entity"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+[ {
+  "id" : "13",
+  "schema" : "Person",
+  "properties" : {
+    "name" : [ "Saddam Hussein Al-Tikriti" ],
+    "alias" : [ "Saddam Hussein Al-Tikriti", "Abu Ali" ],
+    "firstName" : [ "Saddam" ],
+    "lastName" : [ "Hussein Al-Tikriti" ],
+    "gender" : [ "M" ],
+    "birthDate" : [ "1937-04-28" ],
+    "birthPlace" : [ "al-Awja" ],
+    "nationality" : [ "IQ" ],
+    "passportNumber" : [ "A123456" ],
+    "program" : [ "IRQ" ],
+    "sanctionDate" : [ "2003-07-07" ]
+  }
+}, {
+  "id" : "25",
+  "schema" : "Person",
+  "properties" : {
+    "name" : [ "Ali Hassan Al-Tikriti" ],
+    "alias" : [ "Ali Hassan Al-Tikriti", "Chemical Ali" ],
+    "firstName" : [ "Ali" ],
+    "lastName" : [ "Hassan Al-Tikriti" ],
+    "gender" : [ "M" ],
+    "birthDate" : [ "1941-01-01" ],
+    "birthPlace" : [ "al-Awja" ],
+    "nationality" : [ "IQ" ],
+    "program" : [ "IRQ" ],
+    "sanctionDate" : [ "2003-07-07" ]
+  }
+}, {
+  "id" : "88",
+  "schema" : "Company",
+  "properties" : {
+    "name" : [ "Example Shipping & Holding LLC" ],
+    "alias" : [ "Example Shipping & Holding LLC", "ESH Group" ],
+    "country" : [ "RU" ],
+    "address" : [ "Moscow" ],
+    "registrationNumber" : [ "1027700000000" ],
+    "taxNumber" : [ "7701234567" ],
+    "program" : [ "RUS" ],
+    "sanctionDate" : [ "2014-03-17" ]
+  }
+}, {
+  "id" : "99",
+  "schema" : "Company",
+  "properties" : {
+    "alias" : [ "Example Marine Logistics Ltd" ],
+    "country" : [ "CY" ],
+    "address" : [ "Limassol" ],
+    "registrationNumber" : [ "HE123456" ],
+    "program" : [ "RUS" ],
+    "sanctionDate" : [ "2014-07-30" ]
+  }
+}, {
+  "id" : "120",
+  "schema" : "Vessel",
+  "properties" : {
+    "name" : [ "GRACE 1" ],
+    "alias" : [ "GRACE 1", "ADRIAN DARYA 1" ],
+    "imoNumber" : [ "9116412" ],
+    "mmsi" : [ "422123456" ],
+    "callSign" : [ "EPAB3" ],
+    "flag" : [ "IR" ],
+    "type" : [ "Crude Oil Tanker" ],
+    "tonnage" : [ "300000" ],
+    "buildDate" : [ "1997" ],
+    "owner" : [ "88" ],
+    "operator" : [ "99" ],
+    "program" : [ "IRN" ],
+    "sanctionDate" : [ "2019-07-04" ]
+  }
+}, {
+  "id" : "150",
+  "schema" : "Airplane",
+  "properties" : {
+    "name" : [ "RA-96022" ],
+    "registrationNumber" : [ "RA-96022" ],
+    "serialNumber" : [ "74393201022" ],
+    "manufacturer" : [ "Ilyushin" ],
+    "model" : [ "Il-96-300" ],
+    "buildDate" : [ "2009" ],
+    "owner" : [ "88" ],
+    "operator" : [ "88" ],
+    "program" : [ "RUS" ],
+    "sanctionDate" : [ "2022-04-08" ]
+  }
+}, {
+  "id" : "201",
+  "schema" : "Sanction",
+  "properties" : {
+    "program" : [ "GLOBAL" ],
+    "authority" : [ "Council of the European Union" ],
+    "description" : [ "Freezing of funds and economic resources" ],
+    "startDate" : [ "2003-07-07" ],
+    "entity" : [ "13", "25", "88", "99" ]
+  }
+}, {
+  "id" : "202",
+  "schema" : "Sanction",
+  "properties" : {
+    "program" : [ "IRQ" ],
+    "authority" : [ "Council of the European Union" ],
+    "description" : [ "Restrictions on admission / transit through EU member states" ],
+    "startDate" : [ "2003-07-07" ],
+    "entity" : [ "13" ]
+  }
+} ]
