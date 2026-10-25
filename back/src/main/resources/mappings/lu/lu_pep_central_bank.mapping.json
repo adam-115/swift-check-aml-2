@@ -1,0 +1,57 @@
+{
+  "name": "lu_pep_central_bank",
+  "description": "Deux paragraphes : « Président: X Membres: A, B... » (Conseil) et « Directeur général: X Directeurs: A et B » (Direction)",
+  "applyAllRules": true,
+  "explode": {
+    "from": "text",
+    "regex": "(?<=:|:\\s|,\\s|\\set\\s)\\s*((?:(?!Membres\\b|Directeurs?\\b)\\p{Lu}[\\p{L}'’-]+\\s?){2,})",
+    "as": "_name"
+  },
+  "derivedFields": [
+    { "name": "_fullName", "from": "_name_1", "regex": "[\\s.]+$", "replacement": "" },
+    { "name": "_firstName", "from": "_fullName", "regex": "^(\\S+)\\s+(.+)$", "group": 1 },
+    { "name": "_lastName", "from": "_fullName", "regex": "^(\\S+)\\s+(.+)$", "group": 2 },
+    { "name": "_personSlug", "from": "_fullName", "slug": true },
+    { "name": "_personKey", "template": "{_dataset}:{_personSlug}" },
+    { "name": "_direction", "from": "text", "regex": "^\\s*(Directeur)" },
+    { "name": "_organ", "from": "_direction", "regex": ".+", "replacement": "direction", "defaultValue": "council" },
+    { "name": "_directionName", "template": "Directeur général ou directeur de la Banque centrale du Luxembourg ({_direction})", "requireAll": true },
+    { "name": "_positionName", "from": "_directionName", "regex": " \\(.*\\)$", "replacement": "", "defaultValue": "Membre du Conseil de la Banque centrale du Luxembourg" },
+    { "name": "_positionKey", "template": "{_dataset}:{_organ}" },
+    { "name": "_occupancyKey", "template": "{_personKey}:{_organ}" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.national;gov.financial", "split": ";" },
+    { "name": "_status", "template": "current" }
+  ],
+  "recordFilters": [
+    { "path": "_lastName", "operator": "NOT_EMPTY" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$._fullName",
+        "firstName": "$._firstName",
+        "lastName": "$._lastName",
+        "country": "$._country",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._sourceUrl"
+      },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": { "name": "$._positionName", "country": "$._country", "topics": "$._positionTopics" },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": { "holder": "$._personKey", "post": "$._positionKey", "status": "$._status" },
+      "propertyTypes": { "holder": "entity", "post": "entity" }
+    }
+  ]
+}

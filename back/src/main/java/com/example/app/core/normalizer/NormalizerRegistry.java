@@ -20,6 +20,7 @@ public class NormalizerRegistry {
         register(new DateNormalizer());
         register(new CountryNormalizer());
         register(new CurrencyNormalizer());
+        register(new GenderNormalizer());
     }
 
     public NormalizerRegistry(Collection<ValueNormalizer> customNormalizers) {

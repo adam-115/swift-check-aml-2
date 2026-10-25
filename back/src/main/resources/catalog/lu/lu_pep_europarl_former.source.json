@@ -1,0 +1,21 @@
+{
+  "sourceName": "lu_pep_europarl_former",
+  "label": "Anciens eurodéputés élus au Luxembourg",
+  "description": "Fiches open data (API v2) des eurodéputés luxembourgeois sortants de la 9e législature ; mandat terminé depuis moins de 5 ans",
+  "attribution": "© Union européenne, Parlement européen (data.europarl.europa.eu)",
+  "listType": "PEP",
+  "parserType": "API",
+  "sourceFormat": "JSON",
+  "country": "LU",
+  "retentionMonths": 12,
+  "urls": [
+    "https://data.europarl.europa.eu/api/v2/meps/193419?format=application%2Fld%2Bjson",
+    "https://data.europarl.europa.eu/api/v2/meps/197418?format=application%2Fld%2Bjson",
+    "https://data.europarl.europa.eu/api/v2/meps/197428?format=application%2Fld%2Bjson"
+  ],
+  "mapping": "classpath:mappings/lu/lu_pep_europarl_former.mapping.json",
+  "coverage": [
+    { "category": "LU-EU", "function": "Député au Parlement européen élu au Luxembourg", "completeness": "PARTIAL", "includesFormer": true }
+  ],
+  "test": { "fixtures": ["meps_outgoing.json", "mep_semedo.json", "mep_schmit.json"], "minPersons": 2, "samples": ["Christophe HANSEN", "Monica SEMEDO"] }
+}

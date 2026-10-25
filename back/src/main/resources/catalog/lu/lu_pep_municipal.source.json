@@ -1,0 +1,20 @@
+{
+  "sourceName": "lu_pep_municipal",
+  "label": "Bourgmestres et échevins (Luxembourg)",
+  "description": "Collèges des bourgmestre et échevins depuis les élections communales 2023 ; anciens membres gardés 5 ans",
+  "attribution": "Ministère des Affaires intérieures, data.public.lu",
+  "listType": "PEP",
+  "parserType": "OPEN_DATA_FILE",
+  "sourceFormat": "CSV",
+  "country": "LU",
+  "retentionMonths": 12,
+  "urls": ["https://data.public.lu/fr/datasets/r/067d11cc-29a8-4f0c-bf35-f9d4ac1818ec"],
+  "converterOptions": { "encoding": "windows-1252" },
+  "mapping": "classpath:mappings/lu/lu_pep_municipal.mapping.json",
+  "coverage": [
+    { "category": "LU-MUN", "function": "Bourgmestre", "completeness": "COMPLETE", "includesFormer": true },
+    { "category": "LU-MUN", "function": "Échevin", "completeness": "COMPLETE", "includesFormer": true },
+    { "category": "LU-AMLR", "function": "Bourgmestre ou échevin de la Ville de Luxembourg", "completeness": "COMPLETE", "includesFormer": true }
+  ],
+  "test": { "fixtures": ["municipal-councils.csv"], "minPersons": 3, "samples": ["Jean-Luc Nosbusch", "Lynn Mossong"] }
+}

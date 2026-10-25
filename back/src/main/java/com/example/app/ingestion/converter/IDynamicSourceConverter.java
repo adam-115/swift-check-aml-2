@@ -27,6 +27,15 @@ public interface IDynamicSourceConverter {
     List<Map<String, Object>> convertToDynamicJson(InputStream inputStream) throws Exception;
 
     /**
+     * Conversion avec options propres à la source (encodage, sélecteurs HTML...).
+     * Par défaut, les options sont ignorées.
+     */
+    default List<Map<String, Object>> convertToDynamicJson(InputStream inputStream, ConverterOptions options)
+            throws Exception {
+        return convertToDynamicJson(inputStream);
+    }
+
+    /**
      * Convenience method converting a raw text string into dynamic JSON records.
      */
     default List<Map<String, Object>> convertToDynamicJson(String content) throws Exception {

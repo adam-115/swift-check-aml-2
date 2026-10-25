@@ -1,0 +1,26 @@
+{
+  "sourceName": "lu_pep_eu_commission",
+  "label": "Commissaire européen luxembourgeois",
+  "description": "Membre luxembourgeois de la Commission européenne, d'après sa page officielle (adresse à mettre à jour à chaque nouveau collège)",
+  "attribution": "Commission européenne, commission.europa.eu",
+  "listType": "PEP",
+  "parserType": "WEB_PAGE",
+  "sourceFormat": "HTML",
+  "country": "LU",
+  "retentionMonths": 12,
+  "urls": ["https://commission.europa.eu/about/organisation/college-commissioners/christophe-hansen_fr"],
+  "converterOptions": {
+    "html": {
+      "recordSelector": "head",
+      "fields": {
+        "name": "meta[property=og:title]@content",
+        "description": "meta[name=description]@content"
+      }
+    }
+  },
+  "mapping": "classpath:mappings/lu/lu_pep_eu_commission.mapping.json",
+  "coverage": [
+    { "category": "LU-EU", "function": "Membre luxembourgeois de la Commission européenne", "completeness": "COMPLETE", "includesFormer": false }
+  ],
+  "test": { "fixtures": ["eu_commission/christophe_hansen.html"], "minPersons": 1, "samples": ["Christophe Hansen"] }
+}

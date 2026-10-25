@@ -1,0 +1,17 @@
+{
+  "sourceName": "lu_pep_chamber_former",
+  "label": "Anciens députés (Luxembourg)",
+  "description": "Anciens députés de la Chambre des Députés depuis 1999, gardés 5 ans après la fin du mandat",
+  "attribution": "Chambre des Députés du Grand-Duché de Luxembourg, data.public.lu (CC BY)",
+  "listType": "PEP",
+  "parserType": "OPEN_DATA_FILE",
+  "sourceFormat": "CSV",
+  "country": "LU",
+  "retentionMonths": 12,
+  "urls": ["https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"],
+  "mapping": "classpath:mappings/lu/lu_pep_chamber_former.mapping.json",
+  "coverage": [
+    { "category": "LU-b", "function": "Ancien député", "completeness": "COMPLETE", "includesFormer": true }
+  ],
+  "test": { "fixtures": ["chamber-former-deputies.csv"], "minPersons": 1, "samples": ["Semiray Ahmedova"] }
+}

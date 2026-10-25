@@ -1,0 +1,70 @@
+{
+  "name": "lu_pep_grand_duke",
+  "description": "Une page par Grand-Duc : prénom, naissance, prestation de serment et abdication lus dans le texte",
+  "applyAllRules": true,
+  "derivedFields": [
+    { "name": "_titleName", "from": "title", "regex": "Grand-Duc\\s+(\\p{Lu}\\p{Ll}+)\\s*$" },
+    { "name": "_princeName", "from": "text", "regex": "le Prince (\\p{Lu}\\p{Ll}+) portait" },
+    { "name": "_firstName", "from": "_titleName||_princeName" },
+    { "name": "_fullName", "template": "{_firstName} de Luxembourg", "requireAll": true },
+    { "name": "_aliases", "template": "Grand-Duc {_firstName}|S.A.R. le Grand-Duc {_firstName}", "requireAll": true, "split": "\\|" },
+    { "name": "_personSlug", "from": "_firstName", "slug": true },
+    { "name": "_personKey", "template": "{_dataset}:{_personSlug}" },
+    { "name": "_birth", "from": "text", "regex": "(?i)N[ée]e?\\s+le\\s+(\\d{1,2}\\s+\\S+\\s+\\d{4})" },
+    { "name": "_oath", "from": "text", "regex": "(?i)Le\\s+(\\d{1,2}\\s+\\S+\\s+\\d{4}),?\\s+il\\s+pr[êe]te\\s+serment" },
+    { "name": "_swornIn", "from": "text", "regex": "(?i)assermentation a lieu le\\s+(\\d{1,2}\\s+\\S+\\s+\\d{4})" },
+    { "name": "_start", "from": "_oath||_swornIn" },
+    { "name": "_end", "from": "text", "regex": "(?i)abdication[^.]*?le\\s+(\\d{1,2}\\s+\\S+\\s+\\d{4})" },
+    { "name": "_status", "from": "_end", "regex": ".+", "replacement": "ended", "defaultValue": "current" },
+    { "name": "_positionKey", "template": "{_dataset}:grand-duke" },
+    { "name": "_positionName", "template": "Grand-Duc de Luxembourg" },
+    { "name": "_institution", "template": "Maison grand-ducale" },
+    { "name": "_occupancyKey", "template": "{_personKey}:grand-duke" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.national;gov.head", "split": ";" }
+  ],
+  "recordFilters": [
+    { "path": "_firstName", "operator": "NOT_EMPTY" },
+    { "path": "_end", "operator": "WITHIN_YEARS", "value": "5" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$._fullName",
+        "alias": "$._aliases",
+        "firstName": "$._firstName",
+        "birthDate": "$._birth",
+        "country": "$._country",
+        "nationality": "$._country",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._sourceUrl"
+      },
+      "propertyTypes": { "birthDate": "date", "country": "country", "nationality": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": {
+        "name": "$._positionName",
+        "country": "$._country",
+        "topics": "$._positionTopics"
+      },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": {
+        "holder": "$._personKey",
+        "post": "$._positionKey",
+        "startDate": "$._start",
+        "endDate": "$._end",
+        "status": "$._status"
+      },
+      "propertyTypes": { "holder": "entity", "post": "entity", "startDate": "date", "endDate": "date" }
+    }
+  ]
+}

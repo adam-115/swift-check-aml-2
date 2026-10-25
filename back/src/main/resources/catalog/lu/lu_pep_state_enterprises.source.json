@@ -1,0 +1,17 @@
+{
+  "sourceName": "lu_pep_state_enterprises",
+  "label": "Dirigeants des entreprises publiques (Luxembourg)",
+  "description": "Membres des conseils et des directions des participations de l'État (liste open data de la Trésorerie de l'État)",
+  "attribution": "Trésorerie de l'État (Ministère des Finances), data.public.lu (CC0)",
+  "listType": "PEP",
+  "parserType": "OPEN_DATA_FILE",
+  "sourceFormat": "JSON",
+  "country": "LU",
+  "retentionMonths": 60,
+  "urls": ["https://data.public.lu/fr/datasets/r/f3157e5d-7d22-413a-b3d3-39f5d45c3807"],
+  "mapping": "classpath:mappings/lu/lu_pep_state_enterprises.mapping.json",
+  "coverage": [
+    { "category": "LU-g", "function": "Administrateur, directeur ou commissaire du gouvernement d'une entreprise publique", "completeness": "COMPLETE", "includesFormer": false }
+  ],
+  "test": { "fixtures": ["sample_participations.json"], "minPersons": 20, "samples": ["Jeff FELLER"] }
+}

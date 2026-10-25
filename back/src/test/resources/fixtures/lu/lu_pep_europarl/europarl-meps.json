@@ -1,0 +1,67 @@
+{
+ "list": [
+  {
+   "fullName": "Mika AALTOLA",
+   "countryLabel": "Finland",
+   "politicalGroupLabel": "Group of the European People's Party (Christian Democrats)",
+   "persId": "256810",
+   "nationalPoliticalGroupLabel": "Kansallinen Kokoomus"
+  },
+  {
+   "fullName": "Maravillas ABADÍA JOVER",
+   "countryLabel": "Spain",
+   "politicalGroupLabel": "Group of the European People's Party (Christian Democrats)",
+   "persId": "257043",
+   "nationalPoliticalGroupLabel": "Partido Popular"
+  },
+  {
+   "fullName": "Magdalena ADAMOWICZ",
+   "countryLabel": "Poland",
+   "politicalGroupLabel": "Group of the European People's Party (Christian Democrats)",
+   "persId": "197490",
+   "nationalPoliticalGroupLabel": "Koalicja Obywatelska"
+  },
+  {
+   "fullName": "Marc ANGEL",
+   "countryLabel": "Luxembourg",
+   "politicalGroupLabel": "Group of the Progressive Alliance of Socialists and Democrats in the European Parliament",
+   "persId": "202073",
+   "nationalPoliticalGroupLabel": "Parti ouvrier socialiste luxembourgeois"
+  },
+  {
+   "fullName": "Charles GOERENS",
+   "countryLabel": "Luxembourg",
+   "politicalGroupLabel": "Renew Europe Group",
+   "persId": "840",
+   "nationalPoliticalGroupLabel": "Parti démocratique"
+  },
+  {
+   "fullName": "Fernand KARTHEISER",
+   "countryLabel": "Luxembourg",
+   "politicalGroupLabel": "Non-attached Members",
+   "persId": "256900",
+   "nationalPoliticalGroupLabel": "Alternativ Demokratesch Reformpartei"
+  },
+  {
+   "fullName": "Martine KEMP",
+   "countryLabel": "Luxembourg",
+   "politicalGroupLabel": "Group of the European People's Party (Christian Democrats)",
+   "persId": "249603",
+   "nationalPoliticalGroupLabel": "Parti chrétien social luxembourgeois"
+  },
+  {
+   "fullName": "Tilly METZ",
+   "countryLabel": "Luxembourg",
+   "politicalGroupLabel": "Group of the Greens/European Free Alliance",
+   "persId": "193292",
+   "nationalPoliticalGroupLabel": "Déi Gréng - Les Verts"
+  },
+  {
+   "fullName": "Isabel WISELER-LIMA",
+   "countryLabel": "Luxembourg",
+   "politicalGroupLabel": "Group of the European People's Party (Christian Democrats)",
+   "persId": "197421",
+   "nationalPoliticalGroupLabel": "Parti chrétien social luxembourgeois"
+  }
+ ]
+}

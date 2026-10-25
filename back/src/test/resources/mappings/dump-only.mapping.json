@@ -1,0 +1,1 @@
+{ "name": "Inspection seule", "rules": [ { "ftmSchema": "Thing", "idJsonPaths": ["$._sourceUrl"], "propertiesMapping": { "name": "$._dataset" } } ] }

@@ -1,0 +1,33 @@
+{
+  "sourceName": "lu_pep_cssf",
+  "label": "Direction de la CSSF (Luxembourg)",
+  "description": "Directeur général et directeurs de la Commission de Surveillance du Secteur Financier (liste officielle des membres de la Direction, PDF)",
+  "attribution": "Commission de Surveillance du Secteur Financier (cssf.lu)",
+  "listType": "PEP",
+  "parserType": "PDF_DOCUMENT",
+  "sourceFormat": "PDF",
+  "country": "LU",
+  "retentionMonths": 60,
+  "urls": [
+    "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+  ],
+  "mapping": "classpath:mappings/lu/lu_pep_cssf.mapping.json",
+  "coverage": [
+    {
+      "category": "LU-i",
+      "function": "Membre de la direction d'une autorité de régulation",
+      "completeness": "COMPLETE",
+      "includesFormer": false
+    }
+  ],
+  "test": {
+    "fixtures": [
+      "LM_DIRECTION.pdf"
+    ],
+    "minPersons": 5,
+    "samples": [
+      "Claude MARX",
+      "Pascale TOUSSING"
+    ]
+  }
+}

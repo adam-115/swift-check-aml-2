@@ -1,0 +1,17 @@
+{
+  "sourceName": "lu_pep_caa",
+  "label": "Direction du Commissariat aux Assurances (Luxembourg)",
+  "description": "Comité de direction du Commissariat aux Assurances (document PDF officiel)",
+  "attribution": "Commissariat aux Assurances (caa.lu)",
+  "listType": "PEP",
+  "parserType": "PDF_DOCUMENT",
+  "sourceFormat": "PDF",
+  "country": "LU",
+  "retentionMonths": 60,
+  "urls": ["https://www.caa.lu/uploads/documents/files/ComiteDeDirectionDuCAA.pdf"],
+  "mapping": "classpath:mappings/lu/lu_pep_caa.mapping.json",
+  "coverage": [
+    { "category": "LU-i", "function": "Membre de la direction d'une autorité de régulation", "completeness": "COMPLETE", "includesFormer": false }
+  ],
+  "test": { "fixtures": ["ComiteDeDirectionDuCAA.pdf"], "minPersons": 3, "samples": ["Thierry FLAMAND"] }
+}

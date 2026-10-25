@@ -1,0 +1,57 @@
+{
+  "name": "lu_pep_chamber_former",
+  "description": "Anciens députés : mandat terminé depuis moins de 5 ans (vigilance après la fin des fonctions)",
+  "applyAllRules": true,
+  "derivedFields": [
+    { "name": "_personKey", "template": "{_dataset}:{NAME}:{FIRSTNAME}:{BIRTH_DATE}" },
+    { "name": "_fullName", "template": "{FIRSTNAME} {NAME}" },
+    { "name": "_positionKey", "template": "{_dataset}:deputy" },
+    { "name": "_positionName", "template": "Député à la Chambre des Députés du Luxembourg" },
+    { "name": "_occupancyKey", "template": "{_personKey}:deputy:{START_DATE}" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.national;gov.legislative", "split": ";" },
+    { "name": "_status", "template": "ended" }
+  ],
+  "recordFilters": [
+    { "path": "NAME", "operator": "NOT_EMPTY" },
+    { "path": "END_DATE", "operator": "WITHIN_YEARS", "value": "5" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$._fullName",
+        "firstName": "$.FIRSTNAME",
+        "lastName": "$.NAME",
+        "birthDate": "$.BIRTH_DATE",
+        "gender": "$.PERSON_TITLE",
+        "country": "$._country",
+        "political": "$.POLITICAL_PARTY",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._sourceUrl"
+      },
+      "propertyTypes": { "birthDate": "date", "gender": "gender", "country": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": { "name": "$._positionName", "country": "$._country", "topics": "$._positionTopics" },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": {
+        "holder": "$._personKey",
+        "post": "$._positionKey",
+        "startDate": "$.START_DATE",
+        "endDate": "$.END_DATE",
+        "status": "$._status",
+        "politicalGroup": "$.POLITICAL_GROUP"
+      },
+      "propertyTypes": { "holder": "entity", "post": "entity", "startDate": "date", "endDate": "date" }
+    }
+  ]
+}

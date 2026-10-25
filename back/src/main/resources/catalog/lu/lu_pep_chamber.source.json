@@ -1,0 +1,18 @@
+{
+  "sourceName": "lu_pep_chamber",
+  "label": "Députés en fonction (Luxembourg)",
+  "description": "Députés de la Chambre des Députés en fonction (jeu de données n° 105, data.public.lu)",
+  "attribution": "Chambre des Députés du Grand-Duché de Luxembourg, data.public.lu (CC BY)",
+  "listType": "PEP",
+  "parserType": "OPEN_DATA_FILE",
+  "sourceFormat": "CSV",
+  "country": "LU",
+  "retentionMonths": 12,
+  "urls": ["https://data.public.lu/fr/datasets/r/a5b6e7f9-b488-41a6-9bd1-be913a5c35b5"],
+  "converterOptions": { "encoding": "windows-1252" },
+  "mapping": "classpath:mappings/lu/lu_pep_chamber.mapping.json",
+  "coverage": [
+    { "category": "LU-b", "function": "Député", "completeness": "COMPLETE", "includesFormer": false }
+  ],
+  "test": { "fixtures": ["chamber-current-deputies.csv"], "minPersons": 2, "samples": ["Diane Adehm"] }
+}

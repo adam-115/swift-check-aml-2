@@ -1,0 +1,191 @@
+<div class="max-w-7xl mx-auto space-y-6">
+  <a routerLink="/executions" class="inline-flex items-center gap-1 text-sm text-slate-500 hover:text-emerald-700">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+    Toutes les exécutions
+  </a>
+
+  @if (errorMessage()) {
+    <div class="bg-rose-50 border border-rose-200 text-rose-800 p-3 rounded-xl text-sm">{{ errorMessage() }}</div>
+  }
+  @if (isLoading() && !execution()) {
+    <div class="text-center py-16 text-slate-500 text-sm">Chargement…</div>
+  }
+
+  @if (execution(); as e) {
+    <div class="bg-white rounded-2xl shadow-xs border border-slate-200 overflow-hidden">
+      <div class="bg-slate-900 px-4 sm:px-8 py-5 sm:py-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Exécution n° {{ e.id }}</p>
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">{{ e.sourceLabel || e.sourceName }}</h2>
+          <p class="mt-1 text-xs sm:text-sm text-slate-300">
+            {{ e.startedAt | date:'EEEE d MMMM yyyy, HH:mm:ss' }} · durée {{ duration(e.startedAt, e.finishedAt) }}
+          </p>
+        </div>
+        <div class="flex items-center gap-3">
+          <app-status-badge [status]="e.status" />
+          <a [routerLink]="['/executions']" [queryParams]="{ sourceId: e.sourceId }"
+             class="rounded-xl bg-white/10 hover:bg-white/20 px-3 py-2 text-sm font-semibold text-white transition-colors">
+            Historique de la source
+          </a>
+        </div>
+      </div>
+
+      <div class="p-4 sm:p-6 bg-slate-50 space-y-6">
+        <!-- Étapes du pipeline -->
+        <ol class="grid grid-cols-1 sm:grid-cols-5 gap-3">
+          @for (p of pipeline; track p.step) {
+            @let state = stepState(p.step);
+            <li class="rounded-xl border p-3 bg-white"
+                [ngClass]="{
+                  'border-emerald-200': state === 'done',
+                  'border-rose-300 bg-rose-50': state === 'failed',
+                  'border-blue-200': state === 'running',
+                  'border-slate-200 opacity-60': state === 'skipped'
+                }">
+              <div class="flex items-center gap-2">
+                <span class="flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold"
+                      [ngClass]="{
+                        'bg-emerald-500 text-white': state === 'done',
+                        'bg-rose-500 text-white': state === 'failed',
+                        'bg-blue-500 text-white animate-pulse': state === 'running',
+                        'bg-slate-200 text-slate-500': state === 'skipped'
+                      }">
+                  {{ state === 'done' ? '✓' : state === 'failed' ? '✕' : $index + 1 }}
+                </span>
+                <span class="text-sm font-semibold text-slate-900">{{ p.label }}</span>
+              </div>
+              <p class="mt-1 text-xs text-slate-500">{{ p.hint }}</p>
+            </li>
+          }
+        </ol>
+
+        <!-- Erreur -->
+        @if (e.status === 'FAILED') {
+          <div class="bg-white rounded-xl border border-rose-200 overflow-hidden">
+            <div class="px-4 py-3 bg-rose-50 border-b border-rose-200">
+              <p class="text-sm font-bold text-rose-800">
+                Échec{{ e.failedStep ? ' à l\'étape « ' + steps[e.failedStep] + ' »' : '' }}
+              </p>
+            </div>
+            <div class="p-4 space-y-3">
+              <p class="text-sm text-slate-800 whitespace-pre-line">{{ e.errorMessage }}</p>
+              @if (e.errorDetail) {
+                <button type="button" (click)="showTrace.set(!showTrace())"
+                        class="text-xs font-semibold text-slate-600 hover:text-slate-900 underline">
+                  {{ showTrace() ? 'Masquer' : 'Afficher' }} la trace technique
+                </button>
+                @if (showTrace()) {
+                  <pre class="text-[11px] leading-relaxed bg-slate-900 text-slate-100 rounded-lg p-3 max-h-96 overflow-auto">{{ e.errorDetail }}</pre>
+                }
+              }
+            </div>
+          </div>
+        }
+
+        @if (e.status === 'RUNNING') {
+          <div class="bg-white rounded-xl border border-blue-200 p-4">
+            <p class="text-sm text-blue-800 font-semibold">Exécution en cours…</p>
+            <div class="mt-3 h-1.5 w-full rounded-full bg-blue-100 overflow-hidden">
+              <div class="h-full w-1/3 bg-blue-500 rounded-full animate-[progress_1.2s_ease-in-out_infinite]"></div>
+            </div>
+            <p class="mt-2 text-xs text-slate-500">La page se met à jour toute seule.</p>
+          </div>
+        }
+
+        <!-- Chiffres -->
+        @if (e.status === 'SUCCESS') {
+          <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+            <div class="bg-white rounded-xl border border-slate-200 p-4">
+              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Fichiers lus</p>
+              <p class="mt-1 text-2xl font-bold text-slate-900">{{ e.sourceFiles ?? '—' }}</p>
+            </div>
+            <div class="bg-white rounded-xl border border-slate-200 p-4">
+              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Enregistrements JSON</p>
+              <p class="mt-1 text-2xl font-bold text-slate-900">{{ e.sourceRecords | number:'1.0-0' }}</p>
+            </div>
+            <div class="bg-white rounded-xl border border-slate-200 p-4">
+              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Gardés par le mapping</p>
+              <p class="mt-1 text-2xl font-bold text-slate-900">{{ e.mappedRecords | number:'1.0-0' }}</p>
+            </div>
+            <div class="bg-white rounded-xl border border-slate-200 p-4">
+              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Personnes</p>
+              <p class="mt-1 text-2xl font-bold text-emerald-600">{{ e.personCount | number:'1.0-0' }}</p>
+            </div>
+            <div class="bg-white rounded-xl border border-slate-200 p-4">
+              <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Entités FTM</p>
+              <p class="mt-1 text-2xl font-bold text-slate-900">{{ e.entityCount | number:'1.0-0' }}</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-700 flex flex-wrap items-center gap-x-3 gap-y-2">
+            <span class="font-semibold">Fichier FTM :</span>
+            <span class="font-mono text-xs text-slate-600 break-all">{{ e.outputPath }}</span>
+            <span class="flex flex-wrap gap-1.5">
+              @for (s of schemas(); track s.schema) {
+                <span class="rounded-md px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset" [ngClass]="schemaCss(s.schema)">
+                  {{ s.schema }} · {{ s.count | number:'1.0-0' }}
+                </span>
+              }
+            </span>
+          </div>
+
+          <!-- Aperçu des entités -->
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="px-4 py-3 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center gap-3">
+              <h3 class="text-sm font-bold text-slate-900 flex-1">Aperçu des entités générées</h3>
+              <select [ngModel]="schemaFilter()" (ngModelChange)="schemaFilter.set($event)" aria-label="Schéma"
+                      class="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                <option value="">Tous les schémas</option>
+                @for (s of schemas(); track s.schema) {
+                  <option [value]="s.schema">{{ s.schema }}</option>
+                }
+              </select>
+              <input type="search" [ngModel]="search()" (ngModelChange)="search.set($event)" placeholder="Rechercher…"
+                     class="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            </div>
+            @if (entitiesError()) {
+              <div class="p-4 text-sm text-rose-700">{{ entitiesError() }}</div>
+            } @else {
+              <div class="overflow-x-auto max-h-[36rem] overflow-y-auto">
+                <table class="min-w-full divide-y divide-slate-100 text-sm">
+                  <thead class="bg-slate-50 sticky top-0">
+                    <tr class="text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                      <th class="px-4 py-2">Schéma</th>
+                      <th class="px-4 py-2">Nom</th>
+                      <th class="px-4 py-2">Propriétés</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100">
+                    @for (entity of visibleEntities(); track entity.id) {
+                      <tr class="align-top">
+                        <td class="px-4 py-2">
+                          <span class="rounded-md px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset" [ngClass]="schemaCss(entity.schema)">{{ entity.schema }}</span>
+                        </td>
+                        <td class="px-4 py-2">
+                          <p class="font-medium text-slate-900">{{ caption(entity) }}</p>
+                          <p class="font-mono text-[10px] text-slate-400" [title]="entity.id">{{ entity.id.slice(0, 12) }}…</p>
+                        </td>
+                        <td class="px-4 py-2 text-xs text-slate-600">
+                          @for (p of summary(entity); track p.key) {
+                            <span class="mr-3 inline-block"><span class="text-slate-400">{{ p.key }}</span> {{ p.value.length > 60 ? p.value.slice(0, 60) + '…' : p.value }}</span>
+                          }
+                        </td>
+                      </tr>
+                    } @empty {
+                      <tr><td colspan="3" class="px-4 py-6 text-center text-xs text-slate-400 italic">Aucune entité ne correspond.</td></tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+              <p class="px-4 py-2 border-t border-slate-100 text-[11px] text-slate-500">
+                {{ visibleEntities().length }} entité(s) affichée(s) sur les {{ entities().length }} premières du fichier.
+              </p>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>

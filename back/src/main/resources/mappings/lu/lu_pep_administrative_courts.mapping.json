@@ -1,0 +1,55 @@
+{
+  "name": "lu_pep_administrative_courts",
+  "description": "Rôle des audiences : chaque ligne « Composition : NOM Prénom, NOM Prénom, ... » donne les magistrats qui siègent",
+  "applyAllRules": true,
+  "explode": {
+    "from": "line",
+    "regex": "(\\p{Lu}[\\p{Lu}'’-]+(?:\\s\\p{Lu}[\\p{Lu}'’-]+)*)\\s+(\\p{Lu}\\p{Ll}[\\p{L}'’-]*(?:[\\s-]\\p{Lu}\\p{Ll}[\\p{L}'’-]*)*)",
+    "as": "_magistrate"
+  },
+  "derivedFields": [
+    { "name": "_lastName", "from": "_magistrate_1" },
+    { "name": "_firstName", "from": "_magistrate_2" },
+    { "name": "_name", "template": "{_firstName} {_lastName}" },
+    { "name": "_personSlug", "from": "_name", "slug": true },
+    { "name": "_personKey", "template": "{_dataset}:{_personSlug}" },
+    { "name": "_positionKey", "template": "{_dataset}:member" },
+    { "name": "_positionName", "template": "Membre de la Cour administrative" },
+    { "name": "_occupancyKey", "template": "{_personKey}:member" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.national;gov.judicial", "split": ";" },
+    { "name": "_status", "template": "current" }
+  ],
+  "recordFilters": [
+    { "path": "line", "operator": "MATCHES", "value": "^\\s*Composition\\s*:" },
+    { "path": "_lastName", "operator": "NOT_EMPTY" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$._name",
+        "firstName": "$._firstName",
+        "lastName": "$._lastName",
+        "country": "$._country",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._sourceUrl"
+      },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": { "name": "$._positionName", "country": "$._country", "topics": "$._positionTopics" },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": { "holder": "$._personKey", "post": "$._positionKey", "status": "$._status" },
+      "propertyTypes": { "holder": "entity", "post": "entity" }
+    }
+  ]
+}

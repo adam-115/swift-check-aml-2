@@ -1,0 +1,23 @@
+{
+  "sourceName": "lu_pep_legilux",
+  "label": "Hautes fonctions nommées au Journal officiel (Legilux)",
+  "description": "Nominations et démissions publiées sur Legilux depuis 2017 (Conseil d'État, hautes juridictions, Cour des comptes, BCL, CSSF, CAA). À implémenter : requête SPARQL puis lecture de chaque acte, hors du modèle fichier → JSON → mapping.",
+  "attribution": "Journal officiel du Grand-Duché de Luxembourg, legilux.public.lu",
+  "listType": "PEP",
+  "parserType": "SPARQL",
+  "sourceFormat": "XML",
+  "country": "LU",
+  "retentionMonths": 12,
+  "urls": ["https://data.legilux.public.lu/sparqlendpoint"],
+  "coverage": [
+    { "category": "LU-b", "function": "Membre du Conseil d'État", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-d", "function": "Membre de la Cour constitutionnelle", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-d", "function": "Membre de la Cour de cassation", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-d", "function": "Président ou vice-président de la Cour supérieure de justice", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-d", "function": "Procureur général d'État ou adjoint", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-d", "function": "Membre de la Cour administrative", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-e", "function": "Membre de la Cour des comptes", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-e", "function": "Directeur général ou directeur de la BCL", "completeness": "PARTIAL", "includesFormer": true },
+    { "category": "LU-i", "function": "Membre de la direction d'une autorité de régulation", "completeness": "PARTIAL", "includesFormer": true }
+  ]
+}

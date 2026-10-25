@@ -49,7 +49,7 @@ public class JsonSourceConverter implements IDynamicSourceConverter {
             });
             // Check for common collection envelopes like "results", "data", "records",
             // "items", "entities"
-            for (String key : List.of("results", "data", "records", "items", "entities", "sanctions")) {
+            for (String key : List.of("results", "data", "records", "items", "list", "entities", "entites", "sanctions")) {
                 Object val = map.get(key);
                 if (val instanceof List<?> list) {
                     List<Map<String, Object>> records = new ArrayList<>();

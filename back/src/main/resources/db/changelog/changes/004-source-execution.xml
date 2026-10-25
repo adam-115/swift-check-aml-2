@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Nom lisible, description, attribution, options de conversion et activation d'une source -->
+    <changeSet id="004-add-display-columns-to-data-source-config" author="adam">
+        <addColumn tableName="data_source_config">
+            <column name="label" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(1000)"/>
+            <column name="attribution" type="VARCHAR(1000)"/>
+            <!-- JSON : encodage, sélecteurs HTML (voir ConverterOptions) -->
+            <column name="converter_options" type="TEXT"/>
+            <column name="enabled" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+        <addUniqueConstraint tableName="data_source_config" columnNames="source_name"
+                             constraintName="uk_data_source_config_source_name"/>
+    </changeSet>
+
+    <!-- Historique des exécutions du pipeline FTM : résultat, chiffres et erreur -->
+    <changeSet id="004-create-source-execution-table" author="adam">
+        <createTable tableName="source_execution">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="data_source_config_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_source_execution_source"
+                             references="data_source_config(id)" deleteCascade="true"/>
+            </column>
+            <!-- RUNNING, SUCCESS ou FAILED -->
+            <column name="status" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="started_at" type="DATETIME">
+                <constraints nullable="false"/>
+            </column>
+            <column name="finished_at" type="DATETIME"/>
+            <column name="source_files" type="INT"/>
+            <column name="source_records" type="INT"/>
+            <column name="mapped_records" type="INT"/>
+            <column name="entity_count" type="INT"/>
+            <column name="person_count" type="INT"/>
+            <column name="entities_by_schema" type="VARCHAR(1000)"/>
+            <column name="output_path" type="VARCHAR(1000)"/>
+            <!-- CONFIGURATION, DOWNLOAD, CONVERSION, MAPPING ou EXPORT -->
+            <column name="failed_step" type="VARCHAR(20)"/>
+            <column name="error_message" type="VARCHAR(2000)"/>
+            <column name="error_detail" type="TEXT"/>
+        </createTable>
+        <createIndex tableName="source_execution" indexName="idx_source_execution_source_started">
+            <column name="data_source_config_id"/>
+            <column name="started_at"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

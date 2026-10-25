@@ -1,0 +1,64 @@
+{
+  "name": "lu_pep_diplomats",
+  "description": "Chef de mission : en tête de la méta-description (« M. Prénom NOM Ambassadeur ... ») ou ligne « Botschafter » d'un tableau",
+  "applyAllRules": true,
+  "derivedFields": [
+    { "name": "_descName", "from": "description", "regex": "^\\s*(?:H\\.E\\.\\s+|S\\.E\\.\\s+)?(?:(?:Mr|Ms|Mrs|M|Mme|Madame|Monsieur|Herr|Frau)\\.?\\s+)?(\\p{Lu}.+?)\\s*(?:Ambassad|Charg[ée]e? d|Botschafter)" },
+    { "name": "_descRole", "from": "description", "regex": "^\\s*(?:H\\.E\\.\\s+|S\\.E\\.\\s+)?(?:(?:Mr|Ms|Mrs|M|Mme|Madame|Monsieur|Herr|Frau)\\.?\\s+)?\\p{Lu}.+?\\s*((?:Ambassad|Charg[ée]e? d|Botschafter).*?)\\s*(?=,|\\S+@|Mr\\.|Ms\\.|Mrs\\.|M\\.\\s|Mme\\b|Madame|Monsieur|Herr\\b|Frau\\b|Executive|Deputy|Assistant|Secr|Chef de|Consul|Attach|Normal\\b|$)" },
+    { "name": "_descTitle", "from": "description", "regex": "^\\s*(?:H\\.E\\.\\s+|S\\.E\\.\\s+)?(Mr\\.?|Ms\\.?|Mrs\\.?|M\\.|Mme|Madame|Monsieur|Herr|Frau)\\s" },
+    { "name": "_tableName", "template": "{firstName} {lastName}", "requireAll": true },
+    { "name": "_name", "from": "_descName||_tableName" },
+    { "name": "_role", "from": "_descRole||tableRole" },
+    { "name": "_titleRaw", "from": "_descTitle||tableRole" },
+    { "name": "_gender", "from": "_titleRaw", "regex": "(?i)^(?:Botschafterin|Ms\\.?|Mrs\\.?|Mme|Madame|Frau)$", "replacement": "female" },
+    { "name": "_genderFinal", "from": "_gender", "regex": "(?i)^(?:Botschafter|Mr\\.?|M\\.|Monsieur|Herr)$", "replacement": "male" },
+    { "name": "_embassy", "from": "_sourceUrl", "regex": "https?://([a-z0-9-]+)\\.mae\\.lu" },
+    { "name": "_lastName", "from": "_name", "regex": "((?:\\b\\p{Lu}[\\p{Lu}'’-]+\\b\\s*)+)$" },
+    { "name": "_personSlug", "from": "_name", "slug": true },
+    { "name": "_personKey", "template": "{_dataset}:{_personSlug}" },
+    { "name": "_positionKey", "template": "{_dataset}:head-of-mission" },
+    { "name": "_positionName", "template": "Ambassadeur ou chargé d'affaires du Grand-Duché de Luxembourg" },
+    { "name": "_occupancyKey", "template": "{_personKey}:head-of-mission:{_embassy}" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.national;role.diplo", "split": ";" },
+    { "name": "_status", "template": "current" }
+  ],
+  "recordFilters": [
+    { "path": "_name", "operator": "NOT_EMPTY" },
+    { "path": "_role", "operator": "MATCHES", "value": "ambassad|charg[ée]e? d|botschafter|permanent representative" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$._name",
+        "lastName": "$._lastName",
+        "gender": "$._genderFinal",
+        "position": "$._role",
+        "country": "$._country",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._sourceUrl"
+      },
+      "propertyTypes": { "gender": "gender", "country": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": { "name": "$._positionName", "country": "$._country", "topics": "$._positionTopics" },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": {
+        "holder": "$._personKey",
+        "post": "$._positionKey",
+        "status": "$._status",
+        "description": "$._role"
+      },
+      "propertyTypes": { "holder": "entity", "post": "entity" }
+    }
+  ]
+}

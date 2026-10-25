@@ -1,0 +1,61 @@
+{
+  "name": "lu_pep_europarl_former",
+  "description": "Fiche d'un eurodéputé : mandat parlementaire (rôle MEMBER_PARLIAMENT) terminé depuis moins de 5 ans",
+  "applyAllRules": true,
+  "derivedFields": [
+    { "name": "_personKey", "template": "{_dataset}:{identifier}" },
+    { "name": "_lastName", "from": "label", "regex": "((?:\\b\\p{Lu}[\\p{Lu}'’-]+\\b\\s*)+)$" },
+    { "name": "_firstName", "from": "label", "regex": "^(.*?)\\s+(?:\\p{Lu}[\\p{Lu}'’-]+\\b\\s*)+$" },
+    { "name": "_gender", "from": "hasGender", "regex": "(MALE|FEMALE)$" },
+    { "name": "_start", "from": "$.hasMembership[?(@.role == 'def/ep-roles/MEMBER_PARLIAMENT')].memberDuring.startDate", "pick": "max" },
+    { "name": "_end", "from": "$.hasMembership[?(@.role == 'def/ep-roles/MEMBER_PARLIAMENT')].memberDuring.endDate", "pick": "max" },
+    { "name": "_profileUrl", "template": "https://www.europarl.europa.eu/meps/fr/{identifier}" },
+    { "name": "_positionKey", "template": "{_dataset}:mep" },
+    { "name": "_positionName", "template": "Membre du Parlement européen élu au Luxembourg" },
+    { "name": "_occupancyKey", "template": "{_personKey}:mep:{_start}" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.national;gov.legislative", "split": ";" },
+    { "name": "_status", "template": "ended" }
+  ],
+  "recordFilters": [
+    { "path": "identifier", "operator": "NOT_EMPTY" },
+    { "path": "_end", "operator": "NOT_EMPTY" },
+    { "path": "_end", "operator": "WITHIN_YEARS", "value": "5" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$.label",
+        "firstName": "$._firstName",
+        "lastName": "$._lastName",
+        "birthDate": "$.bday",
+        "gender": "$._gender",
+        "country": "$._country",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._profileUrl"
+      },
+      "propertyTypes": { "birthDate": "date", "gender": "gender", "country": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": { "name": "$._positionName", "country": "$._country", "topics": "$._positionTopics" },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": {
+        "holder": "$._personKey",
+        "post": "$._positionKey",
+        "startDate": "$._start",
+        "endDate": "$._end",
+        "status": "$._status"
+      },
+      "propertyTypes": { "holder": "entity", "post": "entity", "startDate": "date", "endDate": "date" }
+    }
+  ]
+}

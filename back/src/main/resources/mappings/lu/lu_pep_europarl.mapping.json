@@ -1,0 +1,57 @@
+{
+  "name": "lu_pep_europarl",
+  "description": "Eurodéputés du Luxembourg : nom de famille en majuscules dans fullName",
+  "applyAllRules": true,
+  "derivedFields": [
+    { "name": "_personKey", "template": "{_dataset}:{persId||id}" },
+    { "name": "_lastName", "from": "fullName", "regex": "((?:\\b\\p{Lu}[\\p{Lu}'’-]+\\b\\s*)+)$" },
+    { "name": "_firstName", "from": "fullName", "regex": "^(.*?)\\s+(?:\\p{Lu}[\\p{Lu}'’-]+\\b\\s*)+$" },
+    { "name": "_national", "from": "nationalPoliticalGroupLabel||nationalPoliticalGroup" },
+    { "name": "_group", "from": "politicalGroupLabel||politicalGroup" },
+    { "name": "_profileUrl", "template": "https://www.europarl.europa.eu/meps/fr/{persId||id}" },
+    { "name": "_positionKey", "template": "{_dataset}:mep" },
+    { "name": "_positionName", "template": "Membre du Parlement européen élu au Luxembourg" },
+    { "name": "_occupancyKey", "template": "{_personKey}:mep" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.legislative" },
+    { "name": "_status", "template": "current" }
+  ],
+  "recordFilters": [
+    { "path": "countryLabel||country", "operator": "EQUALS", "value": "Luxembourg" },
+    { "path": "persId||id", "operator": "NOT_EMPTY" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$.fullName",
+        "firstName": "$._firstName",
+        "lastName": "$._lastName",
+        "country": "$._country",
+        "political": "$._national",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._profileUrl"
+      },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": { "name": "$._positionName", "country": "$._country", "topics": "$._positionTopics" },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": {
+        "holder": "$._personKey",
+        "post": "$._positionKey",
+        "status": "$._status",
+        "politicalGroup": "$._group"
+      },
+      "propertyTypes": { "holder": "entity", "post": "entity" }
+    }
+  ]
+}

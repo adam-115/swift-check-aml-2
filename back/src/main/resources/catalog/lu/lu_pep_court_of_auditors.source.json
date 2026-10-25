@@ -1,0 +1,23 @@
+{
+  "sourceName": "lu_pep_court_of_auditors",
+  "label": "Cour des comptes (Luxembourg)",
+  "description": "Membres du collège de la Cour des comptes : président, vice-président et conseillers",
+  "attribution": "Cour des comptes (cour-des-comptes.public.lu)",
+  "listType": "PEP",
+  "parserType": "WEB_PAGE",
+  "sourceFormat": "HTML",
+  "country": "LU",
+  "retentionMonths": 60,
+  "urls": ["https://cour-des-comptes.public.lu/fr/cour/college.html"],
+  "converterOptions": {
+    "html": {
+      "recordSelector": "h2:has(> a[href*=/cour/college/])",
+      "fields": { "name": "a", "url": "a@href", "role": "next(p) em" }
+    }
+  },
+  "mapping": "classpath:mappings/lu/lu_pep_court_of_auditors.mapping.json",
+  "coverage": [
+    { "category": "LU-e", "function": "Membre de la Cour des comptes", "completeness": "COMPLETE", "includesFormer": false }
+  ],
+  "test": { "fixtures": ["college.html"], "minPersons": 5, "samples": ["Marc Gengler", "Patrick Graffé"] }
+}

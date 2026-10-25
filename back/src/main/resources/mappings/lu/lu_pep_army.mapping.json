@@ -1,0 +1,66 @@
+{
+  "name": "lu_pep_army",
+  "description": "« la fonction de CEMA est assumée par le Général Claude ROBINET ; la fonction de ACEM par le Colonel Pascal BALLINGER »",
+  "applyAllRules": true,
+  "explode": {
+    "from": "text",
+    "regex": "fonction de (CEMA|ACEM)[^;.]*?par le (Général|Colonel|Lieutenant-colonel|Major)\\s+(\\p{Lu}[\\p{Ll}'’-]+(?:[\\s-]\\p{Lu}[\\p{Ll}'’-]+)*)\\s+(\\p{Lu}[\\p{Lu}'’-]+(?:\\s\\p{Lu}[\\p{Lu}'’-]+)*)",
+    "as": "_officer"
+  },
+  "derivedFields": [
+    { "name": "_code", "from": "_officer_1" },
+    { "name": "_rank", "from": "_officer_2" },
+    { "name": "_firstName", "from": "_officer_3" },
+    { "name": "_lastName", "from": "_officer_4" },
+    { "name": "_fullName", "template": "{_firstName} {_lastName}" },
+    { "name": "_personSlug", "from": "_fullName", "slug": true },
+    { "name": "_personKey", "template": "{_dataset}:{_personSlug}" },
+    { "name": "_roleChief", "from": "_code", "regex": "^CEMA$", "replacement": "Chef d'état-major de l'Armée" },
+    { "name": "_role", "from": "_roleChief", "regex": "^ACEM$", "replacement": "Chef d'état-major adjoint de l'Armée" },
+    { "name": "_title", "template": "{_rank}" },
+    { "name": "_positionKey", "template": "{_dataset}:officier-superieur" },
+    { "name": "_positionName", "template": "Officier supérieur de l'Armée luxembourgeoise" },
+    { "name": "_occupancyKey", "template": "{_personKey}:{_code}" },
+    { "name": "_country", "template": "lu" },
+    { "name": "_personTopics", "template": "role.pep" },
+    { "name": "_positionTopics", "template": "gov.national;mil", "split": ";" },
+    { "name": "_status", "template": "current" }
+  ],
+  "recordFilters": [
+    { "path": "_lastName", "operator": "NOT_EMPTY" }
+  ],
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["$._personKey"],
+      "propertiesMapping": {
+        "name": "$._fullName",
+        "firstName": "$._firstName",
+        "lastName": "$._lastName",
+        "title": "$._title",
+        "position": "$._role",
+        "country": "$._country",
+        "topics": "$._personTopics",
+        "sourceUrl": "$._sourceUrl"
+      },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["$._positionKey"],
+      "propertiesMapping": { "name": "$._positionName", "country": "$._country", "topics": "$._positionTopics" },
+      "propertyTypes": { "country": "country" }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["$._occupancyKey"],
+      "propertiesMapping": {
+        "holder": "$._personKey",
+        "post": "$._positionKey",
+        "status": "$._status",
+        "description": "$._role"
+      },
+      "propertyTypes": { "holder": "entity", "post": "entity" }
+    }
+  ]
+}

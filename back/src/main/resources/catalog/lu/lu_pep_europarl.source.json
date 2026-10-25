@@ -1,0 +1,33 @@
+{
+  "sourceName": "lu_pep_europarl",
+  "label": "Eurodéputés élus au Luxembourg",
+  "description": "Députés au Parlement européen en fonction, élus au Luxembourg (liste de tous les eurodéputés, publiée en JSON, filtrée)",
+  "attribution": "© Union européenne, Parlement européen",
+  "listType": "PEP",
+  "parserType": "OPEN_DATA_FILE",
+  "sourceFormat": "JSON",
+  "country": "LU",
+  "retentionMonths": 12,
+  "urls": [
+    "https://www.europarl.europa.eu/meps/en/full-list/xml"
+  ],
+  "mapping": "classpath:mappings/lu/lu_pep_europarl.mapping.json",
+  "coverage": [
+    {
+      "category": "LU-EU",
+      "function": "Député au Parlement européen élu au Luxembourg",
+      "completeness": "COMPLETE",
+      "includesFormer": false
+    }
+  ],
+  "test": {
+    "fixtures": [
+      "europarl-meps.json"
+    ],
+    "minPersons": 6,
+    "samples": [
+      "Marc ANGEL",
+      "Isabel WISELER-LIMA"
+    ]
+  }
+}

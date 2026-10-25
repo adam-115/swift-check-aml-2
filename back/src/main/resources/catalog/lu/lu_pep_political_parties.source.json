@@ -1,0 +1,17 @@
+{
+  "sourceName": "lu_pep_political_parties",
+  "label": "Dirigeants des partis politiques (Luxembourg)",
+  "description": "Membres des organes dirigeants des 7 partis représentés à la Chambre, relevés sur le site de chaque parti (fichier de référence à tenir à jour)",
+  "attribution": "Sites officiels des partis (csv.lu, dp.lu, lsap.lu, adr.lu, greng.lu, piraten.lu, dei-lenk.lu)",
+  "listType": "PEP",
+  "parserType": "WEB_PAGE",
+  "sourceFormat": "CSV",
+  "country": "LU",
+  "retentionMonths": 60,
+  "urls": ["classpath:data/lu/partis_politiques_luxembourg.csv"],
+  "mapping": "classpath:mappings/lu/lu_pep_political_parties.mapping.json",
+  "coverage": [
+    { "category": "LU-c", "function": "Membre d'un organe dirigeant de parti politique", "completeness": "PARTIAL", "includesFormer": false }
+  ],
+  "test": { "fixtures": ["partis_politiques_luxembourg.csv"], "minPersons": 40, "samples": ["Luc Frieden", "Martine Hansen"] }
+}

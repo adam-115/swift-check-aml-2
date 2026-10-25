@@ -1,0 +1,92 @@
+{
+  "sourceName": "lu_pep_diplomats",
+  "label": "Ambassadeurs et chargés d'affaires du Luxembourg",
+  "description": "Chefs de mission des ambassades et représentations du Luxembourg : page « équipe » de chaque site *.mae.lu (40 sites sur 49 ont une telle page)",
+  "attribution": "Ministère des Affaires étrangères et européennes (mae.lu)",
+  "listType": "PEP",
+  "parserType": "WEB_PAGE",
+  "sourceFormat": "HTML",
+  "country": "LU",
+  "retentionMonths": 60,
+  "urls": [
+    "https://abudhabi.mae.lu/en/ambassades/team.html",
+    "https://addisababa.mae.lu/en/ambassades/team.html",
+    "https://albania.mae.lu/en/ambassades/team.html",
+    "https://ankara.mae.lu/en/ambassades/team.html",
+    "https://armenia.mae.lu/en/ambassades/team.html",
+    "https://athenes.mae.lu/en/ambassades/team.html",
+    "https://bangkok.mae.lu/en/ambassades/team.html",
+    "https://berlin.mae.lu/de/ambassades/team.html",
+    "https://bosnia-herzegovina.mae.lu/en/ambassades/team.html",
+    "https://brasilia.mae.lu/fr/ambassades/equipe.html",
+    "https://bruxelles.mae.lu/fr/ambassades/equipe.html",
+    "https://cotonou.mae.lu/fr/ambassades/equipe.html",
+    "https://dakar.mae.lu/fr/ambassades/equipe.html",
+    "https://geneve-cg.mae.lu/fr/ambassades/equipe.html",
+    "https://kigali.mae.lu/en/ambassades/team.html",
+    "https://lisbonne.mae.lu/fr/ambassades/equipe.html",
+    "https://londres.mae.lu/en/ambassades/team.html",
+    "https://madrid.mae.lu/fr/ambassades/equipe.html",
+    "https://moldova.mae.lu/en/ambassades/team.html",
+    "https://montenegro.mae.lu/en/ambassades/team.html",
+    "https://moscou.mae.lu/en/ambassades/team.html",
+    "https://newdelhi.mae.lu/en/ambassades/team.html",
+    "https://newyork-cg.mae.lu/en/ambassades/team.html",
+    "https://north-macedonia.mae.lu/en/ambassades/team.html",
+    "https://ottawa.mae.lu/fr/ambassades/equipe.html",
+    "https://paris.mae.lu/fr/ambassades/equipe.html",
+    "https://pekin.mae.lu/en/ambassades/team.html",
+    "https://prague.mae.lu/en/ambassades/team.html",
+    "https://praia.mae.lu/fr/ambassades/equipe.html",
+    "https://pristina.mae.lu/en/ambassades/team.html",
+    "https://rome.mae.lu/fr/ambassades/equipe.html",
+    "https://saintsiege.mae.lu/fr/ambassades/equipe.html",
+    "https://sanfrancisco.mae.lu/en/ambassades/team.html",
+    "https://sanjose.mae.lu/fr/ambassades/equipe.html",
+    "https://seoul.mae.lu/en/ambassades/team.html",
+    "https://serbia.mae.lu/en/ambassades/team.html",
+    "https://singapour.mae.lu/en/ambassades/team.html",
+    "https://strasbourg.mae.lu/fr/ambassades/equipe.html",
+    "https://tokyo.mae.lu/en/ambassades/team.html",
+    "https://varsovie.mae.lu/en/ambassades/team.html"
+  ],
+  "converterOptions": {
+    "html": {
+      "recordSelector": "head, tr:has(td:matchesOwn(^\\s*Botschafter))",
+      "fields": {
+        "description": "meta[name=description]@content",
+        "firstName": "td:eq(0)",
+        "lastName": "td:eq(1)",
+        "tableRole": "td:eq(2)"
+      }
+    }
+  },
+  "mapping": "classpath:mappings/lu/lu_pep_diplomats.mapping.json",
+  "coverage": [
+    {
+      "category": "LU-f",
+      "function": "Ambassadeur ou chargé d'affaires",
+      "completeness": "PARTIAL",
+      "includesFormer": false
+    }
+  ],
+  "test": {
+    "fixtures": [
+      "embassies/abudhabi.html",
+      "embassies/bangkok.html",
+      "embassies/berlin.html",
+      "embassies/brasilia.html",
+      "embassies/dakar.html",
+      "embassies/londres.html",
+      "embassies/madrid.html",
+      "embassies/paris.html",
+      "embassies/seoul.html",
+      "embassies/tokyo.html"
+    ],
+    "minPersons": 9,
+    "samples": [
+      "Sam SCHREINER",
+      "Elisabeth Cardoso"
+    ]
+  }
+}
