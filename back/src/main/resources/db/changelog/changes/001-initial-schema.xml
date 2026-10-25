@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="001-create-data-source-config-table" author="adam">
+        <createTable tableName="data_source_config">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="source_name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="source_format" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="external_source_path" type="VARCHAR(1000)"/>
+            <column name="local_source_path" type="VARCHAR(1000)"/>
+            <column name="initial_json_source_path" type="VARCHAR(1000)"/>
+            <column name="mapping_file_path" type="VARCHAR(1000)"/>
+            <column name="ftm_output_path" type="VARCHAR(1000)"/>
+            <column name="created_at" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP"/>
+            <column name="updated_at" type="TIMESTAMP" defaultValueComputed="CURRENT_TIMESTAMP"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
