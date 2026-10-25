@@ -61,11 +61,22 @@ public class MappingRule {
     private Map<String, String> propertiesMapping = new LinkedHashMap<>();
 
     /**
-     * Liste des propriétés dont les valeurs sont des références (clés étrangères) vers d'autres entités.
-     * Le moteur hache automatiquement ces valeurs en SHA-1 pour maintenir l'intégrité relationnelle.
+     * Types sémantiques des propriétés FTM ("date", "country", "currency", "entity", etc.).
+     * Exemple : "birthDate" -> "date", "nationality" -> "country", "owner" -> "entity"
      */
     @Builder.Default
-    private List<String> foreignKeyProperties = new ArrayList<>();
+    private Map<String, String> propertyTypes = new LinkedHashMap<>();
+
+    /**
+     * Résout le type sémantique d'une propriété FTM ("date", "country", "currency", "entity", etc.).
+     */
+    @JsonIgnore
+    public String getPropertyType(String ftmProperty) {
+        if (propertyTypes != null) {
+            return propertyTypes.get(ftmProperty);
+        }
+        return null;
+    }
 
     /**
      * Vérifie si un fragment de données JSON correspond aux conditions discriminantes de cette règle.

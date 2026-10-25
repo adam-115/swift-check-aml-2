@@ -23,9 +23,11 @@
         "program": "$.regulation.programme",
         "sanctionDate": "$.designationDate"
       },
-      "foreignKeyProperties": [
-        "sanction"
-      ]
+      "propertyTypes": {
+        "birthDate": "date",
+        "sanctionDate": "date",
+        "nationality": "country"
+      }
     },
     {
       "targetNodeName": "sanctionEntity",
@@ -45,7 +47,10 @@
         "program": "$.regulation.programme",
         "sanctionDate": "$.designationDate"
       },
-      "foreignKeyProperties": []
+      "propertyTypes": {
+        "sanctionDate": "date",
+        "country": "country"
+      }
     },
     {
       "targetNodeName": "sanctionEntity",
@@ -70,10 +75,13 @@
         "program": "$.regulation.programme",
         "sanctionDate": "$.designationDate"
       },
-      "foreignKeyProperties": [
-        "owner",
-        "operator"
-      ]
+      "propertyTypes": {
+        "buildDate": "date",
+        "sanctionDate": "date",
+        "flag": "country",
+        "owner": "entity",
+        "operator": "entity"
+      }
     },
     {
       "targetNodeName": "sanctionEntity",
@@ -95,10 +103,12 @@
         "program": "$.regulation.programme",
         "sanctionDate": "$.designationDate"
       },
-      "foreignKeyProperties": [
-        "owner",
-        "operator"
-      ]
+      "propertyTypes": {
+        "buildDate": "date",
+        "sanctionDate": "date",
+        "owner": "entity",
+        "operator": "entity"
+      }
     },
     {
       "targetNodeName": "sanctionEntity",
@@ -115,9 +125,10 @@
         "startDate": "$.designationDate",
         "entity": "$.targetEntity[*].targetLogicalId"
       },
-      "foreignKeyProperties": [
-        "entity"
-      ]
+      "propertyTypes": {
+        "startDate": "date",
+        "entity": "entity"
+      }
     }
   ]
 }

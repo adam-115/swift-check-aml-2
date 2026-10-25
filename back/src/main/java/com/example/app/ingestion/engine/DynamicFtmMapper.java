@@ -3,6 +3,7 @@ package com.example.app.ingestion.engine;
 import com.example.app.core.HashUtils;
 import com.example.app.core.MappingConfig;
 import com.example.app.core.MappingRule;
+import com.example.app.core.normalizer.NormalizerRegistry;
 import com.example.app.ingestion.model.FtmEntity;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,9 +30,15 @@ public class DynamicFtmMapper {
 
     private final ObjectMapper objectMapper;
     private final Configuration jsonPathConfig;
+    private final NormalizerRegistry normalizerRegistry;
 
     public DynamicFtmMapper() {
+        this(new NormalizerRegistry());
+    }
+
+    public DynamicFtmMapper(NormalizerRegistry normalizerRegistry) {
         this.objectMapper = new ObjectMapper();
+        this.normalizerRegistry = normalizerRegistry != null ? normalizerRegistry : new NormalizerRegistry();
         this.jsonPathConfig = Configuration.defaultConfiguration()
                 .addOptions(Option.DEFAULT_PATH_LEAF_TO_NULL, Option.SUPPRESS_EXCEPTIONS);
     }
@@ -51,8 +58,15 @@ public class DynamicFtmMapper {
     public List<FtmEntity> map(InputStream dataInputStream, InputStream mappingInputStream) throws Exception {
         List<Map<String, Object>> sourceRecords = objectMapper.readValue(dataInputStream, new TypeReference<>() {
         });
-        MappingConfig mappingConfig = objectMapper.readValue(mappingInputStream, MappingConfig.class);
+        return map(sourceRecords, mappingInputStream);
+    }
 
+    public List<FtmEntity> map(List<Map<String, Object>> sourceRecords, InputStream mappingInputStream) throws Exception {
+        MappingConfig mappingConfig = objectMapper.readValue(mappingInputStream, MappingConfig.class);
+        return map(sourceRecords, mappingConfig);
+    }
+
+    public List<FtmEntity> map(List<Map<String, Object>> sourceRecords, MappingConfig mappingConfig) {
         List<FtmEntity> result = new ArrayList<>();
         for (Map<String, Object> record : sourceRecords) {
             DocumentContext ctx = JsonPath.using(jsonPathConfig).parse(record);
@@ -81,20 +95,19 @@ public class DynamicFtmMapper {
                 .schema(rule.getFtmSchema())
                 .build();
 
-        // 2. Extraction et assignation des propriétés FTM (avec hachage des clés
-        // étrangères)
+        // 2. Extraction, normalisation sémantique et assignation des propriétés FTM
         for (Map.Entry<String, String> entry : rule.getPropertiesMapping().entrySet()) {
             String ftmProperty = entry.getKey();
             String jsonPath = entry.getValue();
 
-            boolean isForeignKey = rule.getForeignKeyProperties() != null
-                    && rule.getForeignKeyProperties().contains(ftmProperty);
+            // Résolution du type sémantique FTM ("date", "country", "currency", "entity", etc.)
+            String propertyType = rule.getPropertyType(ftmProperty);
 
             List<String> extractedValues = extractValues(ctx, jsonPath);
             for (String val : extractedValues) {
                 if (val != null && !val.trim().isEmpty()) {
-                    String finalValue = isForeignKey ? HashUtils.sha1(val.trim()) : val.trim();
-                    entity.addProperty(ftmProperty, finalValue);
+                    String normalizedValue = normalizerRegistry.normalize(propertyType, val);
+                    entity.addProperty(ftmProperty, normalizedValue);
                 }
             }
         }
