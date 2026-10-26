@@ -1,0 +1,135 @@
+[ {
+  "line" : "Direction/Executive Board/Vorstand",
+  "lineNumber" : 1,
+  "page" : 1,
+  "nextLine" : "Échéancier — Nominations, Mandats CSSF",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Échéancier — Nominations, Mandats CSSF",
+  "lineNumber" : 2,
+  "page" : 1,
+  "previousLine" : "Direction/Executive Board/Vorstand",
+  "nextLine" : "Schedule — Appointments, CSSF mandates",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Schedule — Appointments, CSSF mandates",
+  "lineNumber" : 3,
+  "page" : 1,
+  "previousLine" : "Échéancier — Nominations, Mandats CSSF",
+  "nextLine" : "Laufzeit der CSSF Mandate — Ernennungsdatum",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Laufzeit der CSSF Mandate — Ernennungsdatum",
+  "lineNumber" : 4,
+  "page" : 1,
+  "previousLine" : "Schedule — Appointments, CSSF mandates",
+  "nextLine" : "Direction/Executive Board/Vorstand",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Direction/Executive Board/Vorstand",
+  "lineNumber" : 5,
+  "page" : 1,
+  "previousLine" : "Laufzeit der CSSF Mandate — Ernennungsdatum",
+  "nextLine" : "Claude MARX Directeur général 05.02.2026 – 04.02.2031 5 ans/years/Jahre",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Claude MARX Directeur général 05.02.2026 – 04.02.2031 5 ans/years/Jahre",
+  "lineNumber" : 6,
+  "page" : 1,
+  "previousLine" : "Direction/Executive Board/Vorstand",
+  "nextLine" : "Jean-Pierre FABER Directeur 01.09.2026 – 31.08.2031 5 ans/years/Jahre",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Jean-Pierre FABER Directeur 01.09.2026 – 31.08.2031 5 ans/years/Jahre",
+  "lineNumber" : 7,
+  "page" : 1,
+  "previousLine" : "Claude MARX Directeur général 05.02.2026 – 04.02.2031 5 ans/years/Jahre",
+  "nextLine" : "Marco ZWICK Directeur 01.09.2023 – 31.08.2028 5 ans/years/Jahre",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Marco ZWICK Directeur 01.09.2023 – 31.08.2028 5 ans/years/Jahre",
+  "lineNumber" : 8,
+  "page" : 1,
+  "previousLine" : "Jean-Pierre FABER Directeur 01.09.2026 – 31.08.2031 5 ans/years/Jahre",
+  "nextLine" : "Claude WAMPACH Directeur 01.01.2024 – 31.12.2028 5 ans/years/Jahre",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Claude WAMPACH Directeur 01.01.2024 – 31.12.2028 5 ans/years/Jahre",
+  "lineNumber" : 9,
+  "page" : 1,
+  "previousLine" : "Marco ZWICK Directeur 01.09.2023 – 31.08.2028 5 ans/years/Jahre",
+  "nextLine" : "Pascale TOUSSING Directeur 22.01.2026 – 21.01.2031 5 ans/years/Jahre",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Pascale TOUSSING Directeur 22.01.2026 – 21.01.2031 5 ans/years/Jahre",
+  "lineNumber" : 10,
+  "page" : 1,
+  "previousLine" : "Claude WAMPACH Directeur 01.01.2024 – 31.12.2028 5 ans/years/Jahre",
+  "nextLine" : "Art. 9 de la loi du 23 décembre 1998",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Art. 9 de la loi du 23 décembre 1998",
+  "lineNumber" : 11,
+  "page" : 1,
+  "previousLine" : "Pascale TOUSSING Directeur 22.01.2026 – 21.01.2031 5 ans/years/Jahre",
+  "nextLine" : "portant création d’une commission de surveillance du secteur financier",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "portant création d’une commission de surveillance du secteur financier",
+  "lineNumber" : 12,
+  "page" : 1,
+  "previousLine" : "Art. 9 de la loi du 23 décembre 1998",
+  "nextLine" : "Art. 9 of the Law of 23 December 1998",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Art. 9 of the Law of 23 December 1998",
+  "lineNumber" : 13,
+  "page" : 1,
+  "previousLine" : "portant création d’une commission de surveillance du secteur financier",
+  "nextLine" : "establishing a financial sector supervisory commission",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "establishing a financial sector supervisory commission",
+  "lineNumber" : 14,
+  "page" : 1,
+  "previousLine" : "Art. 9 of the Law of 23 December 1998",
+  "nextLine" : "Art. 9 vom Gesetz vom 23. Dezember 1998",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "Art. 9 vom Gesetz vom 23. Dezember 1998",
+  "lineNumber" : 15,
+  "page" : 1,
+  "previousLine" : "establishing a financial sector supervisory commission",
+  "nextLine" : "zur Gründung einer Commission de Surveillance du Secteur Financier",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "zur Gründung einer Commission de Surveillance du Secteur Financier",
+  "lineNumber" : 16,
+  "page" : 1,
+  "previousLine" : "Art. 9 vom Gesetz vom 23. Dezember 1998",
+  "nextLine" : "DIRECTION/EXECUTIVE BOARD/VORSTAND",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+}, {
+  "line" : "DIRECTION/EXECUTIVE BOARD/VORSTAND",
+  "lineNumber" : 17,
+  "page" : 1,
+  "previousLine" : "zur Gründung einer Commission de Surveillance du Secteur Financier",
+  "_dataset" : "lu_pep_cssf",
+  "_sourceUrl" : "https://www.cssf.lu/wp-content/uploads/LM_DIRECTION.pdf"
+} ]

@@ -1,0 +1,871 @@
+[ {
+  "line" : "GRAND-DUCHE DE LUXEMBOURG Luxembourg, le 20 octobre 2026",
+  "lineNumber" : 1,
+  "page" : 1,
+  "nextLine" : "COUR ADMINISTRATIVE",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "COUR ADMINISTRATIVE",
+  "lineNumber" : 2,
+  "page" : 1,
+  "previousLine" : "GRAND-DUCHE DE LUXEMBOURG Luxembourg, le 20 octobre 2026",
+  "nextLine" : "CONVOCATION",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "CONVOCATION",
+  "lineNumber" : 3,
+  "page" : 1,
+  "previousLine" : "COUR ADMINISTRATIVE",
+  "nextLine" : "pour l’audience publique de la",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "pour l’audience publique de la",
+  "lineNumber" : 4,
+  "page" : 1,
+  "previousLine" : "CONVOCATION",
+  "nextLine" : "Cour administrative",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Cour administrative",
+  "lineNumber" : 5,
+  "page" : 1,
+  "previousLine" : "pour l’audience publique de la",
+  "nextLine" : "du",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "du",
+  "lineNumber" : 6,
+  "page" : 1,
+  "previousLine" : "Cour administrative",
+  "nextLine" : "mardi 27 octobre 2026, à 9:00 heures",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "mardi 27 octobre 2026, à 9:00 heures",
+  "lineNumber" : 7,
+  "page" : 1,
+  "previousLine" : "du",
+  "nextLine" : "au Nouvel Hémicycle",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "au Nouvel Hémicycle",
+  "lineNumber" : 8,
+  "page" : 1,
+  "previousLine" : "mardi 27 octobre 2026, à 9:00 heures",
+  "nextLine" : "1, rue du Fort Thüngen, L-1499 Luxembourg",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "1, rue du Fort Thüngen, L-1499 Luxembourg",
+  "lineNumber" : 9,
+  "page" : 1,
+  "previousLine" : "au Nouvel Hémicycle",
+  "nextLine" : "(Niveau -3)",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "(Niveau -3)",
+  "lineNumber" : 10,
+  "page" : 1,
+  "previousLine" : "1, rue du Fort Thüngen, L-1499 Luxembourg",
+  "nextLine" : "NOTE IMPORTANTE",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "NOTE IMPORTANTE",
+  "lineNumber" : 11,
+  "page" : 1,
+  "previousLine" : "(Niveau -3)",
+  "nextLine" : "Dans un souci d’efficacité et afin de préparer au mieux les audiences devant la Cour administrative, les mandataires",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Dans un souci d’efficacité et afin de préparer au mieux les audiences devant la Cour administrative, les mandataires",
+  "lineNumber" : 12,
+  "page" : 1,
+  "previousLine" : "NOTE IMPORTANTE",
+  "nextLine" : "recevront un formulaire pour indiquer si l'affaire sera plaidée ou non. Ce formulaire doit impérativement être",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "recevront un formulaire pour indiquer si l'affaire sera plaidée ou non. Ce formulaire doit impérativement être",
+  "lineNumber" : 13,
+  "page" : 1,
+  "previousLine" : "Dans un souci d’efficacité et afin de préparer au mieux les audiences devant la Cour administrative, les mandataires",
+  "nextLine" : "renvoyé dans les délais indiqués.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "renvoyé dans les délais indiqués.",
+  "lineNumber" : 14,
+  "page" : 1,
+  "previousLine" : "recevront un formulaire pour indiquer si l'affaire sera plaidée ou non. Ce formulaire doit impérativement être",
+  "nextLine" : "Afin d’assurer que vos mails arrivent sans délai au greffe de la Cour administrative, veillez à utiliser votre adresse",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Afin d’assurer que vos mails arrivent sans délai au greffe de la Cour administrative, veillez à utiliser votre adresse",
+  "lineNumber" : 15,
+  "page" : 1,
+  "previousLine" : "renvoyé dans les délais indiqués.",
+  "nextLine" : "email officielle (…@barreau.lu ou …etat.lu).",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "email officielle (…@barreau.lu ou …etat.lu).",
+  "lineNumber" : 16,
+  "page" : 1,
+  "previousLine" : "Afin d’assurer que vos mails arrivent sans délai au greffe de la Cour administrative, veillez à utiliser votre adresse",
+  "nextLine" : "Attention : à défaut de réponse dans les délais impartis, les mandataires sont censés marquer leur accord avec",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Attention : à défaut de réponse dans les délais impartis, les mandataires sont censés marquer leur accord avec",
+  "lineNumber" : 17,
+  "page" : 1,
+  "previousLine" : "email officielle (…@barreau.lu ou …etat.lu).",
+  "nextLine" : "une prise en délibéré sans autres formalités.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "une prise en délibéré sans autres formalités.",
+  "lineNumber" : 18,
+  "page" : 1,
+  "previousLine" : "Attention : à défaut de réponse dans les délais impartis, les mandataires sont censés marquer leur accord avec",
+  "nextLine" : "Pour savoir si les affaires seront plaidées ou prises en délibéré sans autres formalités et pour",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Pour savoir si les affaires seront plaidées ou prises en délibéré sans autres formalités et pour",
+  "lineNumber" : 19,
+  "page" : 1,
+  "previousLine" : "une prise en délibéré sans autres formalités.",
+  "nextLine" : "connaître les heures exactes, nous vous invitons à contacter le greffier de la Cour.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "connaître les heures exactes, nous vous invitons à contacter le greffier de la Cour.",
+  "lineNumber" : 20,
+  "page" : 1,
+  "previousLine" : "Pour savoir si les affaires seront plaidées ou prises en délibéré sans autres formalités et pour",
+  "nextLine" : "Ordre du jour :",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Ordre du jour :",
+  "lineNumber" : 21,
+  "page" : 1,
+  "previousLine" : "connaître les heures exactes, nous vous invitons à contacter le greffier de la Cour.",
+  "nextLine" : "Aucune affaire n’a été fixée pour cette audience.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Aucune affaire n’a été fixée pour cette audience.",
+  "lineNumber" : 22,
+  "page" : 1,
+  "previousLine" : "Ordre du jour :",
+  "nextLine" : "DISCLAIMER",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "DISCLAIMER",
+  "lineNumber" : 23,
+  "page" : 1,
+  "previousLine" : "Aucune affaire n’a été fixée pour cette audience.",
+  "nextLine" : "La présente convocation vous est adressée en votre qualité d’auxiliaire de la justice représentant une ou plusieurs parties impliquées dans une",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "La présente convocation vous est adressée en votre qualité d’auxiliaire de la justice représentant une ou plusieurs parties impliquées dans une",
+  "lineNumber" : 24,
+  "page" : 1,
+  "previousLine" : "DISCLAIMER",
+  "nextLine" : "instance devant la Cour administrative et sert aux seules fins de l’organisation utile de l’audience ci-avant indiquée.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "instance devant la Cour administrative et sert aux seules fins de l’organisation utile de l’audience ci-avant indiquée.",
+  "lineNumber" : 25,
+  "page" : 1,
+  "previousLine" : "La présente convocation vous est adressée en votre qualité d’auxiliaire de la justice représentant une ou plusieurs parties impliquées dans une",
+  "nextLine" : "Tout autre usage ou toute diffusion de la présente convocation ou de tout ou partie de son contenu constitueraient un traitement des données",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Tout autre usage ou toute diffusion de la présente convocation ou de tout ou partie de son contenu constitueraient un traitement des données",
+  "lineNumber" : 26,
+  "page" : 1,
+  "previousLine" : "instance devant la Cour administrative et sert aux seules fins de l’organisation utile de l’audience ci-avant indiquée.",
+  "nextLine" : "personnelles de votre part qui va au -delà de la finalité de celui effectué par les juridictions administratives dans l’exercice de leur fonction",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "personnelles de votre part qui va au -delà de la finalité de celui effectué par les juridictions administratives dans l’exercice de leur fonction",
+  "lineNumber" : 27,
+  "page" : 1,
+  "previousLine" : "Tout autre usage ou toute diffusion de la présente convocation ou de tout ou partie de son contenu constitueraient un traitement des données",
+  "nextLine" : "juridictionnelle.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "juridictionnelle.",
+  "lineNumber" : 28,
+  "page" : 1,
+  "previousLine" : "personnelles de votre part qui va au -delà de la finalité de celui effectué par les juridictions administratives dans l’exercice de leur fonction",
+  "nextLine" : "La Cour administrative vous demande partant de respecter l’objet de la présente convocation et de ne pas l’utiliser ou la diffuser intégralement",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "La Cour administrative vous demande partant de respecter l’objet de la présente convocation et de ne pas l’utiliser ou la diffuser intégralement",
+  "lineNumber" : 29,
+  "page" : 1,
+  "previousLine" : "juridictionnelle.",
+  "nextLine" : "ou par extraits à des fins autres que la planification du travail en relation avec les juridictions administratives au sein de votre étude.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "ou par extraits à des fins autres que la planification du travail en relation avec les juridictions administratives au sein de votre étude.",
+  "lineNumber" : 30,
+  "page" : 1,
+  "previousLine" : "La Cour administrative vous demande partant de respecter l’objet de la présente convocation et de ne pas l’utiliser ou la diffuser intégralement",
+  "nextLine" : "Le greffier",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Le greffier",
+  "lineNumber" : 31,
+  "page" : 1,
+  "previousLine" : "ou par extraits à des fins autres que la planification du travail en relation avec les juridictions administratives au sein de votre étude.",
+  "nextLine" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 1 sur 3",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 1 sur 3",
+  "lineNumber" : 32,
+  "page" : 1,
+  "previousLine" : "Le greffier",
+  "nextLine" : "GRAND-DUCHE DE LUXEMBOURG Luxembourg, le 22 octobre 2026",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "GRAND-DUCHE DE LUXEMBOURG Luxembourg, le 22 octobre 2026",
+  "lineNumber" : 33,
+  "page" : 2,
+  "previousLine" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 1 sur 3",
+  "nextLine" : "COUR ADMINISTRATIVE",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "COUR ADMINISTRATIVE",
+  "lineNumber" : 34,
+  "page" : 2,
+  "previousLine" : "GRAND-DUCHE DE LUXEMBOURG Luxembourg, le 22 octobre 2026",
+  "nextLine" : "CONVOCATION",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "CONVOCATION",
+  "lineNumber" : 35,
+  "page" : 2,
+  "previousLine" : "COUR ADMINISTRATIVE",
+  "nextLine" : "pour l’audience publique de la",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "pour l’audience publique de la",
+  "lineNumber" : 36,
+  "page" : 2,
+  "previousLine" : "CONVOCATION",
+  "nextLine" : "Cour administrative",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Cour administrative",
+  "lineNumber" : 37,
+  "page" : 2,
+  "previousLine" : "pour l’audience publique de la",
+  "nextLine" : "du",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "du",
+  "lineNumber" : 38,
+  "page" : 2,
+  "previousLine" : "Cour administrative",
+  "nextLine" : "jeudi 29 octobre 2026, à 9:00 heures",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "jeudi 29 octobre 2026, à 9:00 heures",
+  "lineNumber" : 39,
+  "page" : 2,
+  "previousLine" : "du",
+  "nextLine" : "au Nouvel Hémicycle",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "au Nouvel Hémicycle",
+  "lineNumber" : 40,
+  "page" : 2,
+  "previousLine" : "jeudi 29 octobre 2026, à 9:00 heures",
+  "nextLine" : "1, rue du Fort Thüngen, L-1499 Luxembourg",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "1, rue du Fort Thüngen, L-1499 Luxembourg",
+  "lineNumber" : 41,
+  "page" : 2,
+  "previousLine" : "au Nouvel Hémicycle",
+  "nextLine" : "(Niveau -3)",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "(Niveau -3)",
+  "lineNumber" : 42,
+  "page" : 2,
+  "previousLine" : "1, rue du Fort Thüngen, L-1499 Luxembourg",
+  "nextLine" : "NOTE IMPORTANTE",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "NOTE IMPORTANTE",
+  "lineNumber" : 43,
+  "page" : 2,
+  "previousLine" : "(Niveau -3)",
+  "nextLine" : "Dans un souci d’efficacité et afin de préparer au mieux les audiences devant la Cour administrative, les mandataires",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Dans un souci d’efficacité et afin de préparer au mieux les audiences devant la Cour administrative, les mandataires",
+  "lineNumber" : 44,
+  "page" : 2,
+  "previousLine" : "NOTE IMPORTANTE",
+  "nextLine" : "recevront un formulaire pour indiquer si l'affaire sera plaidée ou non. Ce formulaire doit impérativement être",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "recevront un formulaire pour indiquer si l'affaire sera plaidée ou non. Ce formulaire doit impérativement être",
+  "lineNumber" : 45,
+  "page" : 2,
+  "previousLine" : "Dans un souci d’efficacité et afin de préparer au mieux les audiences devant la Cour administrative, les mandataires",
+  "nextLine" : "renvoyé dans les délais indiqués.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "renvoyé dans les délais indiqués.",
+  "lineNumber" : 46,
+  "page" : 2,
+  "previousLine" : "recevront un formulaire pour indiquer si l'affaire sera plaidée ou non. Ce formulaire doit impérativement être",
+  "nextLine" : "Afin d’assurer que vos mails arrivent sans délai au greffe de la Cour administrative, veillez à utiliser votre adresse",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Afin d’assurer que vos mails arrivent sans délai au greffe de la Cour administrative, veillez à utiliser votre adresse",
+  "lineNumber" : 47,
+  "page" : 2,
+  "previousLine" : "renvoyé dans les délais indiqués.",
+  "nextLine" : "email officielle (…@barreau.lu ou …etat.lu).",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "email officielle (…@barreau.lu ou …etat.lu).",
+  "lineNumber" : 48,
+  "page" : 2,
+  "previousLine" : "Afin d’assurer que vos mails arrivent sans délai au greffe de la Cour administrative, veillez à utiliser votre adresse",
+  "nextLine" : "Attention : à défaut de réponse dans les délais impartis, les mandataires sont censés marquer leur accord avec",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Attention : à défaut de réponse dans les délais impartis, les mandataires sont censés marquer leur accord avec",
+  "lineNumber" : 49,
+  "page" : 2,
+  "previousLine" : "email officielle (…@barreau.lu ou …etat.lu).",
+  "nextLine" : "une prise en délibéré sans autres formalités.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "une prise en délibéré sans autres formalités.",
+  "lineNumber" : 50,
+  "page" : 2,
+  "previousLine" : "Attention : à défaut de réponse dans les délais impartis, les mandataires sont censés marquer leur accord avec",
+  "nextLine" : "Pour savoir si les affaires seront plaidées ou prises en délibéré sans autres formalités et pour",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Pour savoir si les affaires seront plaidées ou prises en délibéré sans autres formalités et pour",
+  "lineNumber" : 51,
+  "page" : 2,
+  "previousLine" : "une prise en délibéré sans autres formalités.",
+  "nextLine" : "connaître les heures exactes, nous vous invitons à contacter le greffier de la Cour.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "connaître les heures exactes, nous vous invitons à contacter le greffier de la Cour.",
+  "lineNumber" : 52,
+  "page" : 2,
+  "previousLine" : "Pour savoir si les affaires seront plaidées ou prises en délibéré sans autres formalités et pour",
+  "nextLine" : "Ordre du jour :",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Ordre du jour :",
+  "lineNumber" : 53,
+  "page" : 2,
+  "previousLine" : "connaître les heures exactes, nous vous invitons à contacter le greffier de la Cour.",
+  "nextLine" : "1) Affaires appelée pour plaidoiries:",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "1) Affaires appelée pour plaidoiries:",
+  "lineNumber" : 54,
+  "page" : 2,
+  "previousLine" : "Ordre du jour :",
+  "nextLine" : "1) 54784C …",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "1) 54784C …",
+  "lineNumber" : 55,
+  "page" : 2,
+  "previousLine" : "1) Affaires appelée pour plaidoiries:",
+  "nextLine" : "c/ Directeur de l'Administration des Contributions directes (ACD)",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ Directeur de l'Administration des Contributions directes (ACD)",
+  "lineNumber" : 56,
+  "page" : 2,
+  "previousLine" : "1) 54784C …",
+  "nextLine" : "en matière de : Commissaire spécial - Impôt sur le revenu",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Commissaire spécial - Impôt sur le revenu",
+  "lineNumber" : 57,
+  "page" : 2,
+  "previousLine" : "c/ Directeur de l'Administration des Contributions directes (ACD)",
+  "nextLine" : "Avocat(s) : ELVINGER HOSS PRUSSEN S.A. (Me Yves PRUSSEN)",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : ELVINGER HOSS PRUSSEN S.A. (Me Yves PRUSSEN)",
+  "lineNumber" : 58,
+  "page" : 2,
+  "previousLine" : "en matière de : Commissaire spécial - Impôt sur le revenu",
+  "nextLine" : "Rapporteur : SCHROEDER Serge",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Rapporteur : SCHROEDER Serge",
+  "lineNumber" : 59,
+  "page" : 2,
+  "previousLine" : "Avocat(s) : ELVINGER HOSS PRUSSEN S.A. (Me Yves PRUSSEN)",
+  "nextLine" : "Composition : SCHROEDER Serge, BRAUN Annick, KUBORN Thessy",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Composition : SCHROEDER Serge, BRAUN Annick, KUBORN Thessy",
+  "lineNumber" : 60,
+  "page" : 2,
+  "previousLine" : "Rapporteur : SCHROEDER Serge",
+  "nextLine" : "2) Affaires appelées pour fixation:",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "2) Affaires appelées pour fixation:",
+  "lineNumber" : 61,
+  "page" : 2,
+  "previousLine" : "Composition : SCHROEDER Serge, BRAUN Annick, KUBORN Thessy",
+  "nextLine" : "1) 55061C …",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "1) 55061C …",
+  "lineNumber" : 62,
+  "page" : 2,
+  "previousLine" : "2) Affaires appelées pour fixation:",
+  "nextLine" : "c/ Ministre de l'Environnement, du Climat et du Développement durable - … - … - … - … -",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ Ministre de l'Environnement, du Climat et du Développement durable - … - … - … - … -",
+  "lineNumber" : 63,
+  "page" : 2,
+  "previousLine" : "1) 55061C …",
+  "nextLine" : "Ville de Luxembourg",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Ville de Luxembourg",
+  "lineNumber" : 64,
+  "page" : 2,
+  "previousLine" : "c/ Ministre de l'Environnement, du Climat et du Développement durable - … - … - … - … -",
+  "nextLine" : "en matière de : Urbanisme et aménagement du territoire - Permis de construire",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Urbanisme et aménagement du territoire - Permis de construire",
+  "lineNumber" : 65,
+  "page" : 2,
+  "previousLine" : "Ville de Luxembourg",
+  "nextLine" : "Avocat(s) : KRIEGER ASSOCIATES S.A. (Me Georges KRIEGER),",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : KRIEGER ASSOCIATES S.A. (Me Georges KRIEGER),",
+  "lineNumber" : 66,
+  "page" : 2,
+  "previousLine" : "en matière de : Urbanisme et aménagement du territoire - Permis de construire",
+  "nextLine" : "ARENDT & MEDERNACH S.A. (Me Christian POINT),",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "ARENDT & MEDERNACH S.A. (Me Christian POINT),",
+  "lineNumber" : 67,
+  "page" : 2,
+  "previousLine" : "Avocat(s) : KRIEGER ASSOCIATES S.A. (Me Georges KRIEGER),",
+  "nextLine" : "Me FELTEN Bernard,",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Me FELTEN Bernard,",
+  "lineNumber" : 68,
+  "page" : 2,
+  "previousLine" : "ARENDT & MEDERNACH S.A. (Me Christian POINT),",
+  "nextLine" : "Me LAMESCH Martine",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Me LAMESCH Martine",
+  "lineNumber" : 69,
+  "page" : 2,
+  "previousLine" : "Me FELTEN Bernard,",
+  "nextLine" : "Le greffier",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Le greffier",
+  "lineNumber" : 70,
+  "page" : 2,
+  "previousLine" : "Me LAMESCH Martine",
+  "nextLine" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 2 sur 3",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 2 sur 3",
+  "lineNumber" : 71,
+  "page" : 2,
+  "previousLine" : "Le greffier",
+  "nextLine" : "2) 55077C …",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "2) 55077C …",
+  "lineNumber" : 72,
+  "page" : 3,
+  "previousLine" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 2 sur 3",
+  "nextLine" : "c/ Commune de Koerich - Ministre des Affaires intérieures – Direction générale des affaires",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ Commune de Koerich - Ministre des Affaires intérieures – Direction générale des affaires",
+  "lineNumber" : 73,
+  "page" : 3,
+  "previousLine" : "2) 55077C …",
+  "nextLine" : "communales",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "communales",
+  "lineNumber" : 74,
+  "page" : 3,
+  "previousLine" : "c/ Commune de Koerich - Ministre des Affaires intérieures – Direction générale des affaires",
+  "nextLine" : "en matière de : Urbanisme et aménagement du territoire - Plan d'aménagement général",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Urbanisme et aménagement du territoire - Plan d'aménagement général",
+  "lineNumber" : 75,
+  "page" : 3,
+  "previousLine" : "communales",
+  "nextLine" : "Avocat(s) : SCHILTZ & SCHILTZ S.A. (Me Serge Marx),",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : SCHILTZ & SCHILTZ S.A. (Me Serge Marx),",
+  "lineNumber" : 76,
+  "page" : 3,
+  "previousLine" : "en matière de : Urbanisme et aménagement du territoire - Plan d'aménagement général",
+  "nextLine" : "Me JABIN Anne-Laure,",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Me JABIN Anne-Laure,",
+  "lineNumber" : 77,
+  "page" : 3,
+  "previousLine" : "Avocat(s) : SCHILTZ & SCHILTZ S.A. (Me Serge Marx),",
+  "nextLine" : "Me THEWES Marc",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Me THEWES Marc",
+  "lineNumber" : 78,
+  "page" : 3,
+  "previousLine" : "Me JABIN Anne-Laure,",
+  "nextLine" : "3) 55097C Etat du Grand-Duché de Luxembourg - Ministre de la Fonction publique",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "3) 55097C Etat du Grand-Duché de Luxembourg - Ministre de la Fonction publique",
+  "lineNumber" : 79,
+  "page" : 3,
+  "previousLine" : "Me THEWES Marc",
+  "nextLine" : "c/ …",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ …",
+  "lineNumber" : 80,
+  "page" : 3,
+  "previousLine" : "3) 55097C Etat du Grand-Duché de Luxembourg - Ministre de la Fonction publique",
+  "nextLine" : "en matière de : Fonctionnaires et agents publics - Pension spéciale du parlementaire",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Fonctionnaires et agents publics - Pension spéciale du parlementaire",
+  "lineNumber" : 81,
+  "page" : 3,
+  "previousLine" : "c/ …",
+  "nextLine" : "Avocat(s) : Me BAULER Jean-Marie",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : Me BAULER Jean-Marie",
+  "lineNumber" : 82,
+  "page" : 3,
+  "previousLine" : "en matière de : Fonctionnaires et agents publics - Pension spéciale du parlementaire",
+  "nextLine" : "4) 55099C …",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "4) 55099C …",
+  "lineNumber" : 83,
+  "page" : 3,
+  "previousLine" : "Avocat(s) : Me BAULER Jean-Marie",
+  "nextLine" : "c/ Fonds d'Urbanisation et Aménagement du Kirchberg",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ Fonds d'Urbanisation et Aménagement du Kirchberg",
+  "lineNumber" : 84,
+  "page" : 3,
+  "previousLine" : "4) 55099C …",
+  "nextLine" : "en matière de : Marchés publics",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Marchés publics",
+  "lineNumber" : 85,
+  "page" : 3,
+  "previousLine" : "c/ Fonds d'Urbanisation et Aménagement du Kirchberg",
+  "nextLine" : "Avocat(s) : ELVINGER HOSS PRUSSEN S.A. (Me Michel NICKELS),",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : ELVINGER HOSS PRUSSEN S.A. (Me Michel NICKELS),",
+  "lineNumber" : 86,
+  "page" : 3,
+  "previousLine" : "en matière de : Marchés publics",
+  "nextLine" : "SCHILTZ & SCHILTZ S.A. (Me Serge Marx)",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "SCHILTZ & SCHILTZ S.A. (Me Serge Marx)",
+  "lineNumber" : 87,
+  "page" : 3,
+  "previousLine" : "Avocat(s) : ELVINGER HOSS PRUSSEN S.A. (Me Michel NICKELS),",
+  "nextLine" : "5) 55766C ...",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "5) 55766C ...",
+  "lineNumber" : 88,
+  "page" : 3,
+  "previousLine" : "SCHILTZ & SCHILTZ S.A. (Me Serge Marx)",
+  "nextLine" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "lineNumber" : 89,
+  "page" : 3,
+  "previousLine" : "5) 55766C ...",
+  "nextLine" : "en matière de : Police des étrangers - Protection internationale, art. 35(1) L2015",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Police des étrangers - Protection internationale, art. 35(1) L2015",
+  "lineNumber" : 90,
+  "page" : 3,
+  "previousLine" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "nextLine" : "Avocat(s) : Me KONÉ Aminatou",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : Me KONÉ Aminatou",
+  "lineNumber" : 91,
+  "page" : 3,
+  "previousLine" : "en matière de : Police des étrangers - Protection internationale, art. 35(1) L2015",
+  "nextLine" : "6) 55820C ...",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "6) 55820C ...",
+  "lineNumber" : 92,
+  "page" : 3,
+  "previousLine" : "Avocat(s) : Me KONÉ Aminatou",
+  "nextLine" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "lineNumber" : 93,
+  "page" : 3,
+  "previousLine" : "6) 55820C ...",
+  "nextLine" : "en matière de : Police des étrangers - Protection internationale, art. 35(1) L2015",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Police des étrangers - Protection internationale, art. 35(1) L2015",
+  "lineNumber" : 94,
+  "page" : 3,
+  "previousLine" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "nextLine" : "Avocat(s) : Me ZARNOWSKI Marc-Olivier",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : Me ZARNOWSKI Marc-Olivier",
+  "lineNumber" : 95,
+  "page" : 3,
+  "previousLine" : "en matière de : Police des étrangers - Protection internationale, art. 35(1) L2015",
+  "nextLine" : "7) 55827C …",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "7) 55827C …",
+  "lineNumber" : 96,
+  "page" : 3,
+  "previousLine" : "Avocat(s) : Me ZARNOWSKI Marc-Olivier",
+  "nextLine" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "lineNumber" : 97,
+  "page" : 3,
+  "previousLine" : "7) 55827C …",
+  "nextLine" : "en matière de : Police des étrangers - Protection internationale, art. 35 (2) L2015",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "en matière de : Police des étrangers - Protection internationale, art. 35 (2) L2015",
+  "lineNumber" : 98,
+  "page" : 3,
+  "previousLine" : "c/ Ministre des Affaires intérieures – Direction générale de l’immigration",
+  "nextLine" : "Avocat(s) : Me HELLAL Nour E.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Avocat(s) : Me HELLAL Nour E.",
+  "lineNumber" : 99,
+  "page" : 3,
+  "previousLine" : "en matière de : Police des étrangers - Protection internationale, art. 35 (2) L2015",
+  "nextLine" : "DISCLAIMER",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "DISCLAIMER",
+  "lineNumber" : 100,
+  "page" : 3,
+  "previousLine" : "Avocat(s) : Me HELLAL Nour E.",
+  "nextLine" : "La présente convocation vous est adressée en votre qualité d’auxiliaire de la justice représentant une ou plusieurs parties impliquées dans une",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "La présente convocation vous est adressée en votre qualité d’auxiliaire de la justice représentant une ou plusieurs parties impliquées dans une",
+  "lineNumber" : 101,
+  "page" : 3,
+  "previousLine" : "DISCLAIMER",
+  "nextLine" : "instance devant la Cour administrative et sert aux seules fins de l’organisation utile de l’audience ci-avant indiquée.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "instance devant la Cour administrative et sert aux seules fins de l’organisation utile de l’audience ci-avant indiquée.",
+  "lineNumber" : 102,
+  "page" : 3,
+  "previousLine" : "La présente convocation vous est adressée en votre qualité d’auxiliaire de la justice représentant une ou plusieurs parties impliquées dans une",
+  "nextLine" : "Tout autre usage ou toute diffusion de la présente convocation ou de tout ou partie de son contenu constitueraient un traitement des données",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Tout autre usage ou toute diffusion de la présente convocation ou de tout ou partie de son contenu constitueraient un traitement des données",
+  "lineNumber" : 103,
+  "page" : 3,
+  "previousLine" : "instance devant la Cour administrative et sert aux seules fins de l’organisation utile de l’audience ci-avant indiquée.",
+  "nextLine" : "personnelles de votre part qui va au -delà de la finalité de celui effectué par les juridictions administratives dans l’exercice de leur fonction",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "personnelles de votre part qui va au -delà de la finalité de celui effectué par les juridictions administratives dans l’exercice de leur fonction",
+  "lineNumber" : 104,
+  "page" : 3,
+  "previousLine" : "Tout autre usage ou toute diffusion de la présente convocation ou de tout ou partie de son contenu constitueraient un traitement des données",
+  "nextLine" : "juridictionnelle.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "juridictionnelle.",
+  "lineNumber" : 105,
+  "page" : 3,
+  "previousLine" : "personnelles de votre part qui va au -delà de la finalité de celui effectué par les juridictions administratives dans l’exercice de leur fonction",
+  "nextLine" : "La Cour administrative vous demande partant de respecter l’objet de la présente convocation et de ne pas l’utiliser ou la diffuser intégralement",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "La Cour administrative vous demande partant de respecter l’objet de la présente convocation et de ne pas l’utiliser ou la diffuser intégralement",
+  "lineNumber" : 106,
+  "page" : 3,
+  "previousLine" : "juridictionnelle.",
+  "nextLine" : "ou par extraits à des fins autres que la planification du travail en relation avec les juridictions administratives au sein de votre étude.",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "ou par extraits à des fins autres que la planification du travail en relation avec les juridictions administratives au sein de votre étude.",
+  "lineNumber" : 107,
+  "page" : 3,
+  "previousLine" : "La Cour administrative vous demande partant de respecter l’objet de la présente convocation et de ne pas l’utiliser ou la diffuser intégralement",
+  "nextLine" : "Le greffier",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Le greffier",
+  "lineNumber" : 108,
+  "page" : 3,
+  "previousLine" : "ou par extraits à des fins autres que la planification du travail en relation avec les juridictions administratives au sein de votre étude.",
+  "nextLine" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 3 sur 3",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+}, {
+  "line" : "Téléphone : 42 105 – 7859 Fax : 42 105 – 7888 E-mail : greffe.cour@ja.etat.lu Page 3 sur 3",
+  "lineNumber" : 109,
+  "page" : 3,
+  "previousLine" : "Le greffier",
+  "_dataset" : "lu_pep_administrative_courts",
+  "_sourceUrl" : "https://justice.public.lu/downloads.jurad/Cour.pdf"
+} ]

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><akomaNtoso xmlns="http://docs.oasis-open.org/legaldocml/ns/akn/3.0/CSD13" xmlns:scl="http://www.scl.lu">
+<act contains="originalVersion" name="" scl:page-proof="single">
+<meta>
+<identification source="#casemates">
+<FRBRWork>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#author" href="#mdda"/>
+<FRBRcountry value=""/>
+</FRBRWork>
+<FRBRExpression>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+<FRBRlanguage language=""/>
+</FRBRExpression>
+<FRBRManifestation>
+<FRBRthis value=""/>
+<FRBRuri value=""/>
+<FRBRdate date="2999-01-01" name=""/>
+<FRBRauthor as="#editor" href="#somebody"/>
+</FRBRManifestation>
+<scl:JOLUXWork>
+<scl:JOLUXComplexWork>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXComplexWork>
+<scl:JOLUXLegalResource><scl:jolux scl:name="typeDocument">http://data.legilux.public.lu/resource/authority/resource-type/PA</scl:jolux><scl:jolux scl:name="dateDocument">2024-01-24</scl:jolux><scl:jolux scl:name="publicationDate"/><scl:jolux scl:name="responsibilityOf">http://data.legilux.public.lu/resource/authority/legal-institution/MJ</scl:jolux><scl:jolux scl:name="urgentEvent">false</scl:jolux><scl:jolux scl:name="subjectLevel1">http://data.legilux.public.lu/resource/authority/legal-subject/988</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/333</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/408</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/1020</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/3282</scl:jolux><scl:jolux scl:name="subjectLevel2">http://data.legilux.public.lu/resource/authority/legal-subject/555</scl:jolux><scl:jolux scl:name="dateEntryInForce">2023-12-06</scl:jolux></scl:JOLUXLegalResource>
+</scl:JOLUXWork>
+<scl:JOLUXExpression>
+<scl:jolux scl:name="title">Magistrature - Nominations.</scl:jolux>
+<scl:jolux scl:name="language">http://publications.europa.eu/resource/authority/language/FRA</scl:jolux>
+</scl:JOLUXExpression>
+<scl:JOLUXManifestation>
+<scl:jolux scl:name="uriThis"/>
+</scl:JOLUXManifestation>
+</identification>
+</meta>
+<preface>
+<longTitle>
+<p>Magistrature - Nominations.</p>
+</longTitle>
+</preface>
+<body>
+<alinea>
+<content>
+<p>Par arrêté grand-ducal du 24 janvier 2024, sont nommés membres effectifs de la commission du recrutement et de la formation des attachés de justice, Monsieur Thierry HOSCHEIT, Président de la Cour supérieure de justice, Madame Martine SOLOVIEFF, Procureur général d’État, Monsieur Pierre CALMES, Président du Tribunal d’arrondissement de Luxembourg, Monsieur Georges OSWALD, Procureur d’État près le Tribunal d’arrondissement de Luxembourg, Madame Brigitte KONZ, Présidente du Tribunal d’arrondissement de Diekirch, Monsieur Ernest NILLES, Procureur d’État près le Tribunal d’arrondissement de Diekirch, Monsieur Francis DELAPORTE, Président de la Cour administrative, Monsieur Marc SÜNNEN, Président du Tribunal d’administratif, sont nommés membres suppléants de la commission du recrutement et de la formation des attachés de justice, Madame Mylène REGENWETTER, Président de chambre à la Cour d’appel, Monsieur John PETRY, Procureur général d’État adjoint, Madame Anick WOLFF, premier vice-président au Tribunal d’arrondissement de Luxembourg, Monsieur David LENTZ, Procureur d’État adjoint près le Tribunal d’arrondissement de Luxembourg, Monsieur Robert WELTER, premier vice-président au Tribunal d’arrondissement de Diekirch, Madame Martine LEYTEM, Procureur d’État adjoint près le Tribunal d’arrondissement de Diekirch, Monsieur Henri CAMPILL, vice-président de la Cour administrative, Madame Françoise EBERHARD, premier vice-président au Tribunal administratif, Monsieur Thierry HOSCHEIT, est nommé Président de la commission du recrutement et de la formation des attachés de justice pour une durée de deux ans avec effet au 6 décembre 2023, Madame Brigitte KONZ, est nommée Vice-Présidente de la commission du recrutement et de la formation des attachés de justice pour une durée de deux ans avec effet au 6 décembre 2023. Les arrêtés antérieurs portant nomination des membres effectifs et des membres suppléants de cette même commission sont abrogés.</p>
+</content>
+</alinea>
+</body>
+</act>
+</akomaNtoso>

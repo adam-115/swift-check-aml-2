@@ -1,0 +1,421 @@
+[ {
+  "nom" : "Frieden",
+  "nom_complet" : "Luc Frieden",
+  "parti_code" : "CSV",
+  "parti_nom" : "Chrëschtlech-Sozial Vollekspartei",
+  "prenom" : "Luc",
+  "role" : "Président national",
+  "source_url" : "https://csv.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Hansen",
+  "nom_complet" : "Martine Hansen",
+  "parti_code" : "CSV",
+  "parti_nom" : "Chrëschtlech-Sozial Vollekspartei",
+  "prenom" : "Martine",
+  "role" : "Vice-présidente",
+  "source_url" : "https://csv.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Weis",
+  "nom_complet" : "Christian Weis",
+  "parti_code" : "CSV",
+  "parti_nom" : "Chrëschtlech-Sozial Vollekspartei",
+  "prenom" : "Christian",
+  "role" : "Vice-président",
+  "source_url" : "https://csv.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Weydert",
+  "nom_complet" : "Stéphanie Weydert",
+  "parti_code" : "CSV",
+  "parti_nom" : "Chrëschtlech-Sozial Vollekspartei",
+  "prenom" : "Stéphanie",
+  "role" : "Vice-présidente",
+  "source_url" : "https://csv.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Donnersbach",
+  "nom_complet" : "Alex Donnersbach",
+  "parti_code" : "CSV",
+  "parti_nom" : "Chrëschtlech-Sozial Vollekspartei",
+  "prenom" : "Alex",
+  "role" : "Secrétaire général",
+  "source_url" : "https://csv.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Kemp",
+  "nom_complet" : "Françoise Kemp",
+  "parti_code" : "CSV",
+  "parti_nom" : "Chrëschtlech-Sozial Vollekspartei",
+  "prenom" : "Françoise",
+  "role" : "Secrétaire générale",
+  "source_url" : "https://csv.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Schuman",
+  "nom_complet" : "Thierry Schuman",
+  "parti_code" : "CSV",
+  "parti_nom" : "Chrëschtlech-Sozial Vollekspartei",
+  "prenom" : "Thierry",
+  "role" : "Trésorier national",
+  "source_url" : "https://csv.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Hartmann",
+  "nom_complet" : "Carole Hartmann",
+  "parti_code" : "DP",
+  "parti_nom" : "Demokratesch Partei",
+  "prenom" : "Carole",
+  "role" : "Présidente nationale",
+  "source_url" : "https://dp.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Thill",
+  "nom_complet" : "Eric Thill",
+  "parti_code" : "DP",
+  "parti_nom" : "Demokratesch Partei",
+  "prenom" : "Eric",
+  "role" : "Secrétaire général",
+  "source_url" : "https://dp.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Lamberty",
+  "nom_complet" : "Claude Lamberty",
+  "parti_code" : "DP",
+  "parti_nom" : "Demokratesch Partei",
+  "prenom" : "Claude",
+  "role" : "Secrétaire général adjoint",
+  "source_url" : "https://dp.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Backes",
+  "nom_complet" : "Yuriko Backes",
+  "parti_code" : "DP",
+  "parti_nom" : "Demokratesch Partei",
+  "prenom" : "Yuriko",
+  "role" : "1ère Vice-présidente",
+  "source_url" : "https://dp.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Cahen",
+  "nom_complet" : "Corinne Cahen",
+  "parti_code" : "DP",
+  "parti_nom" : "Demokratesch Partei",
+  "prenom" : "Corinne",
+  "role" : "Vice-présidente",
+  "source_url" : "https://dp.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Skenderović",
+  "nom_complet" : "Amela Skenderović",
+  "parti_code" : "DP",
+  "parti_nom" : "Demokratesch Partei",
+  "prenom" : "Amela",
+  "role" : "Vice-présidente",
+  "source_url" : "https://dp.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Feyder",
+  "nom_complet" : "Myriam Feyder",
+  "parti_code" : "DP",
+  "parti_nom" : "Demokratesch Partei",
+  "prenom" : "Myriam",
+  "role" : "Trésorière nationale",
+  "source_url" : "https://dp.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Miltgen",
+  "nom_complet" : "Maxime Miltgen",
+  "parti_code" : "LSAP",
+  "parti_nom" : "Lëtzebuerger Sozialistesch Aarbechterpartei",
+  "prenom" : "Maxime",
+  "role" : "Co-présidente",
+  "source_url" : "https://lsap.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Engel",
+  "nom_complet" : "Georges Engel",
+  "parti_code" : "LSAP",
+  "parti_nom" : "Lëtzebuerger Sozialistesch Aarbechterpartei",
+  "prenom" : "Georges",
+  "role" : "Co-président",
+  "source_url" : "https://lsap.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Pulli",
+  "nom_complet" : "Sacha Pulli",
+  "parti_code" : "LSAP",
+  "parti_nom" : "Lëtzebuerger Sozialistesch Aarbechterpartei",
+  "prenom" : "Sacha",
+  "role" : "Secrétaire général",
+  "source_url" : "https://lsap.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Molitor",
+  "nom_complet" : "Max Molitor",
+  "parti_code" : "LSAP",
+  "parti_nom" : "Lëtzebuerger Sozialistesch Aarbechterpartei",
+  "prenom" : "Max",
+  "role" : "Vice-président",
+  "source_url" : "https://lsap.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Breden",
+  "nom_complet" : "Kenichi Breden",
+  "parti_code" : "LSAP",
+  "parti_nom" : "Lëtzebuerger Sozialistesch Aarbechterpartei",
+  "prenom" : "Kenichi",
+  "role" : "Trésorier général",
+  "source_url" : "https://lsap.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Schoos",
+  "nom_complet" : "Alexandra Schoos",
+  "parti_code" : "ADR",
+  "parti_nom" : "Alternativ Demokratesch Reformpartei",
+  "prenom" : "Alexandra",
+  "role" : "Présidente nationale",
+  "source_url" : "https://adr.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Reyter",
+  "nom_complet" : "Luc Reyter",
+  "parti_code" : "ADR",
+  "parti_nom" : "Alternativ Demokratesch Reformpartei",
+  "prenom" : "Luc",
+  "role" : "Secrétaire général",
+  "source_url" : "https://adr.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Hardy",
+  "nom_complet" : "Dan Hardy",
+  "parti_code" : "ADR",
+  "parti_nom" : "Alternativ Demokratesch Reformpartei",
+  "prenom" : "Dan",
+  "role" : "Vice-président",
+  "source_url" : "https://adr.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Koehler",
+  "nom_complet" : "Pierrette Koehler",
+  "parti_code" : "ADR",
+  "parti_nom" : "Alternativ Demokratesch Reformpartei",
+  "prenom" : "Pierrette",
+  "role" : "Vice-présidente",
+  "source_url" : "https://adr.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Martiny",
+  "nom_complet" : "Luc Martiny",
+  "parti_code" : "ADR",
+  "parti_nom" : "Alternativ Demokratesch Reformpartei",
+  "prenom" : "Luc",
+  "role" : "Vice-président",
+  "source_url" : "https://adr.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Biermann",
+  "nom_complet" : "Ramon Biermann",
+  "parti_code" : "ADR",
+  "parti_nom" : "Alternativ Demokratesch Reformpartei",
+  "prenom" : "Ramon",
+  "role" : "Vice-président",
+  "source_url" : "https://adr.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Xhonneux",
+  "nom_complet" : "Detlef Xhonneux",
+  "parti_code" : "ADR",
+  "parti_nom" : "Alternativ Demokratesch Reformpartei",
+  "prenom" : "Detlef",
+  "role" : "Trésorier national",
+  "source_url" : "https://adr.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Empain",
+  "nom_complet" : "Stéphanie Empain",
+  "parti_code" : "déi gréng",
+  "parti_nom" : "déi gréng",
+  "prenom" : "Stéphanie",
+  "role" : "Co-présidente",
+  "source_url" : "https://greng.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Benoy",
+  "nom_complet" : "François Benoy",
+  "parti_code" : "déi gréng",
+  "parti_nom" : "déi gréng",
+  "prenom" : "François",
+  "role" : "Co-président",
+  "source_url" : "https://greng.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Faber",
+  "nom_complet" : "Serge Faber",
+  "parti_code" : "déi gréng",
+  "parti_nom" : "déi gréng",
+  "prenom" : "Serge",
+  "role" : "Trésorier",
+  "source_url" : "https://greng.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Tanson",
+  "nom_complet" : "Sam Tanson",
+  "parti_code" : "déi gréng",
+  "parti_nom" : "déi gréng",
+  "prenom" : "Sam",
+  "role" : "Membre du Bureau exécutif",
+  "source_url" : "https://greng.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Lomel",
+  "nom_complet" : "Ben Lomel",
+  "parti_code" : "Piraten",
+  "parti_nom" : "Piratepartei Lëtzebuerg",
+  "prenom" : "Ben",
+  "role" : "Co-coordinateur national",
+  "source_url" : "https://piraten.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Legrand",
+  "nom_complet" : "Claude Legrand",
+  "parti_code" : "Piraten",
+  "parti_nom" : "Piratepartei Lëtzebuerg",
+  "prenom" : "Claude",
+  "role" : "Co-coordinateur national",
+  "source_url" : "https://piraten.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Flor",
+  "nom_complet" : "Starsky Flor",
+  "parti_code" : "Piraten",
+  "parti_nom" : "Piratepartei Lëtzebuerg",
+  "prenom" : "Starsky",
+  "role" : "Co-coordinateur et porte-parole",
+  "source_url" : "https://piraten.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Lau",
+  "nom_complet" : "Rebecca Lau",
+  "parti_code" : "Piraten",
+  "parti_nom" : "Piratepartei Lëtzebuerg",
+  "prenom" : "Rebecca",
+  "role" : "Porte-parole nationale",
+  "source_url" : "https://piraten.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Remakel",
+  "nom_complet" : "Raymond Remakel",
+  "parti_code" : "Piraten",
+  "parti_nom" : "Piratepartei Lëtzebuerg",
+  "prenom" : "Raymond",
+  "role" : "Trésorier national",
+  "source_url" : "https://piraten.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Thoma",
+  "nom_complet" : "Carole Thoma",
+  "parti_code" : "déi Lénk",
+  "parti_nom" : "déi Lénk",
+  "prenom" : "Carole",
+  "role" : "Co-porte-parole",
+  "source_url" : "https://dei-lenk.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Marques",
+  "nom_complet" : "André Marques",
+  "parti_code" : "déi Lénk",
+  "parti_nom" : "déi Lénk",
+  "prenom" : "André",
+  "role" : "Co-porte-parole",
+  "source_url" : "https://dei-lenk.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Erpelding",
+  "nom_complet" : "Thessy Erpelding",
+  "parti_code" : "déi Lénk",
+  "parti_nom" : "déi Lénk",
+  "prenom" : "Thessy",
+  "role" : "Trésorière",
+  "source_url" : "https://dei-lenk.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Burggraff",
+  "nom_complet" : "Marc Burggraff",
+  "parti_code" : "déi Lénk",
+  "parti_nom" : "déi Lénk",
+  "prenom" : "Marc",
+  "role" : "Membre du Bureau de coordination",
+  "source_url" : "https://dei-lenk.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Demoranville",
+  "nom_complet" : "Sean Demoranville",
+  "parti_code" : "déi Lénk",
+  "parti_nom" : "déi Lénk",
+  "prenom" : "Sean",
+  "role" : "Membre du Bureau de coordination",
+  "source_url" : "https://dei-lenk.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Diderich",
+  "nom_complet" : "Gary Diderich",
+  "parti_code" : "déi Lénk",
+  "parti_nom" : "déi Lénk",
+  "prenom" : "Gary",
+  "role" : "Membre du Bureau de coordination",
+  "source_url" : "https://dei-lenk.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+}, {
+  "nom" : "Muller",
+  "nom_complet" : "Ben Muller",
+  "parti_code" : "déi Lénk",
+  "parti_nom" : "déi Lénk",
+  "prenom" : "Ben",
+  "role" : "Membre du Bureau de coordination",
+  "source_url" : "https://dei-lenk.lu",
+  "_dataset" : "lu_pep_political_parties",
+  "_sourceUrl" : "classpath:data/lu/partis_politiques_luxembourg.csv"
+} ]

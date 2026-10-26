@@ -1,0 +1,16 @@
+[ {
+  "role" : "Directeur",
+  "name" : "Luc Tapella",
+  "_dataset" : "lu_pep_ilr",
+  "_sourceUrl" : "https://www.ilr.lu/a-propos/equipe/"
+}, {
+  "role" : "Directeur adjoint",
+  "name" : "Claude Rischette",
+  "_dataset" : "lu_pep_ilr",
+  "_sourceUrl" : "https://www.ilr.lu/a-propos/equipe/"
+}, {
+  "role" : "Directrice adjointe",
+  "name" : "Sandra Wietor",
+  "_dataset" : "lu_pep_ilr",
+  "_sourceUrl" : "https://www.ilr.lu/a-propos/equipe/"
+} ]

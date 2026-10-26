@@ -1,0 +1,31 @@
+[ {
+  "name" : "Marc Gengler",
+  "url" : "https://cour-des-comptes.public.lu/fr/cour/college/gengler.html",
+  "role" : "Président",
+  "_dataset" : "lu_pep_court_of_auditors",
+  "_sourceUrl" : "https://cour-des-comptes.public.lu/fr/cour/college.html"
+}, {
+  "name" : "Patrick Graffé",
+  "url" : "https://cour-des-comptes.public.lu/fr/cour/college/graffe.html",
+  "role" : "Vice-Président",
+  "_dataset" : "lu_pep_court_of_auditors",
+  "_sourceUrl" : "https://cour-des-comptes.public.lu/fr/cour/college.html"
+}, {
+  "name" : "Georges Ramos",
+  "url" : "https://cour-des-comptes.public.lu/fr/cour/college/ramos.html",
+  "role" : "Conseiller",
+  "_dataset" : "lu_pep_court_of_auditors",
+  "_sourceUrl" : "https://cour-des-comptes.public.lu/fr/cour/college.html"
+}, {
+  "name" : "Marie-Jeanne Conter",
+  "url" : "https://cour-des-comptes.public.lu/fr/cour/college/conter.html",
+  "role" : "Conseiller",
+  "_dataset" : "lu_pep_court_of_auditors",
+  "_sourceUrl" : "https://cour-des-comptes.public.lu/fr/cour/college.html"
+}, {
+  "name" : "Patrick Weymerskirch",
+  "url" : "https://cour-des-comptes.public.lu/fr/cour/college/weymerskirck.html",
+  "role" : "Conseiller",
+  "_dataset" : "lu_pep_court_of_auditors",
+  "_sourceUrl" : "https://cour-des-comptes.public.lu/fr/cour/college.html"
+} ]
