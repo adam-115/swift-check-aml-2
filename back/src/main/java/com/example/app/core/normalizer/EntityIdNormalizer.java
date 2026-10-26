@@ -22,6 +22,10 @@ public class EntityIdNormalizer implements ValueNormalizer {
         if (rawValue == null || rawValue.trim().isEmpty()) {
             return null;
         }
-        return HashUtils.sha1(rawValue.trim());
+        String trimmed = rawValue.trim();
+        if (trimmed.matches("^[a-fA-F0-9]{40}$")) {
+            return trimmed.toLowerCase();
+        }
+        return HashUtils.sha1(trimmed);
     }
 }

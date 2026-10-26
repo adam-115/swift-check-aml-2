@@ -1,6 +1,7 @@
 package com.example.app.core;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
@@ -14,14 +15,17 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Modèle universel représentant n'importe quel fichier de configuration de mapping (Zero-DTO).
- * Ce modèle unique est capable de représenter les règles pour l'UE, l'OFAC, l'ONU, ou toute autre source.
+ * Modèle universel représentant n'importe quel fichier de configuration de
+ * mapping (Zero-DTO).
+ * Ce modèle unique est capable de représenter les règles pour l'UE, l'OFAC,
+ * l'ONU, ou toute autre source.
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class MappingConfig {
 
     /**
@@ -41,7 +45,17 @@ public class MappingConfig {
     private List<MappingRule> rules = new ArrayList<>();
 
     /**
-     * Recherche la règle appropriée correspondant à un fragment JSON donné (via targetNodeName et discriminateur conditionnel).
+     * Si vrai, toutes les règles correspondantes s'appliquent à l'enregistrement
+     * pour générer plusieurs entités
+     * (ex: Person + Position + Occupancy). Si faux, seule la première règle
+     * correspondante s'applique.
+     */
+    @Builder.Default
+    private boolean applyAllRules = false;
+
+    /**
+     * Recherche la règle appropriée correspondant à un fragment JSON donné (via
+     * targetNodeName et discriminateur conditionnel).
      */
     @JsonIgnore
     public Optional<MappingRule> findMatchingRule(DocumentContext documentContext) {
@@ -51,6 +65,25 @@ public class MappingConfig {
         return rules.stream()
                 .filter(rule -> rule.matches(documentContext))
                 .findFirst();
+    }
+
+    /**
+     * Recherche toutes les règles correspondantes (ou la première si applyAllRules
+     * est faux).
+     */
+    @JsonIgnore
+    public List<MappingRule> findMatchingRules(DocumentContext documentContext) {
+        if (rules == null || rules.isEmpty() || documentContext == null) {
+            return List.of();
+        }
+        if (applyAllRules) {
+            return rules.stream()
+                    .filter(rule -> rule.matches(documentContext))
+                    .toList();
+        }
+        return findMatchingRule(documentContext)
+                .map(List::of)
+                .orElse(List.of());
     }
 
     /**

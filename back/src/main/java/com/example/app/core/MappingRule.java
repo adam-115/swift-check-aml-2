@@ -1,6 +1,7 @@
 package com.example.app.core;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.jayway.jsonpath.DocumentContext;
 import com.jayway.jsonpath.JsonPath;
@@ -16,59 +17,65 @@ import java.util.Map;
 
 /**
  * Définition d'une règle de mapping unitaire (Zero-DTO).
- * Applicable à n'importe quel format source et schéma cible (Person, Company, Vessel, Airplane, Sanction, etc.).
+ * Applicable à n'importe quel format source et schéma cible (Person, Company,
+ * Vessel, Airplane, Sanction, etc.).
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class MappingRule {
 
     /**
-     * Nom du nœud ou de la balise source ciblée (ex: "sanctionEntity", "sdnEntry", "row").
-     */
-    private String targetNodeName;
-
-    /**
-     * Expression JsonPath discriminante optionnelle (ex: "$.subjectType.code", "$.sdnType", "$.GroupType").
+     * Expression JsonPath discriminante optionnelle (ex: "$.subjectType.code",
+     * "$.sdnType", "$.GroupType").
      * Si null ou vide, la règle s'applique par défaut sans condition.
      */
     private String conditionJsonPath;
 
     /**
-     * Valeur attendue de la condition discriminante (ex: "person", "enterprise", "vessel", "Individual").
+     * Valeur attendue de la condition discriminante (ex: "person", "enterprise",
+     * "vessel", "Individual").
      */
     private String conditionValue;
 
     /**
-     * Schéma cible de l'ontologie FollowTheMoney (ex: "Person", "Company", "Vessel", "Airplane", "Sanction").
+     * Schéma cible de l'ontologie FollowTheMoney (ex: "Person", "Company",
+     * "Vessel", "Airplane", "Sanction").
      */
     private String ftmSchema;
 
     /**
      * Chemins JsonPath utilisés pour extraire les identifiants sources.
-     * Leurs valeurs sont concaténées puis hachées en SHA-1 pour obtenir un ID FTM déterministe.
+     * Leurs valeurs sont concaténées puis hachées en SHA-1 pour obtenir un ID FTM
+     * déterministe.
      */
     @Builder.Default
     private List<String> idJsonPaths = new ArrayList<>();
 
     /**
-     * Table de correspondance : clé propriété FTM -> expression JsonPath dans le fragment source.
-     * Exemple : "name" -> "$.nameAlias[0].wholeName", "birthDate" -> "$.birthdate.birthdate"
+     * Table de correspondance : clé propriété FTM -> expression JsonPath dans le
+     * fragment source.
+     * Exemple : "name" -> "$.nameAlias[0].wholeName", "birthDate" ->
+     * "$.birthdate.birthdate"
      */
     @Builder.Default
     private Map<String, String> propertiesMapping = new LinkedHashMap<>();
 
     /**
-     * Types sémantiques des propriétés FTM ("date", "country", "currency", "entity", etc.).
-     * Exemple : "birthDate" -> "date", "nationality" -> "country", "owner" -> "entity"
+     * Types sémantiques des propriétés FTM ("date", "country", "currency",
+     * "entity", etc.).
+     * Exemple : "birthDate" -> "date", "nationality" -> "country", "owner" ->
+     * "entity"
      */
     @Builder.Default
     private Map<String, String> propertyTypes = new LinkedHashMap<>();
 
     /**
-     * Résout le type sémantique d'une propriété FTM ("date", "country", "currency", "entity", etc.).
+     * Résout le type sémantique d'une propriété FTM ("date", "country", "currency",
+     * "entity", etc.).
      */
     @JsonIgnore
     public String getPropertyType(String ftmProperty) {
@@ -79,7 +86,8 @@ public class MappingRule {
     }
 
     /**
-     * Vérifie si un fragment de données JSON correspond aux conditions discriminantes de cette règle.
+     * Vérifie si un fragment de données JSON correspond aux conditions
+     * discriminantes de cette règle.
      */
     @JsonIgnore
     public boolean matches(DocumentContext documentContext) {
