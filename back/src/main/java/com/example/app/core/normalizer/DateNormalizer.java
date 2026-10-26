@@ -33,18 +33,8 @@ public class DateNormalizer implements ValueNormalizer {
             DateTimeFormatter.ofPattern("MMM d, yyyy", Locale.ENGLISH),// Jul 7, 2003
             DateTimeFormatter.ofPattern("d MMMM yyyy", Locale.ENGLISH),// 7 July 2003
             DateTimeFormatter.ofPattern("d MMMM yyyy", Locale.FRENCH), // 7 juillet 2003
-            DateTimeFormatter.ISO_DATE_TIME,                           // 2003-07-07T10:00:00Z
-            DateTimeFormatter.ofPattern("d.M.yyyy"),                   // 07.07.2003 (Luxembourg, Allemagne)
-            DateTimeFormatter.ofPattern("d/M/yyyy"),                   // 7/7/2003
-            caseInsensitive("d-MMM-yy", Locale.ENGLISH),               // 27-Oct-23
-            caseInsensitive("d MMMM yyyy", Locale.FRENCH),             // 7 Juillet 2003
-            caseInsensitive("d MMMM yyyy", Locale.GERMAN)              // 7. Juli 2003 (après retrait du point)
+            DateTimeFormatter.ISO_DATE_TIME                            // 2003-07-07T10:00:00Z
     );
-
-    private static DateTimeFormatter caseInsensitive(String pattern, Locale locale) {
-        return new java.time.format.DateTimeFormatterBuilder().parseCaseInsensitive().appendPattern(pattern)
-                .toFormatter(locale);
-    }
 
     @Override
     public String getSupportedType() {
@@ -81,11 +71,9 @@ public class DateNormalizer implements ValueNormalizer {
         }
 
         // 4. Tentative de parsing complet avec les formats usuels
-        // « 1er juillet 2003 » → « 1 juillet 2003 », « 7. Juli 2003 » → « 7 Juli 2003 »
-        String candidate = trimmed.replaceFirst("^1er\\b", "1").replaceFirst("^(\\d{1,2})\\. ", "$1 ");
         for (DateTimeFormatter formatter : DATE_FORMATTERS) {
             try {
-                LocalDate date = LocalDate.parse(candidate, formatter);
+                LocalDate date = LocalDate.parse(trimmed, formatter);
                 return date.format(DateTimeFormatter.ISO_LOCAL_DATE);
             } catch (DateTimeParseException ignored) {
             }

@@ -8,6 +8,5 @@ public enum SourceFormat {
     JSON,
     CSV,
     XLSX,
-    HTML,
-    PDF
+    HTML
 }

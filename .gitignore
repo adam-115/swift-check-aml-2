@@ -38,6 +38,3 @@ desktop.ini
 .env.*
 application-local.properties
 application-local.yml
-
-# ── Données de travail (sources téléchargées, JSON intermédiaires, fichiers FTM) ──
-data/

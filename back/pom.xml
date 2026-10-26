@@ -76,13 +76,6 @@
             <artifactId>mysql-connector-j</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <!-- Modèle FollowTheMoney officiel : validation des entités produites dans les tests -->
-        <dependency>
-            <groupId>tech.followthemoney</groupId>
-            <artifactId>followthemoney</artifactId>
-            <version>4.10.1</version>
-            <scope>test</scope>
-        </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -112,11 +105,6 @@
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.3.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.pdfbox</groupId>
-            <artifactId>pdfbox</artifactId>
-            <version>3.0.8</version>
         </dependency>
         <dependency>
             <groupId>org.jsoup</groupId>

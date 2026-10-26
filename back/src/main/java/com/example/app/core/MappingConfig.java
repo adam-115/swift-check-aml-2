@@ -41,31 +41,6 @@ public class MappingConfig {
     private List<MappingRule> rules = new ArrayList<>();
 
     /**
-     * Si vrai, chaque enregistrement passe par toutes les règles dont la condition est vraie (et non par la
-     * première seulement) : une ligne de député produit ainsi la Person, la Position et l'Occupancy.
-     */
-    private boolean applyAllRules;
-
-    /**
-     * Découpage facultatif d'un enregistrement en plusieurs (une personne par correspondance), appliqué
-     * avant le calcul des champs.
-     */
-    private RecordExplode explode;
-
-    /**
-     * Champs calculés ajoutés à chaque enregistrement avant le mapping, dans l'ordre : clés d'identifiant
-     * partagées entre entités, constantes, extraits par expression régulière.
-     */
-    @Builder.Default
-    private List<DerivedField> derivedFields = new ArrayList<>();
-
-    /**
-     * Filtres appliqués après le calcul des champs : un enregistrement qui ne les passe pas tous est écarté.
-     */
-    @Builder.Default
-    private List<RecordFilter> recordFilters = new ArrayList<>();
-
-    /**
      * Recherche la règle appropriée correspondant à un fragment JSON donné (via targetNodeName et discriminateur conditionnel).
      */
     @JsonIgnore

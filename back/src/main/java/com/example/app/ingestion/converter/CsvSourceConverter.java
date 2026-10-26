@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -32,20 +31,8 @@ public class CsvSourceConverter implements IDynamicSourceConverter {
 
     @Override
     public List<Map<String, Object>> convertToDynamicJson(InputStream inputStream) throws Exception {
-        return convertToDynamicJson(inputStream, ConverterOptions.DEFAULT);
-    }
-
-    @Override
-    public List<Map<String, Object>> convertToDynamicJson(InputStream inputStream, ConverterOptions options)
-            throws Exception {
-        Charset charset = options != null ? options.charset() : StandardCharsets.UTF_8;
-        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, charset));
-        reader.mark(1 << 16);
-        int first = reader.read();
-        if (first != '﻿') {      // marque d'ordre des octets (BOM) en tête de fichier : ignorée
-            reader.reset();
-        }
-        reader.mark(1 << 16);
+        BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
+        reader.mark(4096);
         String firstLine = reader.readLine();
         reader.reset();
 

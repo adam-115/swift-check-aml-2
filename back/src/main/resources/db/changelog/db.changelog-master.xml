@@ -6,11 +6,5 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
     <include file="db/changelog/changes/001-initial-schema.xml"/>
-    <include file="db/changelog/changes/002-pep-reference-schema.xml"/>
-    <include file="db/changelog/changes/003-pep-reference-data.xml"/>
-    <include file="db/changelog/changes/004-source-execution.xml"/>
-    <include file="db/changelog/changes/005-external-source-path-text.xml"/>
-    <include file="db/changelog/changes/006-source-path-customized.xml"/>
-    <include file="db/changelog/changes/007-source-crud.xml"/>
 
 </databaseChangeLog>
