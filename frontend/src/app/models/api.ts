@@ -7,6 +7,60 @@ export type SourceFormat = 'XML' | 'JSON' | 'CSV' | 'XLSX' | 'HTML' | 'PDF';
 export type Completeness = 'COMPLETE' | 'PARTIAL';
 export type PepCategoryKind = 'OFFICIAL' | 'AMLR' | 'RISK_BASED' | 'EU' | 'RCA';
 export type CoverageStatus = 'COVERED' | 'PARTIAL' | 'NONE';
+export type ExecutionStatus = 'RUNNING' | 'SUCCESS' | 'FAILED';
+
+/** Fichier archivé d'une exécution ; size est nul s'il n'a pas été produit. */
+export interface ExecutionFile {
+  kind: 'source' | 'json' | 'mapping' | 'ftm';
+  label: string;
+  size?: number | null;
+  url: string;
+}
+
+/** Une exécution de FtmGeneratorService pour une source. */
+export interface Execution {
+  id: number;
+  sourceId: number;
+  sourceName: string;
+  sourceLabel?: string | null;
+  status: ExecutionStatus;
+  startedAt: string;
+  finishedAt?: string | null;
+  durationMs?: number | null;
+  entityCount?: number | null;
+  schemaCounts?: string | null;
+  /** Étape en échec. */
+  failedStep?: FailedStep | null;
+  /** Chaîne des erreurs, de l'exception levée à sa cause première. */
+  errorMessage?: string | null;
+  /** Cause première, avec l'endroit où elle a été levée. */
+  errorCause?: string | null;
+  /** Pile d'appels (détail d'une exécution seulement). */
+  errorStack?: string | null;
+  files: ExecutionFile[];
+}
+
+export type FailedStep = 'DOWNLOAD' | 'CONVERSION' | 'MAPPING' | 'EXPORT';
+
+/** Entité FTM produite par une exécution. */
+export interface FtmEntityItem {
+  id: string;
+  schema: string;
+  caption: string;
+  properties: Record<string, string[]>;
+}
+
+/** Une page des entités FTM d'une exécution. */
+export interface EntityPage {
+  total: number;
+  matching: number;
+  page: number;
+  size: number;
+  schemas: Record<string, number>;
+  items: FtmEntityItem[];
+  /** Entités citées par la page (holder, post...), par identifiant. */
+  references: Record<string, { schema: string; caption: string }>;
+}
 
 export interface Country {
   iso: string;
@@ -77,6 +131,7 @@ export interface Source {
   createdAt?: string | null;
   updatedAt?: string | null;
   coverage: CoveredFunction[];
+  lastExecution?: Execution | null;
 }
 
 export interface CoverageItem {

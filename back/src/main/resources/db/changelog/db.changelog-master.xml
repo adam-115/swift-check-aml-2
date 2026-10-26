@@ -9,5 +9,7 @@
     <include file="db/changelog/changes/002-pep-referentiel.xml"/>
     <include file="db/changelog/changes/003-pep-referentiel-data.xml"/>
     <include file="db/changelog/changes/004-data-source-pep-function.xml"/>
+    <include file="db/changelog/changes/005-source-execution.xml"/>
+    <include file="db/changelog/changes/006-source-execution-error.xml"/>
 
 </databaseChangeLog>

@@ -6,6 +6,7 @@ import com.example.app.core.ParserType;
 import com.example.app.core.entities.DataSourceConfig;
 import com.example.app.core.entities.ParserCoverage;
 import com.example.app.core.entities.PepFunction;
+import com.example.app.core.entities.SourceExecution;
 import com.example.app.ingestion.model.SourceFormat;
 
 import java.time.LocalDateTime;
@@ -35,7 +36,8 @@ public record SourceDto(Long id,
                         String ftmOutputPath,
                         LocalDateTime createdAt,
                         LocalDateTime updatedAt,
-                        List<CoveredFunction> coverage) {
+                        List<CoveredFunction> coverage,
+                        ExecutionDto lastExecution) {
 
     /** Fonction PEP couverte par la source. */
     public record CoveredFunction(Long functionId, String categoryCode, String label, Completeness completeness,
@@ -47,7 +49,7 @@ public record SourceDto(Long id,
         }
     }
 
-    public static SourceDto of(DataSourceConfig s, List<ParserCoverage> coverage) {
+    public static SourceDto of(DataSourceConfig s, List<ParserCoverage> coverage, SourceExecution lastExecution) {
         PepFunction main = s.getPepFunction();
         return new SourceDto(s.getId(), s.getSourceName(), s.getLabel(), s.getDescription(), s.getAttribution(),
                 s.getSourceFormat(), s.getListType(), s.getParserType(),
@@ -56,6 +58,7 @@ public record SourceDto(Long id,
                 main != null ? main.getCategory().getCode() : null, s.getRetentionMonths(), s.isEnabled(),
                 s.getExternalSourcePath(), s.getLocalSourcePath(), s.getInitialJsonSourcePath(),
                 s.getMappingFilePath(), s.getFtmOutputPath(), s.getCreatedAt(), s.getUpdatedAt(),
-                coverage.stream().map(CoveredFunction::of).toList());
+                coverage.stream().map(CoveredFunction::of).toList(),
+                lastExecution != null ? ExecutionDto.of(lastExecution) : null);
     }
 }

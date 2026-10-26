@@ -6,6 +6,9 @@ target/
 hs_err_pid*.log
 replay_pid*.log
 
+# ── Archives des exécutions de sources ───────────
+data/executions/
+
 # ── Frontend (Angular) ───────────────────────────
 frontend/node_modules/
 frontend/dist/

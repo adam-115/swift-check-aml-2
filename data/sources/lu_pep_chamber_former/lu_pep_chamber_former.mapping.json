@@ -71,7 +71,7 @@
         "startDate": "$.START_DATE",
         "endDate": "$.END_DATE",
         "status": "ended",
-        "description": "Groupe politique : {$.POLITICAL_GROUP}",
+        "description": "$.POLITICAL_GROUP",
         "sourceUrl": "https://data.public.lu/fr/datasets/la-liste-des-anciens-deputes-de-la-chambre-des-deputes-du-luxembourg/"
       },
       "propertyTypes": {

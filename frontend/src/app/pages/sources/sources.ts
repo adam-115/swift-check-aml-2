@@ -1,11 +1,12 @@
-import { Component, OnInit, computed, inject, signal } from '@angular/core';
+import { Component, DestroyRef, OnInit, computed, inject, signal } from '@angular/core';
 import { DatePipe, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Country, ListType, Source } from '../../models/api';
+import { Country, Execution, ListType, Source } from '../../models/api';
 import { ApiService } from '../../services/api.service';
 import { apiError } from '../../services/api-error';
 import { ConfirmDialog } from '../../shared/confirm-dialog';
-import { FORMAT_CSS, LIST_TYPES, PARSER_TYPES } from '../../shared/labels';
+import { EXECUTION_STATUSES, FORMAT_CSS, LIST_TYPES, PARSER_TYPES, duration } from '../../shared/labels';
+import { RouterLink } from '@angular/router';
 import { SourceDialog } from './source-dialog';
 
 interface Notice {
@@ -15,15 +16,25 @@ interface Notice {
 
 /**
  * Page « Sources » (/sources) : liste des sources de données, création et modification dans un dialog,
- * activation et suppression.
+ * activation, suppression, exécution de FtmGeneratorService et historique des exécutions.
  */
 @Component({
   selector: 'app-sources-page',
-  imports: [FormsModule, NgClass, DatePipe, SourceDialog, ConfirmDialog],
+  imports: [FormsModule, NgClass, DatePipe, RouterLink, SourceDialog, ConfirmDialog],
   templateUrl: './sources.html',
 })
 export class SourcesPage implements OnInit {
   private readonly api = inject(ApiService);
+  /** Suivi des exécutions en cours : id de l'exécution → minuterie de rafraîchissement. */
+  private readonly watched = new Map<number, ReturnType<typeof setTimeout>>();
+
+  // Exécutions
+  protected readonly executionStatuses = EXECUTION_STATUSES;
+  protected readonly duration = duration;
+
+  constructor() {
+    inject(DestroyRef).onDestroy(() => this.watched.forEach(t => clearTimeout(t)));
+  }
 
   protected readonly countries = signal<Country[]>([]);
   protected readonly sources = signal<Source[]>([]);
@@ -85,6 +96,8 @@ export class SourcesPage implements OnInit {
         this.sources.set(sources);
         this.isLoading.set(false);
         this.errorMessage.set('');
+        // Exécutions lancées ailleurs ou avant le chargement de la page
+        sources.filter(s => s.lastExecution?.status === 'RUNNING').forEach(s => this.watch(s.lastExecution!));
       },
       error: err => {
         this.isLoading.set(false);
@@ -126,6 +139,56 @@ export class SourcesPage implements OnInit {
         this.notice.set({ kind: 'error', text: apiError(err) });
       },
     });
+  }
+
+  /** Lance FtmGeneratorService pour la source, puis suit l'exécution jusqu'à la fin. */
+  run(source: Source): void {
+    this.setBusy(source.id, true);
+    this.api.runSource(source.id).subscribe({
+      next: execution => {
+        this.setBusy(source.id, false);
+        this.setLastExecution(execution);
+        this.notice.set({ kind: 'success', text: `Exécution de « ${this.name(source)} » lancée.` });
+        this.watch(execution);
+      },
+      error: err => {
+        this.setBusy(source.id, false);
+        this.notice.set({ kind: 'error', text: apiError(err) });
+      },
+    });
+  }
+
+  isRunning(source: Source): boolean {
+    return source.lastExecution?.status === 'RUNNING';
+  }
+
+  private watch(execution: Execution): void {
+    if (this.watched.has(execution.id)) {
+      return;
+    }
+    const poll = () => {
+      this.api.execution(execution.id).subscribe({
+        next: current => {
+          this.setLastExecution(current);
+          if (current.status === 'RUNNING') {
+            this.watched.set(execution.id, setTimeout(poll, 1500));
+            return;
+          }
+          this.watched.delete(execution.id);
+          const source = this.sources().find(s => s.id === current.sourceId);
+          const label = source ? this.name(source) : current.sourceName;
+          this.notice.set(current.status === 'SUCCESS'
+            ? { kind: 'success', text: `« ${label} » exécutée : ${current.entityCount} entités FTM en ${duration(current.durationMs)}.` }
+            : { kind: 'error', text: `Échec de l'exécution de « ${label} » : ${current.errorMessage ?? 'erreur inconnue'}` });
+        },
+        error: () => this.watched.set(execution.id, setTimeout(poll, 3000)),
+      });
+    };
+    this.watched.set(execution.id, setTimeout(poll, 1000));
+  }
+
+  private setLastExecution(execution: Execution): void {
+    this.sources.update(list => list.map(s => (s.id === execution.sourceId ? { ...s, lastExecution: execution } : s)));
   }
 
   askDelete(source: Source): void {

@@ -85,7 +85,7 @@
                   <th class="px-4 py-2.5">Source</th>
                   <th class="px-4 py-2.5">Type</th>
                   <th class="px-4 py-2.5">Fonctions couvertes <span class="normal-case font-normal text-emerald-700">(en vert : principale)</span></th>
-                  <th class="px-4 py-2.5">Modifiée</th>
+                  <th class="px-4 py-2.5">Dernière exécution</th>
                   <th class="px-4 py-2.5 text-right">Actions</th>
                 </tr>
               </thead>
@@ -144,9 +144,41 @@
                         }
                       </div>
                     </td>
-                    <td class="px-4 py-3 whitespace-nowrap text-xs text-slate-500">{{ s.updatedAt | date:'dd/MM/yyyy HH:mm' }}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">
+                      @if (s.lastExecution; as e) {
+                        <a [routerLink]="['/executions', e.id]" class="block text-left group" title="Voir le détail de cette exécution">
+                          <span class="rounded-full px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset" [ngClass]="executionStatuses[e.status].css">
+                            @if (e.status === 'RUNNING') { <span class="inline-block w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse mr-1"></span> }
+                            {{ executionStatuses[e.status].label }}
+                          </span>
+                          <span class="block text-[11px] text-slate-500 mt-1 group-hover:text-emerald-700 group-hover:underline">
+                            {{ e.startedAt | date:'dd/MM/yyyy HH:mm' }}
+                            @if (e.entityCount != null) { · {{ e.entityCount }} entités }
+                          </span>
+                        </a>
+                      } @else {
+                        <span class="text-xs text-slate-400 italic">Jamais exécutée</span>
+                      }
+                    </td>
                     <td class="px-4 py-3">
                       <div class="flex items-center justify-end gap-1.5">
+                        <button type="button" (click)="run(s)" [disabled]="!s.enabled || isRunning(s) || isBusy(s.id)"
+                                [title]="!s.enabled ? 'Source désactivée' : isRunning(s) ? 'Exécution en cours' : 'Exécuter FtmGeneratorService'"
+                                class="inline-flex items-center gap-1 rounded-lg bg-emerald-600 px-2.5 py-1.5 text-xs font-semibold text-white hover:bg-emerald-700 disabled:opacity-40 disabled:cursor-not-allowed">
+                          @if (isRunning(s)) {
+                            <svg class="h-3.5 w-3.5 animate-spin" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="3" class="opacity-30"/><path d="M21 12a9 9 0 00-9-9" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                            En cours
+                          } @else {
+                            <svg class="h-3.5 w-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.14v13.72a1 1 0 001.5.86l11-6.86a1 1 0 000-1.72l-11-6.86A1 1 0 008 5.14z"/></svg>
+                            Exécuter
+                          }
+                        </button>
+                        <a [routerLink]="['/executions']" [queryParams]="{ source: s.id }" title="Historique des exécutions"
+                           class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-slate-50 hover:text-emerald-700">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </a>
                         <button type="button" (click)="openEdit(s)" title="Modifier"
                                 class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-slate-50 hover:text-emerald-700">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -178,7 +210,6 @@
 
 <app-source-dialog [open]="editOpen()" [source]="editing()" [countries]="countries()"
                    (saved)="onSaved($event)" (closed)="editOpen.set(false)" />
-
 <app-confirm-dialog [open]="!!deleting()" title="Supprimer la source"
                     [message]="'La source « ' + (deleting() ? name(deleting()!) : '') + ' » et sa couverture PEP seront supprimées. Cette action est définitive.'"
                     [busy]="deleteBusy()" [error]="deleteError()"

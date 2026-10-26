@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Une base qui a connu une version précédente garde son ancienne table source_execution (autres colonnes) :
+         elle est conservée sous le nom source_execution_legacy. -->
+    <changeSet id="005-source-execution-legacy" author="swift-check">
+        <preConditions onFail="MARK_RAN">
+            <tableExists tableName="source_execution"/>
+            <not><columnExists tableName="source_execution" columnName="archive_dir"/></not>
+            <not><tableExists tableName="source_execution_legacy"/></not>
+        </preConditions>
+        <renameTable oldTableName="source_execution" newTableName="source_execution_legacy"/>
+    </changeSet>
+
+    <!-- Historique des exécutions de FtmGeneratorService, une ligne par exécution d'une source. -->
+    <changeSet id="005-source-execution-table" author="swift-check">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="source_execution"/></not>
+        </preConditions>
+        <createTable tableName="source_execution">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="data_source_config_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_source_execution_data_source_config"
+                             referencedTableName="data_source_config" referencedColumnNames="id"
+                             deleteCascade="true"/>
+            </column>
+            <column name="status" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="started_at" type="DATETIME">
+                <constraints nullable="false"/>
+            </column>
+            <column name="finished_at" type="DATETIME"/>
+            <column name="duration_ms" type="BIGINT"/>
+            <column name="entity_count" type="INT"/>
+            <column name="schema_counts" type="VARCHAR(1000)"/>
+            <column name="error_message" type="TEXT"/>
+            <column name="archive_dir" type="VARCHAR(1000)"/>
+            <column name="source_size" type="BIGINT"/>
+            <column name="json_size" type="BIGINT"/>
+            <column name="mapping_size" type="BIGINT"/>
+            <column name="ftm_size" type="BIGINT"/>
+        </createTable>
+        <createIndex tableName="source_execution" indexName="idx_source_execution_source">
+            <column name="data_source_config_id"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>

@@ -28,15 +28,17 @@ public class SourceService {
     private final ParserCoverageRepository coverageRepository;
     private final PepFunctionRepository functionRepository;
     private final CountryRepository countryRepository;
+    private final ExecutionService executionService;
     private final String dataDir;
 
     public SourceService(DataSourceConfigRepository sourceRepository, ParserCoverageRepository coverageRepository,
                          PepFunctionRepository functionRepository, CountryRepository countryRepository,
-                         @Value("${app.data-dir:data}") String dataDir) {
+                         ExecutionService executionService, @Value("${app.data-dir:data}") String dataDir) {
         this.sourceRepository = sourceRepository;
         this.coverageRepository = coverageRepository;
         this.functionRepository = functionRepository;
         this.countryRepository = countryRepository;
+        this.executionService = executionService;
         this.dataDir = dataDir;
     }
 
@@ -76,6 +78,7 @@ public class SourceService {
     @Transactional
     public void delete(Long id) {
         DataSourceConfig source = find(id);
+        executionService.deleteForSource(id);
         coverageRepository.deleteAll(coverageRepository.findByDataSourceConfigId(id));
         coverageRepository.flush();
         sourceRepository.delete(source);

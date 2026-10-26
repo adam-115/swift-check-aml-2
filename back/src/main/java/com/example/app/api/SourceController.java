@@ -47,12 +47,14 @@ public class SourceController {
     private final DataSourceConfigRepository sourceRepository;
     private final ParserCoverageRepository coverageRepository;
     private final SourceService sourceService;
+    private final ExecutionService executionService;
 
     public SourceController(DataSourceConfigRepository sourceRepository, ParserCoverageRepository coverageRepository,
-                            SourceService sourceService) {
+                            SourceService sourceService, ExecutionService executionService) {
         this.sourceRepository = sourceRepository;
         this.coverageRepository = coverageRepository;
         this.sourceService = sourceService;
+        this.executionService = executionService;
     }
 
     @GetMapping
@@ -99,6 +101,7 @@ public class SourceController {
     }
 
     private SourceDto toDto(DataSourceConfig s) {
-        return SourceDto.of(s, coverageRepository.findByDataSourceConfigId(s.getId()));
+        return SourceDto.of(s, coverageRepository.findByDataSourceConfigId(s.getId()),
+                executionService.last(s.getId()).orElse(null));
     }
 }

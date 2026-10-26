@@ -675,9 +675,7 @@
   "img" : "https://www.europarl.europa.eu/mepphoto/193419.jpg",
   "sortLabel" : "HANSEN",
   "upperFamilyName" : "HANSEN",
-  "upperGivenName" : "CHRISTOPHE",
-  "_dataset" : "lu_pep_europarl_former",
-  "_sourceUrl" : "https://data.europarl.europa.eu/api/v2/meps/193419?format=application%2Fld%2Bjson"
+  "upperGivenName" : "CHRISTOPHE"
 }, {
   "id" : "person/197418",
   "type" : "Person",
@@ -1114,9 +1112,7 @@
   "img" : "https://www.europarl.europa.eu/mepphoto/197418.jpg",
   "sortLabel" : "SEMEDO",
   "upperFamilyName" : "SEMEDO",
-  "upperGivenName" : "MONICA",
-  "_dataset" : "lu_pep_europarl_former",
-  "_sourceUrl" : "https://data.europarl.europa.eu/api/v2/meps/197418?format=application%2Fld%2Bjson"
+  "upperGivenName" : "MONICA"
 }, {
   "id" : "person/197428",
   "type" : "Person",
@@ -1269,7 +1265,5 @@
   "img" : "https://www.europarl.europa.eu/mepphoto/197428.jpg",
   "sortLabel" : "SCHMITNI",
   "upperFamilyName" : "SCHMIT",
-  "upperGivenName" : "NICOLAS",
-  "_dataset" : "lu_pep_europarl_former",
-  "_sourceUrl" : "https://data.europarl.europa.eu/api/v2/meps/197428?format=application%2Fld%2Bjson"
+  "upperGivenName" : "NICOLAS"
 } ]

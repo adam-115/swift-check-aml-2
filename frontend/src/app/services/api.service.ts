@@ -2,8 +2,8 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import {
-  CategoryRequest, Country, CountryRequest, Coverage, FunctionRequest, ListType, PepCategory, PepFunction, Source,
-  SourceRequest,
+  CategoryRequest, Country, CountryRequest, Coverage, EntityPage, Execution, ExecutionStatus, FunctionRequest,
+  ListType, PepCategory, PepFunction, Source, SourceRequest,
 } from '../models/api';
 
 /** Accès à l'API REST du back (/api). */
@@ -37,6 +37,46 @@ export class ApiService {
 
   deleteSource(id: number): Observable<void> {
     return this.http.delete<void>(`/api/sources/${id}`);
+  }
+
+  // Exécutions
+
+  /** Lance FtmGeneratorService en arrière-plan ; l'exécution renvoyée est « en cours ». */
+  runSource(id: number): Observable<Execution> {
+    return this.http.post<Execution>(`/api/sources/${id}/executions`, null);
+  }
+
+  executions(sourceId: number): Observable<Execution[]> {
+    return this.http.get<Execution[]>(`/api/sources/${sourceId}/executions`);
+  }
+
+  execution(id: number): Observable<Execution> {
+    return this.http.get<Execution>(`/api/executions/${id}`);
+  }
+
+  /** Dernières exécutions, toutes sources ou d'une source. */
+  allExecutions(filter: { sourceId?: number | null; status?: ExecutionStatus | '' }): Observable<Execution[]> {
+    let params = new HttpParams();
+    if (filter.sourceId) {
+      params = params.set('sourceId', filter.sourceId);
+    }
+    if (filter.status) {
+      params = params.set('status', filter.status);
+    }
+    return this.http.get<Execution[]>('/api/executions', { params });
+  }
+
+  /** Entités FTM produites par une exécution, par page. */
+  executionEntities(id: number, filter: { schema?: string; q?: string; page: number; size: number }):
+    Observable<EntityPage> {
+    let params = new HttpParams().set('page', filter.page).set('size', filter.size);
+    if (filter.schema) {
+      params = params.set('schema', filter.schema);
+    }
+    if (filter.q) {
+      params = params.set('q', filter.q);
+    }
+    return this.http.get<EntityPage>(`/api/executions/${id}/entities`, { params });
   }
 
   // Pays

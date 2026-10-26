@@ -1,0 +1,112 @@
+<div class="max-w-7xl mx-auto space-y-6">
+  <div class="bg-white rounded-2xl shadow-xs border border-slate-200 overflow-hidden">
+
+    <div class="bg-slate-900 px-4 sm:px-8 py-5 sm:py-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Exécutions</h2>
+        <p class="mt-1 text-xs sm:text-sm text-slate-300">
+          @if (selectedSource(); as s) {
+            Historique de <span class="font-semibold text-white">{{ s.label || s.sourceName }}</span>
+            · <a routerLink="/executions" (click)="sourceId = null; filter()" class="text-emerald-300 hover:underline">toutes les sources</a>
+          } @else {
+            Historique des exécutions de FtmGeneratorService, toutes sources confondues.
+          }
+        </p>
+      </div>
+      <div class="flex flex-wrap items-center gap-2">
+        <select [(ngModel)]="sourceId" (ngModelChange)="filter()" aria-label="Source"
+                class="rounded-xl border-0 bg-white/10 px-3 py-2 text-sm font-semibold text-white focus:ring-2 focus:ring-emerald-500 max-w-xs">
+          <option [ngValue]="null" class="text-slate-900">Toutes les sources</option>
+          @for (s of sources(); track s.id) {
+            <option [ngValue]="s.id" class="text-slate-900">{{ s.label || s.sourceName }}</option>
+          }
+        </select>
+        <select [(ngModel)]="status" (ngModelChange)="load()" aria-label="État"
+                class="rounded-xl border-0 bg-white/10 px-3 py-2 text-sm font-semibold text-white focus:ring-2 focus:ring-emerald-500">
+          <option value="" class="text-slate-900">Tous les états</option>
+          @for (k of statusKeys; track k) { <option [value]="k" class="text-slate-900">{{ statuses[k].label }}</option> }
+        </select>
+      </div>
+    </div>
+
+    <div class="p-4 sm:p-6 bg-slate-50 min-h-[400px] space-y-5">
+      @if (errorMessage()) {
+        <div class="bg-rose-50 border border-rose-200 text-rose-800 p-3 rounded-xl text-sm">{{ errorMessage() }}</div>
+      }
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Exécutions</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">{{ stats().total }}</p>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Réussies</p>
+          <p class="mt-1 text-2xl font-bold text-emerald-700">{{ stats().success }}</p>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">En échec</p>
+          <p class="mt-1 text-2xl font-bold text-rose-700">{{ stats().failed }}</p>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">En cours</p>
+          <p class="mt-1 text-2xl font-bold text-sky-700">{{ stats().running }}</p>
+        </div>
+      </div>
+
+      @if (loading()) {
+        <p class="text-sm text-slate-500">Chargement…</p>
+      } @else {
+        <div class="bg-white rounded-xl border border-slate-200 overflow-x-auto">
+          <table class="min-w-full divide-y divide-slate-100 text-sm">
+            <thead class="bg-slate-50">
+              <tr class="text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                <th class="px-4 py-2.5">#</th>
+                <th class="px-4 py-2.5">Source</th>
+                <th class="px-4 py-2.5">État</th>
+                <th class="px-4 py-2.5">Début</th>
+                <th class="px-4 py-2.5 text-right">Durée</th>
+                <th class="px-4 py-2.5 text-right">Entités</th>
+                <th class="px-4 py-2.5">Résultat</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              @for (e of executions(); track e.id) {
+                <tr (click)="open(e)" class="align-top cursor-pointer hover:bg-emerald-50/50">
+                  <td class="px-4 py-3 font-mono text-xs font-bold text-slate-500">
+                    <a [routerLink]="['/executions', e.id]" (click)="$event.stopPropagation()" class="hover:text-emerald-700 hover:underline">#{{ e.id }}</a>
+                  </td>
+                  <td class="px-4 py-3">
+                    <p class="font-medium text-slate-900">{{ e.sourceLabel || e.sourceName }}</p>
+                    <p class="font-mono text-[11px] text-slate-500">{{ e.sourceName }}</p>
+                  </td>
+                  <td class="px-4 py-3 whitespace-nowrap">
+                    <span class="rounded-full px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset" [ngClass]="statuses[e.status].css">
+                      @if (e.status === 'RUNNING') { <span class="inline-block w-1.5 h-1.5 rounded-full bg-sky-500 animate-pulse mr-1"></span> }
+                      {{ statuses[e.status].label }}
+                    </span>
+                  </td>
+                  <td class="px-4 py-3 whitespace-nowrap text-slate-700">{{ e.startedAt | date:'dd/MM/yyyy HH:mm:ss' }}</td>
+                  <td class="px-4 py-3 whitespace-nowrap text-right text-slate-600">{{ duration(e.durationMs) }}</td>
+                  <td class="px-4 py-3 whitespace-nowrap text-right font-semibold text-slate-900">{{ e.entityCount ?? '—' }}</td>
+                  <td class="px-4 py-3 max-w-md">
+                    @if (e.status === 'FAILED') {
+                      @if (e.failedStep) {
+                        <p class="text-xs font-semibold text-rose-700">Échec à l'étape « {{ steps[e.failedStep].label }} »</p>
+                      }
+                      <p class="text-xs text-rose-800 font-mono truncate" [title]="causeLine(e)">{{ causeLine(e) }}</p>
+                    } @else if (e.schemaCounts) {
+                      <p class="text-xs text-slate-600">{{ e.schemaCounts }}</p>
+                    }
+                  </td>
+                </tr>
+              } @empty {
+                <tr><td colspan="7" class="px-4 py-10 text-center text-sm text-slate-500">Aucune exécution.
+                  <a routerLink="/sources" class="text-emerald-700 hover:underline">Lancez-en une depuis la page Sources.</a></td></tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+    </div>
+  </div>
+</div>

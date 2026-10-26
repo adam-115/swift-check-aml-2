@@ -1,0 +1,94 @@
+{
+  "name": "lu_pep_europarl_former",
+  "description": "Anciens eurodéputés élus au Luxembourg : fiches complètes de l'API Open Data v2 du Parlement européen (/meps/{id1},{id2},... en JSON-LD, une personne par enregistrement). Chaque fiche donne la Person, le poste de député européen élu au Luxembourg (une seule Position) et l'Occupancy qui couvre ses mandats luxembourgeois (rôle MEMBER_PARLIAMENT, represents = LUX). Le genre et la nationalité sont publiés sous forme d'URI : des règles Person conditionnelles (même identifiant, fusionnées par FTM) les convertissent.",
+  "applyAllRules": true,
+  "rules": [
+    {
+      "conditionJsonPath": "$.hasGender",
+      "conditionValue": "http://publications.europa.eu/resource/authority/human-sex/MALE",
+      "ftmSchema": "Person",
+      "idJsonPaths": ["eu-parliament-person", "$.identifier"],
+      "propertiesMapping": {
+        "name": "{$.givenName} {$.familyName}",
+        "firstName": "$.givenName",
+        "lastName": "$.familyName",
+        "gender": "male",
+        "birthDate": "$.bday",
+        "birthPlace": "$.placeOfBirth",
+        "position": "Ancien député au Parlement européen élu au Luxembourg",
+        "country": "LU",
+        "topics": "role.pep",
+        "sourceUrl": "https://www.europarl.europa.eu/meps/fr/{$.identifier}"
+      },
+      "propertyTypes": {
+        "birthDate": "date",
+        "country": "country"
+      }
+    },
+    {
+      "conditionJsonPath": "$.hasGender",
+      "conditionValue": "http://publications.europa.eu/resource/authority/human-sex/FEMALE",
+      "ftmSchema": "Person",
+      "idJsonPaths": ["eu-parliament-person", "$.identifier"],
+      "propertiesMapping": {
+        "name": "{$.givenName} {$.familyName}",
+        "firstName": "$.givenName",
+        "lastName": "$.familyName",
+        "gender": "female",
+        "birthDate": "$.bday",
+        "birthPlace": "$.placeOfBirth",
+        "position": "Ancienne députée au Parlement européen élue au Luxembourg",
+        "country": "LU",
+        "topics": "role.pep",
+        "sourceUrl": "https://www.europarl.europa.eu/meps/fr/{$.identifier}"
+      },
+      "propertyTypes": {
+        "birthDate": "date",
+        "country": "country"
+      }
+    },
+    {
+      "conditionJsonPath": "$.citizenship",
+      "conditionValue": "http://publications.europa.eu/resource/authority/country/LUX",
+      "ftmSchema": "Person",
+      "idJsonPaths": ["eu-parliament-person", "$.identifier"],
+      "propertiesMapping": {
+        "nationality": "LU"
+      },
+      "propertyTypes": {
+        "nationality": "country"
+      }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["eu-parliament-position", "LU"],
+      "propertiesMapping": {
+        "name": "Député au Parlement européen élu au Luxembourg",
+        "country": "LU",
+        "topics": "gov.legislative",
+        "sourceUrl": "https://www.europarl.europa.eu/meps/fr/search/advanced?countryCode=LU"
+      },
+      "propertyTypes": {
+        "country": "country"
+      }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["eu-parliament-occupancy", "$.identifier", "LU"],
+      "propertiesMapping": {
+        "holder": "Person",
+        "post": "Position",
+        "startDate": "$.hasMembership[?(@.role == 'def/ep-roles/MEMBER_PARLIAMENT' && @.represents anyof ['http://publications.europa.eu/resource/authority/country/LUX'])].memberDuring.startDate",
+        "endDate": "$.hasMembership[?(@.role == 'def/ep-roles/MEMBER_PARLIAMENT' && @.represents anyof ['http://publications.europa.eu/resource/authority/country/LUX'])].memberDuring.endDate",
+        "status": "ended",
+        "sourceUrl": "https://www.europarl.europa.eu/meps/fr/{$.identifier}"
+      },
+      "propertyTypes": {
+        "holder": "entity",
+        "post": "entity",
+        "startDate": "date",
+        "endDate": "date"
+      }
+    }
+  ]
+}

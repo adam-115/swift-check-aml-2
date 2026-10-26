@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Détail d'un échec : étape en cause, cause première et pile d'appels. -->
+    <changeSet id="006-source-execution-error" author="swift-check">
+        <preConditions onFail="MARK_RAN">
+            <not><columnExists tableName="source_execution" columnName="failed_step"/></not>
+        </preConditions>
+        <addColumn tableName="source_execution">
+            <column name="failed_step" type="VARCHAR(20)"/>
+            <column name="error_cause" type="TEXT"/>
+            <column name="error_stack" type="MEDIUMTEXT"/>
+        </addColumn>
+    </changeSet>
+
+</databaseChangeLog>
