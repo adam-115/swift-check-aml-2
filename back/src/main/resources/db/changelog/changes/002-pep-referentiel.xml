@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Référentiel PEP (pays, catégories, fonctions), couverture des fonctions par les sources, et colonnes de
+    classification des sources.
+
+    Chaque changement a une précondition : il est sauté (MARK_RAN) quand la table ou la colonne existe déjà,
+    pour une base qui a déjà reçu ce référentiel par une version précédente.
+-->
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Pays couverts : UE + Suisse. retention_months = durée minimale de vigilance après la fin des fonctions -->
+    <changeSet id="002-country" author="adam">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="country"/></not>
+        </preConditions>
+        <createTable tableName="country">
+            <column name="iso" type="VARCHAR(2)">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="eu_member" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+            <column name="legal_basis" type="VARCHAR(500)"/>
+            <column name="retention_months" type="INT" defaultValueNumeric="12">
+                <constraints nullable="false"/>
+            </column>
+            <column name="official_list_reference" type="VARCHAR(255)"/>
+            <column name="official_list_date" type="DATE"/>
+            <column name="official_list_url" type="VARCHAR(1024)"/>
+        </createTable>
+    </changeSet>
+
+    <!-- Catégorie de fonctions PEP d'un pays (ex. LU-b « Parlementaires et Conseil d'État ») -->
+    <changeSet id="002-pep-category" author="adam">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="pep_category"/></not>
+        </preConditions>
+        <createTable tableName="pep_category">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="country_iso" type="VARCHAR(2)">
+                <constraints nullable="false" foreignKeyName="fk_pep_category_country" references="country(iso)"/>
+            </column>
+            <column name="code" type="VARCHAR(20)">
+                <constraints nullable="false" unique="true" uniqueConstraintName="uk_pep_category_code"/>
+            </column>
+            <column name="label" type="VARCHAR(500)">
+                <constraints nullable="false"/>
+            </column>
+            <!-- OFFICIAL, AMLR, RISK_BASED, EU ou RCA (voir PepCategoryKind) -->
+            <column name="kind" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <!-- 1 = risque le plus élevé, 4 = le plus faible -->
+            <column name="risk_class" type="INT" defaultValueNumeric="2">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sort_order" type="INT" defaultValueNumeric="0">
+                <constraints nullable="false"/>
+            </column>
+            <column name="legal_reference" type="VARCHAR(500)"/>
+        </createTable>
+    </changeSet>
+
+    <!-- Fonction précise d'une catégorie (ex. « Député », Chambre des Députés, 60 titulaires) -->
+    <changeSet id="002-pep-function" author="adam">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="pep_function"/></not>
+        </preConditions>
+        <createTable tableName="pep_function">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="category_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_pep_function_category" references="pep_category(id)"/>
+            </column>
+            <column name="label" type="VARCHAR(500)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="institution" type="VARCHAR(255)"/>
+            <column name="expected_holders" type="INT"/>
+        </createTable>
+    </changeSet>
+
+    <!-- Fonctions PEP couvertes par une source, et à quel point -->
+    <changeSet id="002-parser-coverage" author="adam">
+        <preConditions onFail="MARK_RAN">
+            <not><tableExists tableName="parser_coverage"/></not>
+        </preConditions>
+        <createTable tableName="parser_coverage">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="data_source_config_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_parser_coverage_source" references="data_source_config(id)"/>
+            </column>
+            <column name="pep_function_id" type="BIGINT">
+                <constraints nullable="false" foreignKeyName="fk_parser_coverage_function" references="pep_function(id)"/>
+            </column>
+            <!-- COMPLETE : tous les titulaires ; PARTIAL : une partie seulement -->
+            <column name="completeness" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="includes_former" type="BOOLEAN" defaultValueBoolean="false">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addUniqueConstraint tableName="parser_coverage" columnNames="data_source_config_id, pep_function_id"
+                             constraintName="uk_parser_coverage"/>
+    </changeSet>
+
+    <!-- Classification et affichage d'une source -->
+    <changeSet id="002-data-source-config-columns" author="adam">
+        <preConditions onFail="MARK_RAN">
+            <not><columnExists tableName="data_source_config" columnName="list_type"/></not>
+        </preConditions>
+        <addColumn tableName="data_source_config">
+            <column name="label" type="VARCHAR(255)"/>
+            <column name="description" type="VARCHAR(1000)"/>
+            <column name="attribution" type="VARCHAR(1000)"/>
+            <!-- SANCTION ou PEP -->
+            <column name="list_type" type="VARCHAR(20)"/>
+            <!-- OPEN_DATA_FILE, API, SPARQL, OFFICIAL_GAZETTE, WEB_PAGE, PDF_DOCUMENT, DECLARATION_REGISTER -->
+            <column name="parser_type" type="VARCHAR(30)"/>
+            <column name="country_iso" type="VARCHAR(2)">
+                <constraints foreignKeyName="fk_data_source_config_country" references="country(iso)"/>
+            </column>
+            <column name="retention_months" type="INT"/>
+            <column name="enabled" type="BOOLEAN" defaultValueBoolean="true">
+                <constraints nullable="false"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <!-- Plusieurs adresses par source (une par ligne) : la colonne dépasse 1000 caractères -->
+    <changeSet id="002-external-source-path-text" author="adam">
+        <modifyDataType tableName="data_source_config" columnName="external_source_path" newDataType="TEXT"/>
+    </changeSet>
+
+    <!-- Le nom technique d'une source est unique -->
+    <changeSet id="002-source-name-unique" author="adam">
+        <preConditions onFail="MARK_RAN">
+            <not><indexExists tableName="data_source_config" indexName="uk_data_source_config_source_name"/></not>
+        </preConditions>
+        <addUniqueConstraint tableName="data_source_config" columnNames="source_name"
+                             constraintName="uk_data_source_config_source_name"/>
+    </changeSet>
+
+</databaseChangeLog>

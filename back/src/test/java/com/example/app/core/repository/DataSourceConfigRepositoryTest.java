@@ -1,6 +1,6 @@
 package com.example.app.core.repository;
 
-import com.example.app.core.DataSourceConfig;
+import com.example.app.core.entities.DataSourceConfig;
 import com.example.app.ingestion.model.SourceFormat;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

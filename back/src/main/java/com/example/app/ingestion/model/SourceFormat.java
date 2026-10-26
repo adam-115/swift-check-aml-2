@@ -8,5 +8,7 @@ public enum SourceFormat {
     JSON,
     CSV,
     XLSX,
-    HTML
+    HTML,
+    /** Document PDF (pas encore de convertisseur dans ce pipeline). */
+    PDF
 }

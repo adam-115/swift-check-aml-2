@@ -1,6 +1,6 @@
 package com.example.app.core.repository;
 
-import com.example.app.core.DataSourceConfig;
+import com.example.app.core.entities.DataSourceConfig;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,4 +13,8 @@ import java.util.Optional;
 public interface DataSourceConfigRepository extends JpaRepository<DataSourceConfig, Long> {
 
     Optional<DataSourceConfig> findBySourceName(String sourceName);
+
+    boolean existsByCountryIso(String countryIso);
+
+    long countByPepFunctionId(Long pepFunctionId);
 }

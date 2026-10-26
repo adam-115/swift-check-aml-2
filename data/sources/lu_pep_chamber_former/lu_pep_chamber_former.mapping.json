@@ -1,0 +1,85 @@
+{
+  "name": "lu_pep_chamber_former",
+  "description": "Anciens députés de la Chambre des Députés (data.public.lu, CSV, une ligne par mandat). Chaque ligne donne la Person (une seule pour tous ses mandats), le poste de député (une seule Position) et l'Occupancy du mandat avec ses dates. Le fichier CSV commence par un BOM UTF-8 : la première colonne s'appelle donc ﻿PERSON_TITLE.",
+  "applyAllRules": true,
+  "rules": [
+    {
+      "conditionJsonPath": "$['﻿PERSON_TITLE']",
+      "conditionValue": "Monsieur",
+      "ftmSchema": "Person",
+      "idJsonPaths": ["lu-chamber-person", "$.NAME", "$.FIRSTNAME"],
+      "propertiesMapping": {
+        "name": "{$.FIRSTNAME} {$.NAME}",
+        "firstName": "$.FIRSTNAME",
+        "lastName": "$.NAME",
+        "title": "$['﻿PERSON_TITLE']",
+        "gender": "male",
+        "birthDate": "$.BIRTH_DATE",
+        "political": "$.POLITICAL_GROUP",
+        "position": "Ancien député",
+        "country": "LU",
+        "topics": "role.pep",
+        "sourceUrl": "https://data.public.lu/fr/datasets/la-liste-des-anciens-deputes-de-la-chambre-des-deputes-du-luxembourg/"
+      },
+      "propertyTypes": {
+        "birthDate": "date",
+        "country": "country"
+      }
+    },
+    {
+      "conditionJsonPath": "$['﻿PERSON_TITLE']",
+      "conditionValue": "Madame",
+      "ftmSchema": "Person",
+      "idJsonPaths": ["lu-chamber-person", "$.NAME", "$.FIRSTNAME"],
+      "propertiesMapping": {
+        "name": "{$.FIRSTNAME} {$.NAME}",
+        "firstName": "$.FIRSTNAME",
+        "lastName": "$.NAME",
+        "title": "$['﻿PERSON_TITLE']",
+        "gender": "female",
+        "birthDate": "$.BIRTH_DATE",
+        "political": "$.POLITICAL_GROUP",
+        "position": "Ancienne députée",
+        "country": "LU",
+        "topics": "role.pep",
+        "sourceUrl": "https://data.public.lu/fr/datasets/la-liste-des-anciens-deputes-de-la-chambre-des-deputes-du-luxembourg/"
+      },
+      "propertyTypes": {
+        "birthDate": "date",
+        "country": "country"
+      }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["lu-chamber-position", "depute"],
+      "propertiesMapping": {
+        "name": "Député à la Chambre des Députés du Luxembourg",
+        "country": "LU",
+        "topics": "gov.legislative",
+        "sourceUrl": "https://www.chd.lu/"
+      },
+      "propertyTypes": {
+        "country": "country"
+      }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["lu-chamber-occupancy", "$.NAME", "$.FIRSTNAME", "$.START_DATE"],
+      "propertiesMapping": {
+        "holder": "Person",
+        "post": "Position",
+        "startDate": "$.START_DATE",
+        "endDate": "$.END_DATE",
+        "status": "ended",
+        "description": "Groupe politique : {$.POLITICAL_GROUP}",
+        "sourceUrl": "https://data.public.lu/fr/datasets/la-liste-des-anciens-deputes-de-la-chambre-des-deputes-du-luxembourg/"
+      },
+      "propertyTypes": {
+        "holder": "entity",
+        "post": "entity",
+        "startDate": "date",
+        "endDate": "date"
+      }
+    }
+  ]
+}

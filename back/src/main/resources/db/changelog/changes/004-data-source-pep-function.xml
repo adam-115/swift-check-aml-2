@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <!-- Fonction PEP principale d'une source (data_source_config.pep_function_id → pep_function.id). -->
+    <changeSet id="004-data-source-pep-function" author="swift-check">
+        <preConditions onFail="MARK_RAN">
+            <not><columnExists tableName="data_source_config" columnName="pep_function_id"/></not>
+        </preConditions>
+        <addColumn tableName="data_source_config">
+            <column name="pep_function_id" type="BIGINT">
+                <constraints nullable="true" foreignKeyName="fk_data_source_config_pep_function"
+                             referencedTableName="pep_function" referencedColumnNames="id"/>
+            </column>
+        </addColumn>
+    </changeSet>
+
+    <!-- Sources existantes : la fonction principale est la première fonction déjà déclarée dans leur couverture. -->
+    <changeSet id="004-data-source-pep-function-data" author="swift-check">
+        <sql>
+            UPDATE data_source_config
+               SET pep_function_id = (SELECT MIN(pc.pep_function_id) FROM parser_coverage pc
+                                       WHERE pc.data_source_config_id = data_source_config.id)
+             WHERE pep_function_id IS NULL
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>

@@ -6,5 +6,8 @@
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
 
     <include file="db/changelog/changes/001-initial-schema.xml"/>
+    <include file="db/changelog/changes/002-pep-referentiel.xml"/>
+    <include file="db/changelog/changes/003-pep-referentiel-data.xml"/>
+    <include file="db/changelog/changes/004-data-source-pep-function.xml"/>
 
 </databaseChangeLog>

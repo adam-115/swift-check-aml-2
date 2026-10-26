@@ -1,6 +1,6 @@
 package com.example.app.ingestion.service;
 
-import com.example.app.core.DataSourceConfig;
+import com.example.app.core.entities.DataSourceConfig;
 import com.example.app.ingestion.converter.CsvSourceConverter;
 import com.example.app.ingestion.converter.HtmlSourceConverter;
 import com.example.app.ingestion.converter.IDynamicSourceConverter;

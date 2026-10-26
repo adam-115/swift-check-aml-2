@@ -1,0 +1,224 @@
+<app-dialog [open]="open()" size="lg" [busy]="busy()" (closed)="closed.emit()"
+            [title]="isEdit() ? 'Modifier la source' : 'Nouvelle source'"
+            [subtitle]="isEdit() ? source()?.sourceName : 'Configuration d\'une source de données à transformer en entités FTM'">
+
+  @if (errors().message) {
+    <div class="mb-4 bg-rose-50 border border-rose-200 text-rose-800 p-3 rounded-xl text-sm">{{ errors().message }}</div>
+  }
+
+  <!-- Onglets -->
+  <div class="flex gap-1 border-b border-slate-200 mb-5 -mt-1">
+    @for (t of [['general', 'Général'], ['files', 'Fichiers et mapping'], ['coverage', 'Couverture PEP']]; track t[0]) {
+      <button type="button" (click)="tab.set($any(t[0]))"
+              class="relative px-3.5 py-2 text-sm font-semibold border-b-2 -mb-px transition-colors"
+              [class.border-emerald-600]="tab() === t[0]" [class.text-emerald-700]="tab() === t[0]"
+              [class.border-transparent]="tab() !== t[0]" [class.text-slate-500]="tab() !== t[0]">
+        {{ t[1] }}
+        @if (t[0] === 'coverage' && selectedCount()) {
+          <span class="ml-1 rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px] text-slate-600">{{ selectedCount() }}</span>
+        }
+        @if (tabHasError($any(t[0]))) {
+          <span class="absolute top-1.5 right-0.5 w-2 h-2 rounded-full bg-rose-500" title="Champ en erreur"></span>
+        }
+      </button>
+    }
+  </div>
+
+  <form (ngSubmit)="save()" id="source-form" class="text-sm">
+    @if (tab() === 'general') {
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="sourceName">Nom technique *</label>
+          <input id="sourceName" name="sourceName" [(ngModel)]="form.sourceName" placeholder="lu_pep_chamber"
+                 class="w-full rounded-lg border px-3 py-2 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                 [class.border-rose-400]="fieldError('sourceName')" [class.border-slate-300]="!fieldError('sourceName')">
+          @if (fieldError('sourceName'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+          @else { <p class="mt-1 text-[11px] text-slate-500">Minuscules, chiffres, - et _ ; préfixe des fichiers de travail.</p> }
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="label">Libellé *</label>
+          <input id="label" name="label" [(ngModel)]="form.label" placeholder="Députés en fonction (Luxembourg)"
+                 class="w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                 [class.border-rose-400]="fieldError('label')" [class.border-slate-300]="!fieldError('label')">
+          @if (fieldError('label'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+        </div>
+        <div class="sm:col-span-2">
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="description">Description</label>
+          <textarea id="description" name="description" rows="2" [(ngModel)]="form.description"
+                    class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+          @if (fieldError('description'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="listType">Type de liste</label>
+          <select id="listType" name="listType" [(ngModel)]="form.listType"
+                  class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <option [ngValue]="null">—</option>
+            @for (t of listTypes; track t) { <option [ngValue]="t">{{ listTypeLabels[t] }}</option> }
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="parserType">Type de source</label>
+          <select id="parserType" name="parserType" [(ngModel)]="form.parserType"
+                  class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+            <option [ngValue]="null">—</option>
+            @for (t of parserTypes; track t) {
+              <option [ngValue]="t">{{ parserTypeLabels[t].code }} · {{ parserTypeLabels[t].label }}</option>
+            }
+          </select>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="sourceFormat">Format du fichier *</label>
+          <select id="sourceFormat" name="sourceFormat" [(ngModel)]="form.sourceFormat"
+                  class="w-full rounded-lg border bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  [class.border-rose-400]="fieldError('sourceFormat')" [class.border-slate-300]="!fieldError('sourceFormat')">
+            @for (f of formats; track f) { <option [ngValue]="f">{{ f }}</option> }
+          </select>
+          @if (fieldError('sourceFormat'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="countryIso">Pays</label>
+          <select id="countryIso" name="countryIso" [(ngModel)]="form.countryIso" (ngModelChange)="loadFunctions()"
+                  class="w-full rounded-lg border bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                  [class.border-rose-400]="fieldError('countryIso')" [class.border-slate-300]="!fieldError('countryIso')">
+            <option value="">Aucun (organisation internationale)</option>
+            @for (c of countries(); track c.iso) { <option [value]="c.iso">{{ c.name }} ({{ c.iso }})</option> }
+          </select>
+          @if (fieldError('countryIso'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="pepFunctionId">Fonction PEP principale</label>
+          <select id="pepFunctionId" name="pepFunctionId" [ngModel]="form.pepFunctionId" (ngModelChange)="setMainFunction($event)"
+                  [disabled]="!form.countryIso"
+                  class="w-full rounded-lg border bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500 disabled:bg-slate-100"
+                  [class.border-rose-400]="fieldError('pepFunctionId')" [class.border-slate-300]="!fieldError('pepFunctionId')">
+            <option [ngValue]="null">—</option>
+            @for (g of groups(); track g.code) {
+              <optgroup [label]="g.code + ' · ' + g.label">
+                @for (f of g.functions; track f.id) { <option [ngValue]="f.id">{{ f.label }}</option> }
+              </optgroup>
+            }
+          </select>
+          @if (fieldError('pepFunctionId'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+          @else { <p class="mt-1 text-[11px] text-slate-500">Cochée aussi dans l'onglet Couverture PEP.</p> }
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="retentionMonths">Rétention (mois)</label>
+          <input id="retentionMonths" name="retentionMonths" type="number" min="0" max="240" [(ngModel)]="form.retentionMonths"
+                 class="w-full rounded-lg border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                 [class.border-rose-400]="fieldError('retentionMonths')" [class.border-slate-300]="!fieldError('retentionMonths')">
+          @if (fieldError('retentionMonths'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+          @else { <p class="mt-1 text-[11px] text-slate-500">Durée de publication après disparition de la source (0 pour les sanctions).</p> }
+        </div>
+        <div class="flex items-center gap-2 pt-6">
+          <input id="enabled" name="enabled" type="checkbox" [(ngModel)]="form.enabled"
+                 class="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+          <label for="enabled" class="text-sm text-slate-700">Source active</label>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="attribution">Attribution</label>
+          <input id="attribution" name="attribution" [(ngModel)]="form.attribution" placeholder="Chambre des Députés, data.public.lu (CC BY)"
+                 class="w-full rounded-lg border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          @if (fieldError('attribution'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+        </div>
+      </div>
+    }
+
+    @if (tab() === 'files') {
+      <div class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="externalSourcePath">Adresse(s) de la source * — une par ligne</label>
+          <textarea id="externalSourcePath" name="externalSourcePath" rows="4" [(ngModel)]="form.externalSourcePath"
+                    placeholder="https://data.public.lu/fr/datasets/r/…"
+                    class="w-full rounded-lg border px-3 py-2 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500"
+                    [class.border-rose-400]="fieldError('externalSourcePath')" [class.border-slate-300]="!fieldError('externalSourcePath')"></textarea>
+          @if (fieldError('externalSourcePath'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1" for="mappingFilePath">Fichier de mapping JSON</label>
+          <input id="mappingFilePath" name="mappingFilePath" [(ngModel)]="form.mappingFilePath" placeholder="classpath:mappings/lu/lu_pep_chamber.json"
+                 class="w-full rounded-lg border border-slate-300 px-3 py-2 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          @if (fieldError('mappingFilePath'); as e) { <p class="mt-1 text-xs text-rose-600">{{ e }}</p> }
+        </div>
+        <p class="text-[11px] text-slate-500">Chemins de travail : laissés vides, ils sont calculés à partir du nom technique (<span class="font-mono">data/sources/&lt;nom&gt;/…</span>).</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1" for="localSourcePath">Fichier source local</label>
+            <input id="localSourcePath" name="localSourcePath" [(ngModel)]="form.localSourcePath"
+                   class="w-full rounded-lg border border-slate-300 px-3 py-2 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1" for="initialJsonSourcePath">JSON intermédiaire</label>
+            <input id="initialJsonSourcePath" name="initialJsonSourcePath" [(ngModel)]="form.initialJsonSourcePath"
+                   class="w-full rounded-lg border border-slate-300 px-3 py-2 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-600 mb-1" for="ftmOutputPath">Fichier FTM produit</label>
+            <input id="ftmOutputPath" name="ftmOutputPath" [(ngModel)]="form.ftmOutputPath"
+                   class="w-full rounded-lg border border-slate-300 px-3 py-2 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          </div>
+        </div>
+      </div>
+    }
+
+    @if (tab() === 'coverage') {
+      @if (!form.countryIso) {
+        <p class="text-sm text-slate-500 italic">Choisissez un pays (onglet Général) pour déclarer les fonctions PEP couvertes.</p>
+      } @else if (functionsError()) {
+        <p class="bg-rose-50 border border-rose-200 text-rose-800 p-3 rounded-xl text-sm">{{ functionsError() }}</p>
+      } @else if (groups().length === 0) {
+        <p class="text-sm text-slate-500 italic">Aucune fonction PEP n'est définie pour ce pays dans le référentiel.</p>
+      } @else {
+        <p class="text-xs text-slate-500 mb-3">Cochez les fonctions dont cette source donne les titulaires.</p>
+        <div class="space-y-3">
+          @for (g of groups(); track g.code) {
+            <div class="rounded-xl border border-slate-200 overflow-hidden">
+              <div class="px-3 py-2 bg-slate-50 border-b border-slate-200 flex items-center gap-2">
+                <span class="font-mono text-xs font-bold text-slate-500">{{ g.code }}</span>
+                <span class="text-xs font-semibold text-slate-800 flex-1">{{ g.label }}</span>
+                <span class="rounded-md px-1.5 py-0.5 text-[10px] font-semibold {{ kinds[g.kind].css }}">{{ kinds[g.kind].label }}</span>
+              </div>
+              @for (f of g.functions; track f.id) {
+                <div class="px-3 py-2 flex flex-wrap items-center gap-x-4 gap-y-2 border-b border-slate-100 last:border-b-0"
+                     [class.bg-emerald-50]="choice(f.id).selected">
+                  <label class="flex items-center gap-2 flex-1 min-w-[14rem] cursor-pointer">
+                    <input type="checkbox" [checked]="choice(f.id).selected" (change)="updateChoice(f.id, { selected: $any($event.target).checked })"
+                           class="h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+                    <span>
+                      <span class="text-sm text-slate-900">{{ f.label }}</span>
+                      @if (f.institution) { <span class="block text-[11px] text-slate-500">{{ f.institution }}</span> }
+                    </span>
+                  </label>
+                  @if (choice(f.id).selected) {
+                    <select [ngModel]="choice(f.id).completeness" (ngModelChange)="updateChoice(f.id, { completeness: $event })"
+                            [ngModelOptions]="{ standalone: true }" aria-label="Complétude"
+                            class="rounded-lg border border-slate-300 bg-white px-2 py-1 text-xs focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                      <option value="COMPLETE">Complète</option>
+                      <option value="PARTIAL">Partielle</option>
+                    </select>
+                    <label class="flex items-center gap-1.5 text-xs text-slate-600">
+                      <input type="checkbox" [checked]="choice(f.id).includesFormer"
+                             (change)="updateChoice(f.id, { includesFormer: $any($event.target).checked })"
+                             class="h-3.5 w-3.5 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+                      avec les anciens titulaires
+                    </label>
+                  }
+                </div>
+              }
+            </div>
+          }
+        </div>
+      }
+    }
+  </form>
+
+  <div dialog-footer class="contents">
+    <button type="button" (click)="closed.emit()" [disabled]="busy()"
+            class="rounded-lg border border-slate-300 bg-white px-3.5 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50">
+      Annuler
+    </button>
+    <button type="submit" form="source-form" [disabled]="busy()"
+            class="rounded-lg bg-emerald-600 px-3.5 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50">
+      {{ busy() ? 'Enregistrement…' : (isEdit() ? 'Enregistrer' : 'Créer la source') }}
+    </button>
+  </div>
+</app-dialog>

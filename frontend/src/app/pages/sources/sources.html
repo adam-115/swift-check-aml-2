@@ -1,0 +1,185 @@
+<div class="max-w-7xl mx-auto space-y-6">
+  <div class="bg-white rounded-2xl shadow-xs border border-slate-200 overflow-hidden">
+
+    <div class="bg-slate-900 px-4 sm:px-8 py-5 sm:py-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Sources</h2>
+        <p class="mt-1 text-xs sm:text-sm text-slate-300">
+          Sources de données à convertir en JSON puis en entités FollowTheMoney, et fonctions PEP qu'elles couvrent.
+        </p>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <select [(ngModel)]="countryIso" (ngModelChange)="load()" aria-label="Pays"
+                class="rounded-xl border-0 bg-white/10 px-3 py-2 text-sm font-semibold text-white focus:ring-2 focus:ring-emerald-500">
+          <option value="" class="text-slate-900">Tous les pays</option>
+          @for (c of countries(); track c.iso) {
+            <option [value]="c.iso" class="text-slate-900">{{ c.name }} ({{ c.iso }})</option>
+          }
+        </select>
+        <select [(ngModel)]="listType" (ngModelChange)="load()" aria-label="Type de liste"
+                class="rounded-xl border-0 bg-white/10 px-3 py-2 text-sm font-semibold text-white focus:ring-2 focus:ring-emerald-500">
+          <option value="" class="text-slate-900">Toutes les listes</option>
+          <option value="PEP" class="text-slate-900">PEP</option>
+          <option value="SANCTION" class="text-slate-900">Sanctions</option>
+        </select>
+        <button type="button" (click)="openCreate()"
+                class="inline-flex items-center gap-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 px-3.5 py-2 text-sm font-semibold text-white transition-colors">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+          </svg>
+          Nouvelle source
+        </button>
+      </div>
+    </div>
+
+    <div class="p-4 sm:p-6 bg-slate-50 min-h-[400px] space-y-6">
+      @if (errorMessage()) {
+        <div class="bg-rose-50 border border-rose-200 text-rose-800 p-3 rounded-xl text-sm">{{ errorMessage() }}</div>
+      }
+      @if (notice(); as n) {
+        <div class="flex items-start justify-between gap-3 p-3 rounded-xl text-sm border"
+             [ngClass]="n.kind === 'success' ? 'bg-emerald-50 border-emerald-200 text-emerald-800' : 'bg-rose-50 border-rose-200 text-rose-800'">
+          <span>{{ n.text }}</span>
+          <button type="button" (click)="notice.set(null)" class="font-bold opacity-70 hover:opacity-100" aria-label="Fermer">×</button>
+        </div>
+      }
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Sources</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">{{ stats().total }}</p>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Actives</p>
+          <p class="mt-1 text-2xl font-bold text-emerald-600">{{ stats().enabled }}</p>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Sources PEP</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">{{ stats().pep }}</p>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 p-4">
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Avec mapping</p>
+          <p class="mt-1 text-2xl font-bold text-slate-900">{{ stats().withMapping }}</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+        <input type="search" [ngModel]="search()" (ngModelChange)="search.set($event)" placeholder="Rechercher une source, une adresse ou une fonction…"
+               class="w-full sm:max-w-md rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        <span class="text-xs text-slate-500">{{ filtered().length }} source{{ filtered().length > 1 ? 's' : '' }}</span>
+      </div>
+
+      @if (isLoading()) {
+        <div class="text-center py-16 text-slate-500 text-sm">Chargement…</div>
+      } @else if (filtered().length === 0) {
+        <div class="text-center py-16 bg-white rounded-xl border border-dashed border-slate-300 text-sm text-slate-500">
+          Aucune source.
+          <button type="button" (click)="openCreate()" class="text-emerald-700 font-semibold hover:underline">Créer une source</button>
+        </div>
+      } @else {
+        <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-slate-100 text-sm">
+              <thead class="bg-slate-50">
+                <tr class="text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                  <th class="px-4 py-2.5">Source</th>
+                  <th class="px-4 py-2.5">Type</th>
+                  <th class="px-4 py-2.5">Fonctions couvertes <span class="normal-case font-normal text-emerald-700">(en vert : principale)</span></th>
+                  <th class="px-4 py-2.5">Modifiée</th>
+                  <th class="px-4 py-2.5 text-right">Actions</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100">
+                @for (s of filtered(); track s.id) {
+                  <tr class="align-top hover:bg-slate-50/60" [class.opacity-60]="!s.enabled">
+                    <td class="px-4 py-3 max-w-xs">
+                      <button type="button" (click)="openEdit(s)" class="text-left group">
+                        <p class="font-semibold text-slate-900 group-hover:text-emerald-700">{{ name(s) }}</p>
+                        <p class="font-mono text-[11px] text-slate-500">{{ s.sourceName }}</p>
+                      </button>
+                      <p class="text-xs text-slate-500 mt-0.5">
+                        {{ host(urls(s)[0]) }}
+                        @if (urls(s).length > 1) { <span class="text-slate-400">· {{ urls(s).length }} adresses</span> }
+                      </p>
+                      <div class="mt-1 flex flex-wrap gap-1">
+                        @if (s.countryIso) {
+                          <span class="rounded-md bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold text-slate-600">{{ s.countryIso }}</span>
+                        }
+                        @if (s.listType) {
+                          <span class="rounded-md bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold text-slate-600">{{ listTypes[s.listType] }}</span>
+                        }
+                        @if (!s.enabled) {
+                          <span class="rounded-md bg-rose-50 px-1.5 py-0.5 text-[10px] font-semibold text-rose-700">Désactivée</span>
+                        }
+                        @if (!s.mappingFilePath) {
+                          <span class="rounded-md bg-amber-50 px-1.5 py-0.5 text-[10px] font-semibold text-amber-700">Sans mapping</span>
+                        }
+                      </div>
+                    </td>
+                    <td class="px-4 py-3 whitespace-nowrap">
+                      @if (s.parserType) {
+                        <span class="rounded-md bg-slate-900 px-1.5 py-0.5 text-[11px] font-semibold text-white" [title]="parserTypes[s.parserType].label">
+                          {{ parserTypes[s.parserType].code }}
+                        </span>
+                      }
+                      <span class="ml-1 rounded-md px-1.5 py-0.5 text-[11px] font-semibold ring-1 ring-inset" [ngClass]="formatCss[s.sourceFormat]">{{ s.sourceFormat }}</span>
+                      @if (s.parserType) {
+                        <p class="text-[11px] text-slate-500 mt-1">{{ parserTypes[s.parserType].label }}</p>
+                      }
+                    </td>
+                    <td class="px-4 py-3">
+                      <div class="flex flex-wrap gap-1.5 max-w-sm">
+                        @for (c of s.coverage; track c.functionId) {
+                          <span class="inline-flex items-center gap-1 rounded-lg px-2 py-0.5 text-[11px]"
+                                [class.bg-emerald-100]="c.functionId === s.pepFunctionId" [class.text-emerald-900]="c.functionId === s.pepFunctionId"
+                                [class.font-semibold]="c.functionId === s.pepFunctionId"
+                                [class.bg-slate-100]="c.functionId !== s.pepFunctionId" [class.text-slate-700]="c.functionId !== s.pepFunctionId"
+                                [title]="(c.functionId === s.pepFunctionId ? 'Fonction principale, ' : '') + (c.completeness === 'COMPLETE' ? 'complète' : 'partielle') + (c.includesFormer ? ', avec les anciens titulaires' : '')">
+                            <span class="font-mono font-bold text-slate-500">{{ c.categoryCode }}</span>
+                            {{ c.label }}
+                            @if (c.completeness === 'PARTIAL') { <span class="text-amber-600">◐</span> }
+                          </span>
+                        } @empty {
+                          <span class="text-xs text-slate-400 italic">—</span>
+                        }
+                      </div>
+                    </td>
+                    <td class="px-4 py-3 whitespace-nowrap text-xs text-slate-500">{{ s.updatedAt | date:'dd/MM/yyyy HH:mm' }}</td>
+                    <td class="px-4 py-3">
+                      <div class="flex items-center justify-end gap-1.5">
+                        <button type="button" (click)="openEdit(s)" title="Modifier"
+                                class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-slate-50 hover:text-emerald-700">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                          </svg>
+                        </button>
+                        <button type="button" (click)="toggleEnabled(s)" [disabled]="isBusy(s.id)"
+                                class="rounded-lg border border-slate-300 bg-white px-2.5 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50">
+                          {{ s.enabled ? 'Désactiver' : 'Activer' }}
+                        </button>
+                        <button type="button" (click)="askDelete(s)" title="Supprimer"
+                                class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-rose-50 hover:text-rose-700 hover:border-rose-200">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+
+<app-source-dialog [open]="editOpen()" [source]="editing()" [countries]="countries()"
+                   (saved)="onSaved($event)" (closed)="editOpen.set(false)" />
+
+<app-confirm-dialog [open]="!!deleting()" title="Supprimer la source"
+                    [message]="'La source « ' + (deleting() ? name(deleting()!) : '') + ' » et sa couverture PEP seront supprimées. Cette action est définitive.'"
+                    [busy]="deleteBusy()" [error]="deleteError()"
+                    (confirm)="confirmDelete()" (cancel)="deleting.set(null)" />

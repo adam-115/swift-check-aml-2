@@ -175,6 +175,8 @@ public class DynamicFtmMapper {
 
     /**
      * Extraction robuste de valeurs :
+     * - Si l'expression contient des accolades {...} : évaluée comme un template de
+     * concaténation (ex: "{$.firstName} {$.lastName}").
      * - Si l'expression commence par '$' ou '@' : évaluée comme JsonPath.
      * - Si elle correspond au schéma d'une entité soeur : injecte l'ID de cette
      * entité (relation automatique).
@@ -186,7 +188,14 @@ public class DynamicFtmMapper {
             return Collections.emptyList();
         }
 
-        // 1. Cas JsonPath
+        // 1. Cas Template de concaténation (ex: "{$.firstName} {$.lastName}" ou
+        // "{firstName} {lastName}")
+        if (expr.contains("{") && expr.contains("}")) {
+            String evaluated = evaluateTemplate(ctx, expr);
+            return evaluated.isEmpty() ? Collections.emptyList() : List.of(evaluated);
+        }
+
+        // 2. Cas JsonPath
         if (expr.startsWith("$") || expr.startsWith("@")) {
             List<String> values = readAndFlatten(ctx, expr);
             if (values.isEmpty() && expr.contains("[*]")) {
@@ -195,7 +204,7 @@ public class DynamicFtmMapper {
             return values;
         }
 
-        // 2. Cas référence à une entité liée (ex: "Person", "Position", "Company")
+        // 3. Cas référence à une entité liée (ex: "Person", "Position", "Company")
         if ("entity".equalsIgnoreCase(propertyType) || isEntitySchema(expr)) {
             String targetSchema = expr.startsWith("schema:") ? expr.substring(7) : expr;
             for (FtmEntity sibling : siblingEntities) {
@@ -205,8 +214,52 @@ public class DynamicFtmMapper {
             }
         }
 
-        // 3. Cas constante littérale directe (ex: "LU", "current", "role.pep")
+        // 4. Cas constante littérale directe (ex: "LU", "current", "role.pep")
         return List.of(expr);
+    }
+
+    /**
+     * Évalue un template contenant des expressions entre accolades (ex:
+     * "{$.firstName} {$.lastName}").
+     * Utilise un parcours par index sans aucune expression régulière.
+     */
+    private String evaluateTemplate(DocumentContext ctx, String template) {
+        StringBuilder sb = new StringBuilder();
+        int cursor = 0;
+        int len = template.length();
+
+        while (cursor < len) {
+            int start = template.indexOf('{', cursor);
+            if (start == -1) {
+                sb.append(template.substring(cursor));
+                break;
+            }
+            sb.append(template, cursor, start);
+
+            int end = template.indexOf('}', start);
+            if (end == -1) {
+                sb.append(template.substring(start));
+                break;
+            }
+
+            String path = template.substring(start + 1, end).trim();
+            if (!path.startsWith("$") && !path.startsWith("@")) {
+                path = "$." + path;
+            }
+
+            List<String> vals = readAndFlatten(ctx, path);
+            if (!vals.isEmpty() && vals.get(0) != null) {
+                sb.append(vals.get(0));
+            }
+
+            cursor = end + 1;
+        }
+
+        String res = sb.toString().trim();
+        while (res.contains("  ")) {
+            res = res.replace("  ", " ");
+        }
+        return res;
     }
 
     private boolean isEntitySchema(String text) {

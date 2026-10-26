@@ -11,7 +11,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
-import com.example.app.core.DataSourceConfig;
+import com.example.app.core.entities.DataSourceConfig;
 import com.example.app.ingestion.model.FtmEntity;
 import com.example.app.ingestion.model.SourceFormat;
 import com.example.app.ingestion.service.FtmGeneratorService;

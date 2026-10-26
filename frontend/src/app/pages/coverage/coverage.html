@@ -1,0 +1,88 @@
+<div class="max-w-7xl mx-auto space-y-6">
+  <div class="bg-white rounded-2xl shadow-xs border border-slate-200 overflow-hidden">
+
+    <div class="bg-slate-900 px-4 sm:px-8 py-5 sm:py-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Couverture PEP</h2>
+        <p class="mt-1 text-xs sm:text-sm text-slate-300">
+          Fonctions de la liste officielle et sources actives qui déclarent les couvrir.
+        </p>
+      </div>
+      <div class="flex items-center gap-3">
+        <label for="country" class="text-sm text-slate-300">Pays</label>
+        <select id="country" [(ngModel)]="countryIso" (ngModelChange)="load()"
+                class="rounded-xl border-0 bg-white/10 px-3 py-2 text-sm font-semibold text-white focus:ring-2 focus:ring-emerald-500">
+          @for (c of countries(); track c.iso) {
+            <option [value]="c.iso" class="text-slate-900">{{ c.name }} ({{ c.iso }})</option>
+          }
+        </select>
+      </div>
+    </div>
+
+    <div class="p-4 sm:p-6 bg-slate-50 min-h-[400px] space-y-5">
+      @if (errorMessage()) {
+        <div class="bg-rose-50 border border-rose-200 text-rose-800 p-3 rounded-xl text-sm">{{ errorMessage() }}</div>
+      }
+
+      @if (coverage(); as cov) {
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white rounded-xl border border-slate-200 p-4">
+            <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Catégories officielles</p>
+            <p class="mt-1 text-2xl font-bold text-slate-900">{{ cov.coveredOfficialCategories }}<span class="text-base text-slate-400"> / {{ cov.officialCategories }}</span></p>
+            <p class="text-xs text-slate-500">couvertes</p>
+          </div>
+          <div class="bg-white rounded-xl border border-slate-200 p-4">
+            <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Fonctions</p>
+            <p class="mt-1 text-2xl font-bold text-slate-900">{{ cov.coveredFunctions }}<span class="text-base text-slate-400"> / {{ cov.totalFunctions }}</span></p>
+            <p class="text-xs text-slate-500">couvertes entièrement</p>
+          </div>
+          <div class="bg-white rounded-xl border border-slate-200 p-4 col-span-2">
+            <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Taux de couverture</p>
+            <p class="mt-1 text-2xl font-bold text-emerald-700">{{ percent() }} %</p>
+            <div class="mt-2 h-2 rounded-full bg-slate-100 overflow-hidden">
+              <div class="h-full bg-emerald-500" [style.width.%]="percent()"></div>
+            </div>
+          </div>
+        </div>
+
+        @for (cat of cov.categories; track cat.id) {
+          <div class="bg-white rounded-xl border border-slate-200 overflow-hidden">
+            <div class="px-4 py-3 border-b border-slate-100 flex flex-wrap items-center gap-2">
+              <span class="font-mono text-xs font-bold text-slate-500">{{ cat.code }}</span>
+              <h3 class="font-semibold text-slate-900 flex-1 min-w-0">{{ cat.label }}</h3>
+              <span class="rounded-md px-2 py-0.5 text-[11px] font-semibold" [ngClass]="kinds[cat.kind].css">{{ kinds[cat.kind].label }}</span>
+              <span class="rounded-full px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset" [ngClass]="statuses[cat.status].css">{{ statuses[cat.status].label }}</span>
+            </div>
+            <ul class="divide-y divide-slate-100">
+              @for (f of cat.functions; track f.id) {
+                <li class="px-4 py-2.5 flex flex-col sm:flex-row sm:items-center gap-2 text-sm">
+                  <div class="flex-1 min-w-0">
+                    <p class="text-slate-900">{{ f.label }}</p>
+                    @if (f.institution) { <p class="text-xs text-slate-500">{{ f.institution }}</p> }
+                  </div>
+                  <div class="flex flex-wrap items-center gap-1.5">
+                    @for (s of f.sources; track s.id) {
+                      <span class="rounded-md border px-1.5 py-0.5 text-[11px]" [title]="sourceTitle(s)"
+                            [ngClass]="s.enabled ? 'border-slate-200 bg-slate-50 text-slate-700' : 'border-dashed border-slate-300 text-slate-400 line-through'">
+                        {{ s.label || s.sourceName }}@if (s.completeness !== 'COMPLETE') { (partiel) }
+                      </span>
+                    }
+                    <span class="rounded-full px-2 py-0.5 text-[11px] font-semibold ring-1 ring-inset whitespace-nowrap" [ngClass]="statuses[f.status].css">{{ statuses[f.status].label }}</span>
+                  </div>
+                </li>
+              } @empty {
+                <li class="px-4 py-4 text-sm text-slate-500 italic">Aucune fonction dans cette catégorie.</li>
+              }
+            </ul>
+          </div>
+        } @empty {
+          <div class="bg-white rounded-xl border border-slate-200 p-10 text-center text-sm text-slate-500">
+            Aucune catégorie PEP pour ce pays. <a routerLink="/referentiel" class="text-emerald-700 hover:underline">Ajoutez-en dans le référentiel.</a>
+          </div>
+        }
+      } @else if (loading()) {
+        <p class="text-sm text-slate-500">Chargement…</p>
+      }
+    </div>
+  </div>
+</div>

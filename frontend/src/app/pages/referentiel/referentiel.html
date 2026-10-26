@@ -1,0 +1,227 @@
+<div class="max-w-7xl mx-auto space-y-6">
+  <div class="bg-white rounded-2xl shadow-xs border border-slate-200 overflow-hidden">
+
+    <div class="bg-slate-900 px-4 sm:px-8 py-5 sm:py-6 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+      <div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Référentiel PEP</h2>
+        <p class="mt-1 text-xs sm:text-sm text-slate-300">
+          Pays couverts, catégories de la liste officielle des fonctions PEP et fonctions précises de chaque catégorie.
+        </p>
+      </div>
+      @if (tab() !== 'countries') {
+        <div class="flex items-center gap-3">
+          <label for="country" class="text-sm text-slate-300">Pays</label>
+          <select id="country" [(ngModel)]="countryIso" (ngModelChange)="loadCountryData()"
+                  class="rounded-xl border-0 bg-white/10 px-3 py-2 text-sm font-semibold text-white focus:ring-2 focus:ring-emerald-500">
+            @for (c of countries(); track c.iso) {
+              <option [value]="c.iso" class="text-slate-900">{{ c.name }} ({{ c.iso }})</option>
+            }
+          </select>
+        </div>
+      }
+    </div>
+
+    <!-- Onglets -->
+    <div class="px-4 sm:px-8 border-b border-slate-200 bg-white flex gap-1">
+      @for (t of [['categories', 'Catégories'], ['functions', 'Fonctions'], ['countries', 'Pays']]; track t[0]) {
+        <button type="button" (click)="tab.set($any(t[0]))"
+                class="px-4 py-3 text-sm font-semibold border-b-2 -mb-px transition-colors"
+                [class.border-emerald-600]="tab() === t[0]" [class.text-emerald-700]="tab() === t[0]"
+                [class.border-transparent]="tab() !== t[0]" [class.text-slate-500]="tab() !== t[0]">
+          {{ t[1] }}
+          <span class="ml-1 rounded-full bg-slate-100 px-1.5 py-0.5 text-[10px] text-slate-600">
+            {{ t[0] === 'categories' ? categories().length : t[0] === 'functions' ? functions().length : countries().length }}
+          </span>
+        </button>
+      }
+    </div>
+
+    <div class="p-4 sm:p-6 bg-slate-50 min-h-[400px] space-y-5">
+      @if (errorMessage()) {
+        <div class="bg-rose-50 border border-rose-200 text-rose-800 p-3 rounded-xl text-sm">{{ errorMessage() }}</div>
+      }
+      @if (notice(); as n) {
+        <div class="flex items-start justify-between gap-3 p-3 rounded-xl text-sm border bg-emerald-50 border-emerald-200 text-emerald-800">
+          <span>{{ n }}</span>
+          <button type="button" (click)="notice.set(null)" class="font-bold opacity-70 hover:opacity-100" aria-label="Fermer">×</button>
+        </div>
+      }
+
+      <!-- Catégories -->
+      @if (tab() === 'categories') {
+        <div class="flex items-center justify-between gap-3">
+          <p class="text-sm text-slate-600">Catégories PEP de <span class="font-semibold">{{ countryName() }}</span></p>
+          <button type="button" (click)="newCategory()"
+                  class="rounded-lg bg-emerald-600 px-3.5 py-2 text-sm font-semibold text-white hover:bg-emerald-700">+ Nouvelle catégorie</button>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 overflow-x-auto">
+          <table class="min-w-full divide-y divide-slate-100 text-sm">
+            <thead class="bg-slate-50">
+              <tr class="text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                <th class="px-4 py-2.5">Code</th>
+                <th class="px-4 py-2.5">Catégorie</th>
+                <th class="px-4 py-2.5">Nature</th>
+                <th class="px-4 py-2.5 text-center">Classe</th>
+                <th class="px-4 py-2.5 text-center">Fonctions</th>
+                <th class="px-4 py-2.5 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              @for (c of categories(); track c.id) {
+                <tr class="align-top hover:bg-slate-50/60">
+                  <td class="px-4 py-3 font-mono text-xs font-bold text-slate-500">{{ c.code }}</td>
+                  <td class="px-4 py-3">
+                    <p class="font-medium text-slate-900">{{ c.label }}</p>
+                    @if (c.legalReference) { <p class="text-xs text-slate-500">{{ c.legalReference }}</p> }
+                  </td>
+                  <td class="px-4 py-3"><span class="rounded-md px-2 py-0.5 text-[11px] font-semibold" [ngClass]="kinds[c.kind].css">{{ kinds[c.kind].label }}</span></td>
+                  <td class="px-4 py-3 text-center text-slate-600">{{ c.riskClass }}</td>
+                  <td class="px-4 py-3 text-center">
+                    <button type="button" (click)="search.set(c.code); tab.set('functions')" class="text-emerald-700 hover:underline">{{ c.functionCount }}</button>
+                  </td>
+                  <td class="px-4 py-3">
+                    <div class="flex justify-end gap-1.5">
+                      <button type="button" (click)="newFunction(c.id)" title="Ajouter une fonction"
+                              class="rounded-lg border border-slate-300 bg-white px-2 py-1.5 text-xs font-semibold text-slate-600 hover:bg-slate-50">+ Fonction</button>
+                      <button type="button" (click)="editCategory(c)" title="Modifier"
+                              class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-slate-50 hover:text-emerald-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+                      </button>
+                      <button type="button" (click)="deleteCategory(c)" title="Supprimer"
+                              class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-rose-50 hover:text-rose-700 hover:border-rose-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              } @empty {
+                <tr><td colspan="6" class="px-4 py-10 text-center text-sm text-slate-500">Aucune catégorie pour ce pays.</td></tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+
+      <!-- Fonctions -->
+      @if (tab() === 'functions') {
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <input type="search" [ngModel]="search()" (ngModelChange)="search.set($event)" placeholder="Rechercher une fonction, une institution, un code…"
+                 class="w-full sm:max-w-md rounded-xl border border-slate-300 bg-white px-3.5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500">
+          <button type="button" (click)="newFunction()" [disabled]="categories().length === 0"
+                  class="rounded-lg bg-emerald-600 px-3.5 py-2 text-sm font-semibold text-white hover:bg-emerald-700 disabled:opacity-50 whitespace-nowrap">+ Nouvelle fonction</button>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 overflow-x-auto">
+          <table class="min-w-full divide-y divide-slate-100 text-sm">
+            <thead class="bg-slate-50">
+              <tr class="text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                <th class="px-4 py-2.5">Catégorie</th>
+                <th class="px-4 py-2.5">Fonction</th>
+                <th class="px-4 py-2.5 text-center">Titulaires attendus</th>
+                <th class="px-4 py-2.5 text-center">Sources</th>
+                <th class="px-4 py-2.5 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              @for (f of filteredFunctions(); track f.id) {
+                <tr class="align-top hover:bg-slate-50/60">
+                  <td class="px-4 py-3 whitespace-nowrap">
+                    <span class="font-mono text-xs font-bold text-slate-500">{{ f.categoryCode }}</span>
+                  </td>
+                  <td class="px-4 py-3">
+                    <p class="font-medium text-slate-900">{{ f.label }}</p>
+                    @if (f.institution) { <p class="text-xs text-slate-500">{{ f.institution }}</p> }
+                  </td>
+                  <td class="px-4 py-3 text-center text-slate-600">{{ f.expectedHolders ?? '—' }}</td>
+                  <td class="px-4 py-3 text-center">
+                    <span class="rounded-full px-2 py-0.5 text-xs font-semibold"
+                          [ngClass]="f.sourceCount ? 'bg-emerald-50 text-emerald-700' : 'bg-slate-100 text-slate-500'">{{ f.sourceCount }}</span>
+                  </td>
+                  <td class="px-4 py-3">
+                    <div class="flex justify-end gap-1.5">
+                      <button type="button" (click)="editFunction(f)" title="Modifier"
+                              class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-slate-50 hover:text-emerald-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+                      </button>
+                      <button type="button" (click)="deleteFunction(f)" title="Supprimer"
+                              class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-rose-50 hover:text-rose-700 hover:border-rose-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              } @empty {
+                <tr><td colspan="5" class="px-4 py-10 text-center text-sm text-slate-500">Aucune fonction ne correspond.</td></tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+
+      <!-- Pays -->
+      @if (tab() === 'countries') {
+        <div class="flex justify-end">
+          <button type="button" (click)="newCountry()"
+                  class="rounded-lg bg-emerald-600 px-3.5 py-2 text-sm font-semibold text-white hover:bg-emerald-700">+ Nouveau pays</button>
+        </div>
+        <div class="bg-white rounded-xl border border-slate-200 overflow-x-auto">
+          <table class="min-w-full divide-y divide-slate-100 text-sm">
+            <thead class="bg-slate-50">
+              <tr class="text-left text-xs font-semibold text-slate-500 uppercase tracking-wider">
+                <th class="px-4 py-2.5">Pays</th>
+                <th class="px-4 py-2.5">UE</th>
+                <th class="px-4 py-2.5 text-center">Rétention</th>
+                <th class="px-4 py-2.5">Base légale</th>
+                <th class="px-4 py-2.5">Liste officielle</th>
+                <th class="px-4 py-2.5 text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100">
+              @for (c of countries(); track c.iso) {
+                <tr class="align-top hover:bg-slate-50/60">
+                  <td class="px-4 py-3"><span class="font-mono text-xs font-bold text-slate-500 mr-2">{{ c.iso }}</span><span class="font-medium text-slate-900">{{ c.name }}</span></td>
+                  <td class="px-4 py-3">
+                    <span class="rounded-md px-1.5 py-0.5 text-[11px] font-semibold"
+                          [ngClass]="c.euMember ? 'bg-blue-50 text-blue-700' : 'bg-slate-100 text-slate-500'">{{ c.euMember ? 'UE' : 'Hors UE' }}</span>
+                  </td>
+                  <td class="px-4 py-3 text-center text-slate-600 whitespace-nowrap">{{ c.retentionMonths }} mois</td>
+                  <td class="px-4 py-3 text-xs text-slate-600 max-w-xs">{{ c.legalBasis || '—' }}</td>
+                  <td class="px-4 py-3 text-xs">
+                    @if (c.officialListReference) {
+                      @if (c.officialListUrl) {
+                        <a [href]="c.officialListUrl" target="_blank" rel="noopener" class="text-emerald-700 hover:underline">{{ c.officialListReference }}</a>
+                      } @else { {{ c.officialListReference }} }
+                      @if (c.officialListDate) { <span class="text-slate-500"> du {{ c.officialListDate | date:'dd/MM/yyyy' }}</span> }
+                    } @else { <span class="text-slate-400 italic">—</span> }
+                  </td>
+                  <td class="px-4 py-3">
+                    <div class="flex justify-end gap-1.5">
+                      <button type="button" (click)="editCountry(c)" title="Modifier"
+                              class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-slate-50 hover:text-emerald-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" /></svg>
+                      </button>
+                      <button type="button" (click)="deleteCountry(c)" title="Supprimer"
+                              class="rounded-lg border border-slate-300 bg-white p-1.5 text-slate-600 hover:bg-rose-50 hover:text-rose-700 hover:border-rose-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" /></svg>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+    </div>
+  </div>
+</div>
+
+<app-country-dialog [open]="countryOpen()" [country]="editingCountry()"
+                    (saved)="countrySaved($event)" (closed)="countryOpen.set(false)" />
+<app-category-dialog [open]="categoryOpen()" [category]="editingCategory()" [countries]="countries()"
+                     [defaultCountry]="countryIso" (saved)="categorySaved($event)" (closed)="categoryOpen.set(false)" />
+<app-function-dialog [open]="functionOpen()" [fn]="editingFunction()" [categories]="categories()"
+                     [defaultCategoryId]="functionCategoryId()" (saved)="functionSaved($event)" (closed)="functionOpen.set(false)" />
+<app-confirm-dialog [open]="!!pendingDelete()" [title]="pendingDelete()?.title ?? ''"
+                    [message]="(pendingDelete()?.message ?? '') + ' Cette action est définitive.'"
+                    [busy]="deleteBusy()" [error]="deleteError()"
+                    (confirm)="confirmDelete()" (cancel)="pendingDelete.set(null)" />

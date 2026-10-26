@@ -1,0 +1,55 @@
+{
+  "name": "lu_pep_diplomats",
+  "description": "Chefs de mission des ambassades du Luxembourg (ambassadeurs, chargés d'affaires), pages « équipe » des sites *.mae.lu réunies dans data/lu/lu_pep_diplomats.json. Chaque enregistrement donne une Person, une Position et l'Occupancy qui les relie.",
+  "applyAllRules": true,
+  "rules": [
+    {
+      "ftmSchema": "Person",
+      "idJsonPaths": ["lu-pep-person", "$.personId"],
+      "propertiesMapping": {
+        "name": "$.name",
+        "gender": "$.gender",
+        "position": "$.positionName",
+        "country": "$.country",
+        "topics": "role.pep",
+        "sourceUrl": "$.sourceUrl",
+        "retrievedAt": "$.retrievedAt"
+      },
+      "propertyTypes": {
+        "country": "country",
+        "retrievedAt": "date"
+      }
+    },
+    {
+      "ftmSchema": "Position",
+      "idJsonPaths": ["lu-pep-position", "$.missionId", "$.role"],
+      "propertiesMapping": {
+        "name": "$.positionName",
+        "country": "$.country",
+        "topics": "role.diplo",
+        "sourceUrl": "$.sourceUrl",
+        "retrievedAt": "$.retrievedAt"
+      },
+      "propertyTypes": {
+        "country": "country",
+        "retrievedAt": "date"
+      }
+    },
+    {
+      "ftmSchema": "Occupancy",
+      "idJsonPaths": ["lu-pep-occupancy", "$.id", "$.role"],
+      "propertiesMapping": {
+        "holder": "Person",
+        "post": "Position",
+        "status": "current",
+        "sourceUrl": "$.sourceUrl",
+        "retrievedAt": "$.retrievedAt"
+      },
+      "propertyTypes": {
+        "holder": "entity",
+        "post": "entity",
+        "retrievedAt": "date"
+      }
+    }
+  ]
+}

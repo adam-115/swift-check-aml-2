@@ -1,8 +1,84 @@
-<main class="min-h-screen bg-slate-50 flex items-center justify-center p-6">
-  <div class="max-w-md w-full rounded-2xl bg-white shadow-lg p-8 text-center">
-    <h1 class="text-3xl font-bold text-slate-900">{{ title() }}</h1>
-    <p class="mt-3 text-slate-600">Angular 22 + Tailwind v4, servi par Spring Boot depuis un seul fat jar.</p>
-  </div>
-</main>
+<div class="flex h-screen bg-slate-50 overflow-hidden flex-col lg:flex-row">
 
-<router-outlet />
+  <!-- Barre du haut sur mobile (< lg) -->
+  <header class="lg:hidden h-14 bg-slate-950 text-white flex items-center justify-between px-4 border-b border-slate-800 shrink-0 z-30 shadow-md">
+    <div class="flex items-center gap-3">
+      <button (click)="toggleMobileMenu()" type="button" aria-label="Ouvrir le menu"
+              class="p-2 -ml-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-500">
+        @if (!mobileMenuOpen()) {
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        } @else {
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        }
+      </button>
+      <div class="flex items-center gap-2">
+        <img src="images/logo.png" alt="Swift Check" class="h-7 w-auto">
+        <span class="text-base font-bold tracking-tight">Swift Check</span>
+      </div>
+    </div>
+  </header>
+
+  @if (mobileMenuOpen()) {
+    <div (click)="closeMobileMenu()" class="fixed inset-0 bg-slate-950/70 backdrop-blur-xs z-40 lg:hidden"></div>
+  }
+
+  <!-- Barre latérale (permanente sur ordinateur, tiroir sur mobile) -->
+  <aside class="fixed inset-y-0 left-0 z-50 w-72 bg-slate-900 text-white flex flex-col shadow-2xl transition-transform duration-300 ease-in-out lg:static lg:w-64 lg:translate-x-0 lg:shadow-xl lg:z-10"
+         [ngClass]="mobileMenuOpen() ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'">
+
+    <div class="h-16 flex items-center justify-between px-6 bg-slate-950 border-b border-slate-800 shrink-0">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Swift Check" class="h-8">
+        <span class="text-xl font-bold tracking-wider">Swift Check</span>
+      </div>
+      <button (click)="closeMobileMenu()" type="button" aria-label="Fermer le menu"
+              class="lg:hidden p-1.5 text-slate-400 hover:text-white hover:bg-slate-800 rounded-lg">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="flex-1 px-4 py-5 space-y-1.5 overflow-y-auto">
+      <div class="pt-1 pb-1 px-3 text-[11px] font-bold text-slate-500 uppercase tracking-wider">Gestion &amp; Référentiel</div>
+
+      <a routerLink="/sources" routerLinkActive="bg-emerald-600 text-white" (click)="closeMobileMenu()"
+         class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-colors cursor-pointer text-sm font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
+        </svg>
+        <span>Sources</span>
+      </a>
+
+      <a routerLink="/referentiel" routerLinkActive="bg-emerald-600 text-white" (click)="closeMobileMenu()"
+         class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-colors cursor-pointer text-sm font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+        </svg>
+        <span>Référentiel PEP</span>
+      </a>
+
+      <a routerLink="/coverage" routerLinkActive="bg-emerald-600 text-white" (click)="closeMobileMenu()"
+         class="flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-slate-300 hover:bg-slate-800 hover:text-white transition-colors cursor-pointer text-sm font-medium">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+        </svg>
+        <span>Couverture PEP</span>
+      </a>
+    </nav>
+
+    <div class="p-4 border-t border-slate-800 bg-slate-950/40 shrink-0 text-[11px] text-slate-500 leading-relaxed">
+      Sources de données, référentiel des fonctions PEP et couverture déclarée.
+    </div>
+  </aside>
+
+  <main class="flex-1 flex flex-col h-[calc(100vh-3.5rem)] lg:h-full overflow-hidden bg-slate-50 min-w-0">
+    <div class="flex-1 overflow-y-auto overflow-x-hidden p-3 sm:p-5 lg:p-8">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

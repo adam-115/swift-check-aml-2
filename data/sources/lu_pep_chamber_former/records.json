@@ -2,3240 +2,2584 @@
   "END_DATE" : "16/04/2018",
   "FIRSTNAME" : "Claude",
   "NAME" : "Adam",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Claude",
   "NAME" : "Adam",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Claude",
   "NAME" : "Adam",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "21/04/1981",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Semiray",
   "NAME" : "Ahmedova",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "08/10/2019",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "12/03/1963",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Marc",
   "NAME" : "Angel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "12/03/1963",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Marc",
   "NAME" : "Angel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "12/03/1963",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Marc",
   "NAME" : "Angel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "12/03/1963",
   "END_DATE" : "02/12/2019",
   "FIRSTNAME" : "Marc",
   "NAME" : "Angel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "06/11/1966",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Gérard",
   "NAME" : "Anzia",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "10/07/2014",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/06/1959",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Frank",
   "NAME" : "Arndt",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "27/04/1949",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean",
   "NAME" : "Asselborn",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "27/04/1949",
   "END_DATE" : "30/07/2004",
   "FIRSTNAME" : "Jean",
   "NAME" : "Asselborn",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "24/01/1966",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Simone",
   "NAME" : "Asselborn-Bintz",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "17/04/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "24/01/1966",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Simone",
   "NAME" : "Asselborn-Bintz",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "21/01/2020",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "19/01/2022",
   "FIRSTNAME" : "Carlo",
   "NAME" : "Back",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "16/10/1956",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "François",
   "NAME" : "Bausch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "16/10/1956",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "François",
   "NAME" : "Bausch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "16/10/1956",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "François",
   "NAME" : "Bausch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "16/10/1956",
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "François",
   "NAME" : "Bausch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "16/10/1956",
   "END_DATE" : "10/07/2024",
   "FIRSTNAME" : "François",
   "NAME" : "Bausch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "21/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/02/1952",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jeannot",
   "NAME" : "Belling",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "François",
   "NAME" : "Benoy",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/12/1960",
   "END_DATE" : "21/01/2020",
   "FIRSTNAME" : "Eugène",
   "NAME" : "Berger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/12/1960",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Eugène",
   "NAME" : "Berger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/12/1960",
   "END_DATE" : "06/08/1999",
   "FIRSTNAME" : "Eugène",
   "NAME" : "Berger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/12/1960",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Eugène",
   "NAME" : "Berger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/12/1960",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Eugène",
   "NAME" : "Berger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "20/12/2007",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Xavier",
   "NAME" : "Bettel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Xavier",
   "NAME" : "Bettel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Xavier",
   "NAME" : "Bettel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "Xavier",
   "NAME" : "Bettel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Niki",
   "NAME" : "Bettendorf",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "10/10/2006",
   "FIRSTNAME" : "Niki",
   "NAME" : "Bettendorf",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/08/1999",
   "FIRSTNAME" : "François",
   "NAME" : "Biltgen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "14/04/1933",
   "END_DATE" : "30/06/2002",
   "FIRSTNAME" : "Aloyse",
   "NAME" : "Bisdorff",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "04/07/2000",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "13/09/1943",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Boden",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/10/1958",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Alex",
   "NAME" : "Bodry",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/10/1958",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Alex",
   "NAME" : "Bodry",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/10/1958",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Alex",
   "NAME" : "Bodry",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/10/1958",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Alex",
   "NAME" : "Bodry",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/10/1958",
   "END_DATE" : "20/01/2020",
   "FIRSTNAME" : "Alex",
   "NAME" : "Bodry",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Anne",
   "NAME" : "Brasseur",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Anne",
   "NAME" : "Brasseur",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "31/01/2018",
   "FIRSTNAME" : "Anne",
   "NAME" : "Brasseur",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Félix",
   "NAME" : "Braz",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Félix",
   "NAME" : "Braz",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "Félix",
   "NAME" : "Braz",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/06/1985",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Tess",
   "NAME" : "Burton",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "10/06/1985",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Tess",
   "NAME" : "Burton",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "CSV 15",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "CSV 16",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "CSV 17",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "CSV 18",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "CSV 19",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "CSV 20",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "CSV 21",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/11/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/10/1954",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Emile",
   "NAME" : "Calmes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/10/1954",
   "END_DATE" : "19/12/2007",
   "FIRSTNAME" : "Emile",
   "NAME" : "Calmes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/11/1944",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "John",
   "NAME" : "Castegnaro",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "08/06/1999",
   "FIRSTNAME" : "Mario",
   "NAME" : "Castegnaro",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "20/04/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "23/03/1966",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Myriam",
   "NAME" : "Cecchetti",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "19/05/2021",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Clement",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Clement",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Clement",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "27/10/1962",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Frank",
   "NAME" : "Colabianchi",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "06/02/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "27/10/1962",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Frank",
   "NAME" : "Colabianchi",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Jean",
   "NAME" : "Colombera",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean",
   "NAME" : "Colombera",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean",
   "NAME" : "Colombera",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "DP 10",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "DP 11",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "DP 12",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "DP 13",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "DP 14",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "06/04/1973",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Claudia",
   "NAME" : "Dall'Agnol",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "06/04/1973",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Claudia",
   "NAME" : "Dall'Agnol",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "06/04/1973",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Claudia",
   "NAME" : "Dall'Agnol",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "28/11/1984",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Lex",
   "NAME" : "Delles",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "28/11/1984",
   "END_DATE" : "04/12/2018",
   "FIRSTNAME" : "Lex",
   "NAME" : "Delles",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Mady",
   "NAME" : "Delvaux-Stehres",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "30/07/2004",
   "FIRSTNAME" : "Mady",
   "NAME" : "Delvaux-Stehres",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Diederich",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Diederich",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Christine",
   "NAME" : "Doerner",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Christine",
   "NAME" : "Doerner",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Agnès",
   "NAME" : "Durdu",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "22/08/1958",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Sylvie",
   "NAME" : "Duval",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "11/10/2005",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "22/08/1958",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Sylvie",
   "NAME" : "Duval",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "22/08/1958",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Sylvie",
   "NAME" : "Duval",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "06/01/1980",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Joëlle",
   "NAME" : "Elvinger",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "06/01/1980",
   "END_DATE" : "31/12/2019",
   "FIRSTNAME" : "Joëlle",
   "NAME" : "Elvinger",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Stéphanie",
   "NAME" : "Empain",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "31/01/2012",
   "FIRSTNAME" : "Lydie",
   "NAME" : "Err",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Lydie",
   "NAME" : "Err",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Lydie",
   "NAME" : "Err",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Ben",
   "NAME" : "Fayot",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Ben",
   "NAME" : "Fayot",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Ben",
   "NAME" : "Fayot",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Colette",
   "NAME" : "Flesch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Colette",
   "NAME" : "Flesch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Marie-Josée",
   "NAME" : "Frank",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Marie-Josée",
   "NAME" : "Frank",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Marie-Josée",
   "NAME" : "Frank",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "14/09/2014",
   "FIRSTNAME" : "Luc",
   "NAME" : "Frieden",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "17/11/2023",
   "FIRSTNAME" : "Luc",
   "NAME" : "Frieden",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "31/01/2009",
   "FIRSTNAME" : "Marie-Thérèse",
   "NAME" : "Gantenbein-Koullen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "01/01/1988",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Chantal",
   "NAME" : "Gary",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "23/10/2019",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Fabienne",
   "NAME" : "Gaul",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "10/02/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "29/06/1950",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Gast",
   "NAME" : "Gibéryen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "29/06/1950",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Gast",
   "NAME" : "Gibéryen",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "29/06/1950",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Gast",
   "NAME" : "Gibéryen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "29/06/1950",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Gast",
   "NAME" : "Gibéryen",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "29/06/1950",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Gast",
   "NAME" : "Gibéryen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "29/06/1950",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Gast",
   "NAME" : "Gibéryen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "29/06/1950",
   "END_DATE" : "13/10/2020",
   "FIRSTNAME" : "Gast",
   "NAME" : "Gibéryen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "02/06/1958",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Camille",
   "NAME" : "Gira",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "02/06/1958",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Camille",
   "NAME" : "Gira",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "02/06/1958",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Camille",
   "NAME" : "Gira",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "02/06/1958",
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "Camille",
   "NAME" : "Gira",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Marcel",
   "NAME" : "Glesener",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Marcel",
   "NAME" : "Glesener",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/12/1972",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Léon",
   "NAME" : "Gloden",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/12/1972",
   "END_DATE" : "17/11/2023",
   "FIRSTNAME" : "Léon",
   "NAME" : "Gloden",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/12/1972",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Léon",
   "NAME" : "Gloden",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/12/1972",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Léon",
   "NAME" : "Gloden",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Charles",
   "NAME" : "Goerens",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Greisen",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Greisen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "19/12/2007",
   "FIRSTNAME" : "Henri",
   "NAME" : "Grethen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "30/04/1981",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Max",
   "NAME" : "Hahn",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "30/04/1981",
   "END_DATE" : "17/06/2023",
   "FIRSTNAME" : "Max",
   "NAME" : "Hahn",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/02/1957",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Jean-Marie",
   "NAME" : "Halsdorf",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/02/1957",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean-Marie",
   "NAME" : "Halsdorf",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/02/1957",
   "END_DATE" : "30/07/2004",
   "FIRSTNAME" : "Jean-Marie",
   "NAME" : "Halsdorf",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/02/1957",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Jean-Marie",
   "NAME" : "Halsdorf",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "21/02/1982",
   "END_DATE" : "10/07/2024",
   "FIRSTNAME" : "Christophe",
   "NAME" : "Hansen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "27/03/2014",
   "FIRSTNAME" : "Marc",
   "NAME" : "Hansen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Marc",
   "NAME" : "Hansen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/12/1965",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Martine",
   "NAME" : "Hansen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "10/12/1965",
   "END_DATE" : "17/11/2023",
   "FIRSTNAME" : "Martine",
   "NAME" : "Hansen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "10/12/1965",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Martine",
   "NAME" : "Hansen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Norbert",
   "NAME" : "Haupert",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Norbert",
   "NAME" : "Haupert",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Norbert",
   "NAME" : "Haupert",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "08/10/2012",
   "FIRSTNAME" : "Paul",
   "NAME" : "Helminger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Paul",
   "NAME" : "Helminger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "06/11/1955",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Cécile",
   "NAME" : "Hemmen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "04/02/2020",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "06/11/1955",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Cécile",
   "NAME" : "Hemmen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Jacques-Yves",
   "NAME" : "Henckes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jacques-Yves",
   "NAME" : "Henckes",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jacques-Yves",
   "NAME" : "Henckes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Jacques-Yves",
   "NAME" : "Henckes",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Jacques-Yves",
   "NAME" : "Henckes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "08/05/1977",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Max",
   "NAME" : "Hengel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "11/01/2022",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "08/05/1977",
   "END_DATE" : "17/08/2024",
   "FIRSTNAME" : "Max",
   "NAME" : "Hengel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "21/05/1960",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Françoise",
   "NAME" : "Hetto-Gaasch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "21/05/1960",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Françoise",
   "NAME" : "Hetto-Gaasch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "21/05/1960",
   "END_DATE" : "22/07/2009",
   "FIRSTNAME" : "Françoise",
   "NAME" : "Hetto-Gaasch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "21/05/1960",
   "END_DATE" : "31/12/2021",
   "FIRSTNAME" : "Françoise",
   "NAME" : "Hetto-Gaasch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "16/11/2011",
   "FIRSTNAME" : "André",
   "NAME" : "Hoffmann",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "30/06/2000",
   "FIRSTNAME" : "André",
   "NAME" : "Hoffmann",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/07/2011",
   "FIRSTNAME" : "Jean",
   "NAME" : "Huss",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean",
   "NAME" : "Huss",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Jean",
   "NAME" : "Huss",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Aly",
   "NAME" : "Jaerling",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Aly",
   "NAME" : "Jaerling",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Aly",
   "NAME" : "Jaerling",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Aly",
   "NAME" : "Jaerling",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "31/10/2014",
   "FIRSTNAME" : "Jean-Claude",
   "NAME" : "Juncker",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/04/1955",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Aly",
   "NAME" : "Kaes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/04/1955",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Aly",
   "NAME" : "Kaes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/04/1955",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Aly",
   "NAME" : "Kaes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "04/04/1955",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Aly",
   "NAME" : "Kaes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "30/09/1959",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Kartheiser",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "30/09/1959",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Kartheiser",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "30/09/1959",
   "END_DATE" : "10/07/2024",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Kartheiser",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "ADR",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "30/09/1959",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Fernand",
   "NAME" : "Kartheiser",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "27/12/1961",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Dan",
   "NAME" : "Kersch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "11/01/2022",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "27/12/1961",
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "Dan",
   "NAME" : "Kersch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Jean-Pierre",
   "NAME" : "Klein",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean-Pierre",
   "NAME" : "Klein",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Jean-Pierre",
   "NAME" : "Klein",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "08/10/1965",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Pim",
   "NAME" : "Knaff",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "04/02/2020",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "26/04/1934",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean-Pierre",
   "NAME" : "Koepp",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "26/04/1934",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean-Pierre",
   "NAME" : "Koepp",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "26/04/1934",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Jean-Pierre",
   "NAME" : "Koepp",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "26/04/1934",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Jean-Pierre",
   "NAME" : "Koepp",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "14/09/1966",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Claudine",
   "NAME" : "Konsbruck",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/07/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "07/05/1961",
   "END_DATE" : "11/10/2019",
   "FIRSTNAME" : "Henri",
   "NAME" : "Kox",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "07/05/1961",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Henri",
   "NAME" : "Kox",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "07/05/1961",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Henri",
   "NAME" : "Kox",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "07/05/1961",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Henri",
   "NAME" : "Kox",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jeannot",
   "NAME" : "Krecké",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "30/07/2004",
   "FIRSTNAME" : "Jeannot",
   "NAME" : "Krecké",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Alexander",
   "NAME" : "Krieps",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "09/10/2012",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Alexander",
   "NAME" : "Krieps",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "10/10/2006",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Alexander",
   "NAME" : "Krieps",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Alexander",
   "NAME" : "Krieps",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "LSAP 06",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "LSAP 07",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "LSAP 08",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "LSAP 09",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "LSAP 10",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "LSAP 11",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "24/09/1976",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Claude",
   "NAME" : "Lamberty",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "19/01/2016",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "24/09/1976",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Claude",
   "NAME" : "Lamberty",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "21/01/2020",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Nico",
   "NAME" : "Loes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/09/1961",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Josée",
   "NAME" : "Lorsché",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "06/07/2011",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "09/09/1961",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Josée",
   "NAME" : "Lorsché",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "09/09/1961",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Josée",
   "NAME" : "Lorsché",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "10/04/1959",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Viviane",
   "NAME" : "Loschetter",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "10/04/1959",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Viviane",
   "NAME" : "Loschetter",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "10/04/1959",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Viviane",
   "NAME" : "Loschetter",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "10/10/1999",
   "FIRSTNAME" : "Astrid",
   "NAME" : "Lulling",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Lux",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "30/07/2004",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Lux",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Lux",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "07/03/1950",
   "END_DATE" : "01/04/2011",
   "FIRSTNAME" : "Mill",
   "NAME" : "Majerus",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Charles",
   "NAME" : "Margue",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "07/04/1990",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Elisabeth",
   "NAME" : "Margue",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "11/10/2022",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "07/04/1990",
   "END_DATE" : "17/11/2023",
   "FIRSTNAME" : "Elisabeth",
   "NAME" : "Margue",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "23/03/1952",
   "END_DATE" : "31/03/2007",
   "FIRSTNAME" : "François",
   "NAME" : "Maroldt",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Robert",
   "NAME" : "Mehlen",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Robert",
   "NAME" : "Mehlen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Robert",
   "NAME" : "Mehlen",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Robert",
   "NAME" : "Mehlen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Claude",
   "NAME" : "Meisch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Claude",
   "NAME" : "Meisch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Claude",
   "NAME" : "Meisch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "Claude",
   "NAME" : "Meisch",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Pierre",
   "NAME" : "Mellina",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "14/05/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "30/08/1956",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Martine",
   "NAME" : "Mergen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "30/08/1956",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Martine",
   "NAME" : "Mergen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "30/08/1956",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Martine",
   "NAME" : "Mergen",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "14/10/2014",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "22/08/1954",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Edy",
   "NAME" : "Mertens",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/01/1937",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Paul-Henri",
   "NAME" : "Meyers",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/01/1937",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Paul-Henri",
   "NAME" : "Meyers",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/01/1937",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Paul-Henri",
   "NAME" : "Meyers",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/01/1937",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Paul-Henri",
   "NAME" : "Meyers",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "18/09/1974",
   "END_DATE" : "17/11/2023",
   "FIRSTNAME" : "Georges",
   "NAME" : "Mischo",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "18/09/1974",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Georges",
   "NAME" : "Mischo",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Lydia",
   "NAME" : "Mutsch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "06/12/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Lydia",
   "NAME" : "Mutsch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Lydia",
   "NAME" : "Mutsch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Lydia",
   "NAME" : "Mutsch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "Lydia",
   "NAME" : "Mutsch",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Maggy",
   "NAME" : "Nagel",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "03/12/2013",
   "FIRSTNAME" : "Maggy",
   "NAME" : "Nagel",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "DP",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Roger",
   "NAME" : "Negri",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "31/03/2018",
   "FIRSTNAME" : "Roger",
   "NAME" : "Negri",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Roger",
   "NAME" : "Negri",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "02/11/1937",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Ferny",
   "NAME" : "Nicklaus-Faber",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/11/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "09/04/1949",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Marcel",
   "NAME" : "Oberweis",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/04/1949",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Marcel",
   "NAME" : "Oberweis",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "09/04/1949",
   "END_DATE" : "30/06/2018",
   "FIRSTNAME" : "Marcel",
   "NAME" : "Oberweis",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "20/02/1983",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Nathalie",
   "NAME" : "Oberweis",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "19/05/2021",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "17/07/1965",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Roy",
   "NAME" : "Reding",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "17/07/1965",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Roy",
   "NAME" : "Reding",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "ADR",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/08/1999",
   "FIRSTNAME" : "Viviane",
   "NAME" : "Reding",
-  "PERSON_TITLE" : "Madame",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "30/09/2022",
   "FIRSTNAME" : "Viviane",
   "NAME" : "Reding",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Dagmar",
   "NAME" : "Reuter-Angelsberg",
-  "PERSON_TITLE" : "Madame",
   "START_DATE" : "21/10/2003",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean-Paul",
   "NAME" : "Rippinger",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/03/1967",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Gilles",
   "NAME" : "Roth",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/03/1967",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Gilles",
   "NAME" : "Roth",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/03/1967",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Gilles",
   "NAME" : "Roth",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/04/2007",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/03/1967",
   "END_DATE" : "17/11/2023",
   "FIRSTNAME" : "Gilles",
   "NAME" : "Roth",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "01/03/1967",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Gilles",
   "NAME" : "Roth",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "11/03/2009",
   "FIRSTNAME" : "Patrick",
   "NAME" : "Santer",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Patrick",
   "NAME" : "Santer",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "12/10/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Marcel",
   "NAME" : "Sauber",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Marcel",
   "NAME" : "Sauber",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "11/03/2003",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/10/1954",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Marco",
   "NAME" : "Schank",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "02/02/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/10/1954",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Marco",
   "NAME" : "Schank",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/10/1954",
   "END_DATE" : "22/07/2009",
   "FIRSTNAME" : "Marco",
   "NAME" : "Schank",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/10/1954",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Marco",
   "NAME" : "Schank",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "10/10/1954",
   "END_DATE" : "13/10/2020",
   "FIRSTNAME" : "Marco",
   "NAME" : "Schank",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Ben",
   "NAME" : "Scheuer",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jos",
   "NAME" : "Scheuer",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Jos",
   "NAME" : "Scheuer",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "30/07/2004",
   "FIRSTNAME" : "Jean-Louis",
   "NAME" : "Schiltz",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "28/02/2011",
   "FIRSTNAME" : "Jean-Louis",
   "NAME" : "Schiltz",
-  "PERSON_TITLE" : "Monsieur",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "22/07/2009",
   "FIRSTNAME" : "Romain",
   "NAME" : "Schneider",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Romain",
   "NAME" : "Schneider",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Tessy",
   "NAME" : "Scholtes",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "03/05/2011",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Roland",
   "NAME" : "Schreiner",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Roland",
   "NAME" : "Schreiner",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "22/11/2012",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Marco",
   "NAME" : "Schroell",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "John",
   "NAME" : "Schummer",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Jean",
   "NAME" : "Spautz",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Vera",
   "NAME" : "Spautz",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "15/11/2012",
   "FIRSTNAME" : "Vera",
   "NAME" : "Spautz",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "13/11/1937",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Nelly",
   "NAME" : "Stein",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "13/11/1937",
   "END_DATE" : "12/08/2005",
   "FIRSTNAME" : "Nelly",
   "NAME" : "Stein",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Théo",
   "NAME" : "Stendebach",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Nicolas",
   "NAME" : "Strotz",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "11/04/1939",
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Fred",
   "NAME" : "Sunnen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "11/04/1939",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Fred",
   "NAME" : "Sunnen",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "17/11/1999",
   "FIRSTNAME" : "Alphonse",
   "NAME" : "Theis",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "14/02/1943",
   "END_DATE" : "25/08/2011",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Thiel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "14/02/1943",
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Thiel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Jessie",
   "NAME" : "Thill",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "19/01/2022",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "03/01/1963",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Roberto",
   "NAME" : "Traversini",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "03/01/1963",
   "END_DATE" : "05/10/2019",
   "FIRSTNAME" : "Roberto",
   "NAME" : "Traversini",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "28/04/2015",
   "FIRSTNAME" : "Justin",
   "NAME" : "Turpel",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Serge",
   "NAME" : "Urbany",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "02/07/2002",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/04/2016",
   "FIRSTNAME" : "Serge",
   "NAME" : "Urbany",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Serge",
   "NAME" : "Urbany",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi Lénk",
   "START_DATE" : "16/11/2011",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Renée",
   "NAME" : "Wagener",
-  "PERSON_TITLE" : "Madame",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Carlo",
   "NAME" : "Wagner",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "03/08/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Carlo",
   "NAME" : "Wagner",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/08/1999",
   "FIRSTNAME" : "Carlo",
   "NAME" : "Wagner",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "DP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "06/02/1966",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Carlo",
   "NAME" : "Weber",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "LSAP",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "11/01/2022",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Robert",
   "NAME" : "Weber",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Weiler",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "08/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Weiler",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Lucien",
   "NAME" : "Weiler",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/07/2004",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "07/06/2009",
   "FIRSTNAME" : "Raymond",
   "NAME" : "Weydert",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "17/03/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Raymond",
   "NAME" : "Weydert",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "28/07/2009",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "09/07/2014",
   "FIRSTNAME" : "Christiane",
   "NAME" : "Wickler",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_GROUP" : "déi gréng",
   "START_DATE" : "05/12/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "BIRTH_DATE" : "06/05/1982",
   "END_DATE" : "06/10/2013",
   "FIRSTNAME" : "Serge",
   "NAME" : "Wilmes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "11/10/2011",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "06/05/1982",
   "END_DATE" : "30/10/2018",
   "FIRSTNAME" : "Serge",
   "NAME" : "Wilmes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "13/11/2013",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "06/05/1982",
   "END_DATE" : "17/11/2023",
   "FIRSTNAME" : "Serge",
   "NAME" : "Wilmes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "BIRTH_DATE" : "06/05/1982",
   "END_DATE" : "24/10/2023",
   "FIRSTNAME" : "Serge",
   "NAME" : "Wilmes",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_GROUP" : "CSV",
   "POLITICAL_PARTY" : "CSV",
   "START_DATE" : "30/10/2018",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Georges",
   "NAME" : "Wohlfart",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "12/08/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "05/06/2004",
   "FIRSTNAME" : "Marc",
   "NAME" : "Zanussi",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "LSAP",
   "START_DATE" : "13/07/1999",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "déi gréng 02",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "déi gréng 03",
-  "PERSON_TITLE" : "Monsieur",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Monsieur"
 }, {
   "END_DATE" : "20/11/2023",
   "FIRSTNAME" : "Siège",
   "NAME" : "déi gréng 04",
-  "PERSON_TITLE" : "Madame",
   "POLITICAL_PARTY" : "déi gréng",
   "START_DATE" : "24/10/2023",
-  "_dataset" : "lu_pep_chamber_former",
-  "_sourceUrl" : "https://data.public.lu/fr/datasets/r/8fdbd601-6931-47b5-a027-aacd3b1e47f4"
+  "﻿PERSON_TITLE" : "Madame"
 } ]
